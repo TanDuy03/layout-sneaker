@@ -66,14 +66,18 @@ nav:not(.mm-menu) {
     justify-content: space-between;
     align-items: center;
     z-index: 9999999;
+<<<<<<< HEAD
     transition: 2.5s ease-out;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+=======
+    transition: 2s ease-out;
+>>>>>>> dc98f02d5bce6c76cc69aa77ca1caa4538e5720c
 }
 
 #header.active_top {
     position: sticky;
     top: 0;
-    transition: 2.5s ease-out ;
+    transition: 2s ease-out ;
 }
 
 #header .menu .flex-menu ul li {

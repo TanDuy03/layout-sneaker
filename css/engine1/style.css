@@ -310,34 +310,6 @@
 	width:100%;
 }
 
-/*playpause*/
-/* #wowslider-container1 .ws_playpause {
-    position: absolute;
-    width: 3em;
-    height: 2em;
-    top: 1.5em;
-    left: 0.5em;
-    z-index: 59;
-} */
-
-/* #wowslider-container1 .ws_pause span i, #wowslider-container1 .ws_pause span b{
-	position: absolute;
-  	width: 0.2em;
-  	height: 2em;
-  	background: #ffffff;
-	-webkit-transition: background 300ms ease-in-out;
-	transition: background 300ms ease-in-out;
-} */
-/* 
-#wowslider-container1 .ws_pause span i{
-	left: 1.4em;
-} */
-
-/* #wowslider-container1 .ws_pause span b{
-	left: 2.1em;
-} */
-
-
 #wowslider-container1 .ws_play span{
 	border: solid transparent;
 	position: absolute;

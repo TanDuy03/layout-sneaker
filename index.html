@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no" />
 	<!-- Favicon-->
 	<link rel="shortcut icon" href="img/fav.png">
+	<!--  -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<!-- Author Meta -->
 	<meta name="author" content="CodePixar">
 	<!-- Meta Description -->
@@ -73,6 +75,15 @@
 		</ul>
 	</nav>
 	<div class="mm-page">
+		<div class="d-flex justify-content-end align-items-center gap-3" id="top-bar">
+			<div>
+				<span class="text-white">Đăng nhập</span>
+			</div>
+			<span id="line"></span>
+			<div>
+				<span class="text-white">Hotline: 0363.955.555</span>
+			</div>
+		</div>
 		<div id="header">
 			<div class="menu_burger">
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
@@ -100,19 +111,17 @@
 					</ul>
 				</div>
 			</div>
-			<div class="search-group">
-				<div class="d-flex">
-					<div class="me-1">
-						<i class="fas fa-search text-white fs-5"></i>
-					</div>
-					<div class="px-3" id="icon__heart">
-						<i class="fas fa-heart text-white fs-5"></i>
-						<span id="ql_count" class="text-white">1</span>
-					</div>
-					<div class="ms-1" id="icon__shopping">
-						<i class="fas fa-shopping-bag text-white fs-5"></i>
-						<span id="ql_count" class="text-white">1</span>
-					</div>
+			<div class="search-group d-flex gap-4">
+				<div id="icon__search" class="d-flex align-items-center">
+					<i class="fas fa-search text-white"></i>
+				</div>
+				<div id="icon__heart">
+					<i class="fas fa-heart text-white"></i>
+					<span id="quality">1</span>
+				</div>
+				<div id="icon__shopping">
+					<i class="fas fa-shopping-bag text-white"></i>
+					<span id="quality">1</span>
 				</div>
 			</div>
 		</div>
@@ -121,10 +130,10 @@
 		<section class="container-fluid p-0">
 			<div class="w-100">
 				<div id="wowslider-container1" class="w-100">
-					<div class="ws_images">
+					<div class="ws_images h-100">
 						<ul class="w-100">
 							<li><img src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg"
-									alt="12" title="12" id="wows1_0" /></li>
+									alt="12" title="12" id="wows1_0" />aaaaa</li>
 							<li><img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg"
 									alt="css image gallery" title="Tấn Duy" id="wows1_1" /></li>
 							<li><img src="https://cdn.pixabay.com/photo/2016/11/29/04/16/beach-1867271_1280.jpg"
@@ -149,6 +158,7 @@
 		<!-- End banner Area -->
 		<!-- start features Area -->
 		<div class="container-fluid">
+
 			<section class="features-area section_gap">
 				<div class="container px-4">
 					<div class="row features-inner">
@@ -267,7 +277,6 @@
 			<!-- start product Area -->
 			<section>
 				<!-- single product slide -->
-				<!-- data-aos="fade-right" data-aos-duration="1500" -->
 				<div class="single-product-slider">
 					<div class="container">
 						<div class="row justify-content-center">
@@ -300,10 +309,6 @@
 												<p class="hover-text">add to bag</p>
 											</a>
 											<a href="" class="social-info">
-												<span class="lnr lnr-heart"></span>
-												<p class="hover-text">Wishlist</p>
-											</a>
-											<a href="" class="social-info">
 												<span class="lnr lnr-sync"></span>
 												<p class="hover-text">compare</p>
 											</a>
@@ -333,10 +338,6 @@
 												<p class="hover-text">add to bag</p>
 											</a>
 											<a href="" class="social-info">
-												<span class="lnr lnr-heart"></span>
-												<p class="hover-text">Wishlist</p>
-											</a>
-											<a href="" class="social-info">
 												<span class="lnr lnr-sync"></span>
 												<p class="hover-text">compare</p>
 											</a>
@@ -363,10 +364,6 @@
 											<a href="" class="social-info">
 												<span class="ti-bag"></span>
 												<p class="hover-text">add to bag</p>
-											</a>
-											<a href="" class="social-info">
-												<span class="lnr lnr-heart"></span>
-												<p class="hover-text">Wishlist</p>
 											</a>
 											<a href="" class="social-info">
 												<span class="lnr lnr-sync"></span>
@@ -398,10 +395,6 @@
 												<p class="hover-text">add to bag</p>
 											</a>
 											<a href="" class="social-info">
-												<span class="lnr lnr-heart"></span>
-												<p class="hover-text">Wishlist</p>
-											</a>
-											<a href="" class="social-info">
 												<span class="lnr lnr-sync"></span>
 												<p class="hover-text">compare</p>
 											</a>
@@ -429,10 +422,6 @@
 											<a href="" class="social-info">
 												<span class="ti-bag"></span>
 												<p class="hover-text">add to bag</p>
-											</a>
-											<a href="" class="social-info">
-												<span class="lnr lnr-heart"></span>
-												<p class="hover-text">Wishlist</p>
 											</a>
 											<a href="" class="social-info">
 												<span class="lnr lnr-sync"></span>
@@ -464,10 +453,6 @@
 												<p class="hover-text">add to bag</p>
 											</a>
 											<a href="" class="social-info">
-												<span class="lnr lnr-heart"></span>
-												<p class="hover-text">Wishlist</p>
-											</a>
-											<a href="" class="social-info">
 												<span class="lnr lnr-sync"></span>
 												<p class="hover-text">compare</p>
 											</a>
@@ -497,10 +482,6 @@
 												<p class="hover-text">add to bag</p>
 											</a>
 											<a href="" class="social-info">
-												<span class="lnr lnr-heart"></span>
-												<p class="hover-text">Wishlist</p>
-											</a>
-											<a href="" class="social-info">
 												<span class="lnr lnr-sync"></span>
 												<p class="hover-text">compare</p>
 											</a>
@@ -528,10 +509,6 @@
 											<a href="" class="social-info">
 												<span class="ti-bag"></span>
 												<p class="hover-text">add to bag</p>
-											</a>
-											<a href="" class="social-info">
-												<span class="lnr lnr-heart"></span>
-												<p class="hover-text">Wishlist</p>
 											</a>
 											<a href="" class="social-info">
 												<span class="lnr lnr-sync"></span>
@@ -575,6 +552,7 @@
 				</div>
 			</section>
 			<!-- End brand Area -->
+
 			<!-- Start exclusive deal Area -->
 			<section class="exclusive-deal-area">
 				<div class="container-fluid">
@@ -664,8 +642,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-9">
+					<div class="row overflow-x-hidden">
+						<div class="col-lg-9" data-aos="fade-down-right" data-aos-duration="1500">
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 									<div class="single-related-product d-flex">
@@ -777,7 +755,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3">
+						<div class="col-lg-3" data-aos="fade-left" data-aos-duration="1500">
 							<div class="ctg-right">
 								<a href="#" target="_blank">
 									<img class="img-fluid d-block mx-auto" src="img/category/c5.jpg" alt="">

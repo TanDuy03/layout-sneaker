@@ -5643,39 +5643,47 @@ label {
     color: #ffba00; }
 
 /*# sourceMappingURL=main.css.map */
-
-#header .search-group #icon__heart, 
-#header .search-group #icon__shopping {
+#top-bar {
+  padding: 8px 80px;
+  background-color: var(--color-primary);
+}
+#top-bar #line {
+  height: 20px;
+  width: 2px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+#header .search-group #icon__shopping ,
+#header .search-group #icon__heart  {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#header .search-group #icon__shopping #ql_count {
+#header .search-group #icon__search .fa-search,
+#header .search-group #icon__shopping .fa-shopping-bag,
+#header .search-group #icon__heart .fa-heart {
+  font-size: 1.3rem;
+}
+
+#header .search-group #icon__shopping #quality,
+#header .search-group #icon__heart #quality {
   position: absolute;
+  left: 12px;
+  top: -10px;
   height: 20px;
   width: 20px;
+  padding: 5px;
+  color: #fff;
+  font-size: 12px;
   border-radius: 50%;
-  background-color: #ff0000;
-  left: 10px;
-  top: 0;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#header .search-group #icon__heart #ql_count {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #ff0000;
-  right: 5px;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-@media (max-width: 450px){
+@media (max-width: 456px){
   html{
   font-size: 50%;
 }
@@ -5685,6 +5693,21 @@ label {
  .footer{
   text-align: center;
  }
+ #header .search-group #icon__search .fa-search,
+#header .search-group #icon__shopping .fa-shopping-bag,
+#header .search-group #icon__heart .fa-heart {
+  font-size: unset;
+}
+#header .search-group #icon__shopping #quality,
+#header .search-group #icon__heart #quality  {
+  height: 18px;
+  width: 18px;
+  left: 8px;
+  top: -10px;
+}
+#top-bar {
+  padding: 8px 40px;
+}
 }
 
 #section__social #section__blog .img__blog {

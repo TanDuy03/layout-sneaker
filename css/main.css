@@ -179,8 +179,7 @@ button:focus {
   margin-bottom: 30px;
   font-size: 24px; }
 
-b, sup, sub, u, del {
-  color: #ffba00; }
+
 
 h1 {
   font-size: 36px; }
@@ -1131,19 +1130,140 @@ h1, h2, h3, h4, h5, h6 {
     color: #222222; }
 
 .organic-breadcrumb {
-  background: url(../img/banner/common-banner.jpg) center no-repeat;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://storage.sg.content-cdn.io/in-resources/aa3918c2-47e7-41fb-9ea1-975f7750a0e7/Images/userimages/plp-banner/july-2022/Cat-Banner-Desktop-Dynablast.jpg) center no-repeat;
   background-size: cover;
-  padding-top: 130px; }
-  @media (max-width: 991px) {
+  margin-top: 50px;
+  height: 250px;
+
+  }
+   
+  
+  @media (max-width: 1223px) {
     .organic-breadcrumb {
-      padding-top: 80px; } }
+       } 
+  }
   @media (max-width: 767px) {
     .organic-breadcrumb {
       background: none;
-      background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-      background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-      background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-      background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); } }
+      background-color: #D9D9D9;
+    }
+  }
+  .list-loai ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Sử dụng Flexbox để nằm ngang */
+}
+
+.list-loai li {
+    margin-right: 10px; /* Khoảng cách giữa các mục */
+    margin-left: 20px;
+}
+
+.list-loai a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    
+}
+.active{
+  background-color: white;
+  border-radius: 20px ;
+  padding: 5px 20px 5px 20px;
+}
+.list-loai{
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+}
+@media (max-width: 1223px) {
+  .list-loai {
+      display: block;
+      height: 300px;
+      border-radius: 0px;
+      width: 100%;
+  }
+  .flex-container{
+    padding-top: 30px;
+  }
+  .list-loai ul {
+      display: block;
+      text-align: center;
+  }
+
+  .list-loai li {
+      margin-right: 0; /* Loại bỏ khoảng cách giữa các mục */
+      margin-bottom: 10px; /* Thêm khoảng cách dưới mỗi mục */
+      margin-left: 0px;
+  }
+  .list-loai li:hover {
+    background-color: white;
+    border-radius: 20px ;
+    padding: 5px 20px 5px 20px;
+}
+.flex-container {
+  flex-direction: column; /* Chuyển sang hiển thị dọc */
+}
+
+.justify-content-center,
+.justify-content-end {
+  justify-content: center; /* Căn giữa dọc */
+}
+
+.d-flex {
+  justify-content: center; /* Căn giữa dọc */
+}
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    text-size-adjust :20px;
+}
+.justify-content-center>input {
+  height: 40px;
+}
+.d-flex {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.justify-content-center {
+  justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.search-container i {
+  margin-right: 10px; /* Khoảng cách giữa biểu tượng và input */
+  color: #757575;
+}
+
+input[type="search"] {
+  border: none;
+  outline: none;
+}
+
 
 #category .organic-breadcrumb {
   margin-bottom: 100px; }
@@ -4900,6 +5020,8 @@ label {
 
 /*========= blog_categorie_area css ===========*/
 .blog_categorie_area {
+  margin: auto;
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 80px; }
 
@@ -4907,6 +5029,22 @@ label {
   position: relative;
   text-align: center;
   cursor: pointer; }
+  .tomtat{
+    width: 300px;
+    text-align: left;
+  }
+  .loai{
+    text-align: left;
+  }
+  .tieude{
+    text-align: left;
+    font-weight: bold;
+  }
+  .docthem{
+    text-align: left;
+    color: #E45F45;
+    text-align: left;
+  }
   .categories_post img {
     max-width: 100%; }
   .categories_post .categories_details {
@@ -4982,6 +5120,7 @@ label {
   line-height: 34px;
   display: inline-block;
   color: #222222; }
+ 
 
 .blog_details {
   padding-top: 20px; }
@@ -5645,14 +5784,16 @@ label {
 /*# sourceMappingURL=main.css.map */
 #top-bar {
   padding: 8px 80px;
-  background-color: var(--color-primary);
+  background-color: var(--secondary);
 }
 #top-bar #line {
   height: 20px;
   width: 2px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #757575;
 }
+
+
 #header .search-group #icon__shopping ,
 #header .search-group #icon__heart  {
   position: relative;
@@ -5677,7 +5818,7 @@ label {
   color: #fff;
   font-size: 12px;
   border-radius: 50%;
-  background-color: black;
+  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;

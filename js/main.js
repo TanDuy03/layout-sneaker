@@ -43,7 +43,16 @@ $(document).ready(function(){
     /*==========================
 		javaScript for sticky header
 		============================*/
-			$(".sticky-header").sticky();
+    var header = $("#header");
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= 150) {
+				header.addClass('active_top');
+			} else {
+				header.removeClass("active_top");
+			}
+		});
+
 
     /*=================================
     Javascript for banner area carousel
@@ -563,3 +572,4 @@ $(document).ready(function(){
   
 
  });
+

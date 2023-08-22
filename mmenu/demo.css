@@ -48,7 +48,7 @@ nav:not(.mm-menu) {
     position: sticky;
     height: 80px;
     padding: 0 80px;
-    top: 0;
+    top: -100px;
     font-size: 16px;
     font-weight: bold;
     line-height: 44px;
@@ -58,6 +58,13 @@ nav:not(.mm-menu) {
     justify-content: space-between;
     align-items: center;
     z-index: 9999999;
+    transition: 2.5s ease-out;
+}
+
+#header.active_top {
+    position: sticky;
+    top: 0;
+    transition: 2.5s ease-out ;
 }
 
 #header .menu .flex-menu ul li {

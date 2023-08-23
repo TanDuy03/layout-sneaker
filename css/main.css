@@ -1226,17 +1226,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.justify-content-center>input {
+/* .justify-content-center>input {
   height: 40px;
-}
+} */
 .d-flex {
   display: flex;
   align-items: center; /* Căn giữa theo chiều dọc */
 }
 
-.justify-content-center {
-  justify-content: center; /* Căn giữa theo chiều ngang */
-}
+
 
 .search-container {
   display: flex;
@@ -5687,6 +5685,14 @@ label {
     padding: 1.5rem ;
   }
   }
+.single-footer-widget  li{
+  padding-bottom: 10px;
+}
+.single-footer-widget .fa-brands{
+  font-size: 20px;
+  padding-right: 8px;
+  color: #fff;
+}
 .single-footer-widget .form-inline {
   display: inline-block;
   width: 100%; }

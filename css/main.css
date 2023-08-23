@@ -5336,6 +5336,43 @@ label {
   border-color: #eee; }
 
 /*============ Start Blog Single Styles  =============*/
+.anh-post img{
+  max-width: 100%;
+}
+.img-post img{
+  max-width: 100%;
+  padding: 20px;
+}
+.product-slider {
+  display: flex;
+  overflow: hidden;
+  width: 85%;
+}
+.product-list {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+
+}
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+}
+.slider-button-div{
+  width: 90%;
+  padding-bottom: 20px;
+}
+.slider-button {
+  margin-left: 20px;
+  padding: 6px 15px 6px 15px;
+  box-shadow: 3px 5px 10px #ccc;
+  border-radius: 50%;
+  border: none;
+}
+.slider-button:hover{
+  background-color: #555555;
+}
+
 .single-post-area .social-links {
   padding-top: 10px; }
   .single-post-area .social-links li {

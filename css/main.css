@@ -1177,6 +1177,9 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 20px;
 }
 @media (max-width: 1223px) {
+  .timkiem{
+    padding-left: 25px;
+  }
   .list-loai {
       display: block;
       height: 300px;
@@ -1205,10 +1208,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column; /* Chuyển sang hiển thị dọc */
 }
 
-.justify-content-center,
-.justify-content-end {
-  justify-content: center; /* Căn giữa dọc */
-}
+
 
 .d-flex {
   justify-content: center; /* Căn giữa dọc */
@@ -1225,15 +1225,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
 }
 
-.justify-content-center {
-    justify-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-    text-size-adjust :20px;
-}
+
 .justify-content-center>input {
   height: 40px;
 }
@@ -5044,6 +5036,7 @@ label {
     text-align: left;
     color: #E45F45;
     text-align: left;
+    font-style: italic;
   }
   .categories_post img {
     max-width: 100%; }

@@ -14,5 +14,5 @@ const productList = document.querySelector('.product-list');
     });
 
     function updateSliderPosition() {
-      productList.style.transform = `translateX(-${currentIndex * (321 + 1)}px)`;
+      productList.style.transform = `translateX(-${currentIndex * (480)}px)`;
     }

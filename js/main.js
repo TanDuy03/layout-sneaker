@@ -31,13 +31,13 @@ $(document).ready(function(){
     });
 
     // Search Toggle
-    $("#search_input_box").hide();
-    $("#search").on("click", function () {
-        $("#search_input_box").slideToggle();
-        $("#search_input").focus();
-    });
-    $("#close_search").on("click", function () {
-        $('#search_input_box').slideUp(500);
+    var form_search = $('#header #form_search');
+    $("#icon__search .bx-search").on("click", function () {
+      if (form_search.hasClass('active')) {
+        form_search.removeClass('active');
+      } else {
+          form_search.addClass('active');
+      }
     });
 
     /*==========================

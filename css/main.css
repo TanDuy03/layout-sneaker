@@ -1,6 +1,6 @@
 /*--------------------------- Color variations ----------------------*/
 /*--------------------------- Fonts ----------------------*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:500,700|Roboto:400,500");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 /* Medium Layout: 1280px */
 /* Tablet Layout: 768px */
 /* Mobile Layout: 320px */
@@ -13,8 +13,10 @@
   box-sizing: border-box;
 }
 :root{
-  --orange:#ff7800;
+  --color-orange:#FF8164;
   --color-primary: #3DB2FF;
+  --color-red: #F24C3D;
+  --font-text: 'Open Sans', sans-serif
 }
 .no-padding {
   padding: 0; }
@@ -127,7 +129,7 @@
 body {
   line-height: 24px;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-text);
   font-weight: 400;
   color: #777777;
   background: #fff; }
@@ -147,7 +149,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-text);
   color: #222222;
   font-weight: 500;
   line-height: 1.2 !important; }
@@ -1126,7 +1128,7 @@ h1, h2, h3, h4, h5, h6 {
   .add-bag .add-text {
     padding-left: 15px;
     font-size: 12px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-text);
     font-weight: 500;
     color: #222222; }
 
@@ -1357,7 +1359,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
     width: 100%; }
   .single-product .product-details h6 {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
     text-transform: uppercase; }
   .single-product .product-details .price h6 {
     font-size: 14px;
@@ -1413,7 +1416,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 100px;
         left: -40px;
         text-transform: uppercase;
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-text);
         font-weight: 500;
         font-size: 12px;
         color: #222222;
@@ -2734,7 +2737,7 @@ label {
     text-align: center;
     padding-bottom: 40px; }
     .jewellery-single-product .desc h6 {
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: 400;
       margin-bottom: 8px; }
     .jewellery-single-product .desc h5 {
@@ -2742,7 +2745,7 @@ label {
       -moz-transition: all 0.3s ease 0s;
       -o-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: 700;
       margin-bottom: 8px; }
       .jewellery-single-product .desc h5 del {
@@ -3355,7 +3358,7 @@ label {
       margin-top: 26px;
       margin-left: 26px;
       color: #222222;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: 500;
       font-size: 30px; }
     .hot_p_item .product_text a {
@@ -3518,7 +3521,7 @@ label {
   margin-bottom: 13px; }
   .cat_widgets .list li a {
     font-size: 14px;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-text);
     color: #222222; }
   .cat_widgets .list li .list {
     margin-top: 10px;
@@ -3534,7 +3537,7 @@ label {
 .p_filter_widgets h4 {
   color: #222222;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-text);
   font-weight: normal;
   margin-bottom: 22px;
   margin-top: 10px; }
@@ -3543,7 +3546,7 @@ label {
   .p_filter_widgets .list li a {
     padding-left: 30px;
     font-size: 14px;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-text);
     font-weight: normal;
     color: #777777;
     position: relative; }
@@ -3599,7 +3602,7 @@ label {
   font-size: 14px;
   font-weight: normal;
   color: #777777;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-text);
   margin-top: 15px; }
 .p_filter_widgets .range_item input {
   display: inline-block;
@@ -3607,25 +3610,25 @@ label {
   width: 100px;
   font-size: 14px;
   color: #777777;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-text);
   margin-top: 9px;
   padding-left: 3px; }
   .p_filter_widgets .range_item input.placeholder {
     font-size: 14px;
     color: #777777;
-    font-family: "Roboto", sans-serif; }
+    font-family: var(--font-text); }
   .p_filter_widgets .range_item input:-moz-placeholder {
     font-size: 14px;
     color: #777777;
-    font-family: "Roboto", sans-serif; }
+    font-family: var(--font-text); }
   .p_filter_widgets .range_item input::-moz-placeholder {
     font-size: 14px;
     color: #777777;
-    font-family: "Roboto", sans-serif; }
+    font-family: var(--font-text); }
   .p_filter_widgets .range_item input::-webkit-input-placeholder {
     font-size: 14px;
     color: #777777;
-    font-family: "Roboto", sans-serif; }
+    font-family: var(--font-text); }
 
 .product_top_bar {
   background: #e8f0f2;
@@ -3642,14 +3645,14 @@ label {
     padding-left: 20px; }
     .product_top_bar .left_dorp .sorting span {
       font-size: 14px;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       color: #555555; }
     .product_top_bar .left_dorp .sorting .list {
       width: 100%;
       border-radius: 0px; }
       .product_top_bar .left_dorp .sorting .list li {
         font-size: 14px;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         color: #555555; }
     .product_top_bar .left_dorp .sorting:after {
       content: "\f0d7";
@@ -3671,14 +3674,14 @@ label {
     margin-left: 10px; }
     .product_top_bar .left_dorp .show span {
       font-size: 14px;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       color: #555555; }
     .product_top_bar .left_dorp .show .list {
       width: 100%;
       border-radius: 0px; }
       .product_top_bar .left_dorp .show .list li {
         font-size: 14px;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         color: #555555; }
     .product_top_bar .left_dorp .show:after {
       content: "\f0d7";
@@ -3705,7 +3708,7 @@ label {
     font-size: 14px;
     color: #222222;
     font-weight: normal;
-    font-family: "Roboto", sans-serif; }
+    font-family: var(--font-text); }
   .cat_page .pagination li.blank a {
     background: transparent;
     color: #cccccc;
@@ -3760,7 +3763,7 @@ label {
     margin-bottom: 5px; }
     .s_product_text .list li a {
       font-size: 14px;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal;
       color: #555555; }
       .s_product_text .list li a span {
@@ -3822,7 +3825,7 @@ label {
   .product_count label {
     font-size: 14px;
     color: #777777;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-text);
     font-weight: normal;
     padding-right: 10px; }
   .product_count input {
@@ -3913,7 +3916,7 @@ label {
       .product_description_area .tab-content .total_rate .rating_list h3 {
         font-size: 18px;
         color: #222222;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         font-weight: 500;
         margin-bottom: 10px; }
       .product_description_area .tab-content .total_rate .rating_list .list li a {
@@ -3932,7 +3935,7 @@ label {
         padding-bottom: 14px; }
         .product_description_area .tab-content .table tbody tr td h5 {
           font-size: 14px;
-          font-family: "Roboto", sans-serif;
+          font-family: var(--font-text);
           font-weight: normal;
           color: #777777;
           margin-bottom: 0px;
@@ -3955,7 +3958,7 @@ label {
         margin-bottom: 0px;
         font-size: 14px;
         color: #222222;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         margin-bottom: 8px; }
       .review_item .media .media-body i {
         color: #fbd600; }
@@ -3970,7 +3973,7 @@ label {
         line-height: 32px;
         border-radius: 16px;
         font-size: 14px;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         color: #222222;
         position: absolute;
         right: 0px;
@@ -4024,7 +4027,7 @@ label {
   border-top: 0px;
   font-size: 14px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-text);
   color: #777777;
   border-bottom: 0px !important; }
 .cart_inner .table tbody tr td {
@@ -4045,7 +4048,7 @@ label {
   .cart_inner .table tbody tr td h5 {
     font-size: 14px;
     color: #222222;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-text);
     margin-bottom: 0px; }
   .cart_inner .table tbody tr td .product_count {
     margin-bottom: 0px; }
@@ -4097,7 +4100,7 @@ label {
     height: 40px;
     font-size: 14px;
     color: #cccccc;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-text);
     font-weight: normal;
     margin-right: -3px;
     outline: none;
@@ -4105,22 +4108,22 @@ label {
     .cart_inner .table tbody tr.bottom_button td .cupon_text input.placeholder {
       font-size: 14px;
       color: #cccccc;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal; }
     .cart_inner .table tbody tr.bottom_button td .cupon_text input:-moz-placeholder {
       font-size: 14px;
       color: #cccccc;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal; }
     .cart_inner .table tbody tr.bottom_button td .cupon_text input::-moz-placeholder {
       font-size: 14px;
       color: #cccccc;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal; }
     .cart_inner .table tbody tr.bottom_button td .cupon_text input::-webkit-input-placeholder {
       font-size: 14px;
       color: #cccccc;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal; }
   .cart_inner .table tbody tr.bottom_button td .cupon_text .primary-btn {
     height: 40px;
@@ -4174,7 +4177,7 @@ label {
     font-size: 14px;
     font-weight: normal;
     color: #222222;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-text);
     margin-top: 20px;
     margin-bottom: 20px; }
     .cart_inner .table tbody tr.shipping_area .shipping_box h6 i {
@@ -4231,7 +4234,7 @@ label {
 .check_title h2 {
   font-size: 14px;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-text);
   background: #e8f0f2;
   line-height: 40px !important;
   padding-left: 30px;
@@ -4254,27 +4257,27 @@ label {
       height: 40px;
       border-radius: 3px;
       font-size: 14px;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       color: #777777;
       font-weight: normal; }
       .returning_customer .contact_form .form-group input.placeholder {
         font-size: 14px;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         color: #777777;
         font-weight: normal; }
       .returning_customer .contact_form .form-group input:-moz-placeholder {
         font-size: 14px;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         color: #777777;
         font-weight: normal; }
       .returning_customer .contact_form .form-group input::-moz-placeholder {
         font-size: 14px;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         color: #777777;
         font-weight: normal; }
       .returning_customer .contact_form .form-group input::-webkit-input-placeholder {
         font-size: 14px;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         color: #777777;
         font-weight: normal; }
     .returning_customer .contact_form .form-group .primary-btn {
@@ -4294,7 +4297,7 @@ label {
       display: block;
       margin-top: 20px;
       font-size: 14px;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       color: #777777;
       font-weight: normal; }
 
@@ -4348,7 +4351,7 @@ label {
   padding: 0px 40px;
   color: #222222;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-text);
   font-weight: 500;
   border-radius: 3px; }
   .tp_btn:hover {
@@ -4388,7 +4391,7 @@ label {
       border-radius: 0px; }
       .billing_details .contact_form .form-group .country_select .list li {
         font-size: 14px;
-        font-family: "Roboto", sans-serif;
+        font-family: var(--font-text);
         font-weight: normal; }
   .billing_details .contact_form .form-group .creat_account #f-option2 {
     margin-right: 5px; }
@@ -4513,7 +4516,7 @@ label {
     .order_d_inner .details_item .list li a {
       font-size: 14px;
       color: #222222;
-      font-family: "Roboto", sans-serif; }
+      font-family: var(--font-text); }
       .order_d_inner .details_item .list li a span {
         width: 145px;
         display: inline-block;
@@ -4535,7 +4538,7 @@ label {
     .order_details_table .table thead tr th {
       border-bottom: 1px solid #ddd;
       font-size: 14px;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal; }
     .order_details_table .table tbody tr td p {
       margin-bottom: 0px; }
@@ -4636,7 +4639,7 @@ label {
 .login_form .form-group a {
   font-size: 14px;
   color: #777777;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-text);
   margin-top: 20px;
   display: block; }
 
@@ -4659,27 +4662,27 @@ label {
     border-radius: 0px;
     font-size: 14px;
     color: #777777;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-text);
     font-weight: normal; }
     .tracking_box_area .tracking_box_inner .tracking_form .form-group input.placeholder {
       font-size: 14px;
       color: #777777;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal; }
     .tracking_box_area .tracking_box_inner .tracking_form .form-group input:-moz-placeholder {
       font-size: 14px;
       color: #777777;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal; }
     .tracking_box_area .tracking_box_inner .tracking_form .form-group input::-moz-placeholder {
       font-size: 14px;
       color: #777777;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal; }
     .tracking_box_area .tracking_box_inner .tracking_form .form-group input::-webkit-input-placeholder {
       font-size: 14px;
       color: #777777;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-weight: normal; }
   .tracking_box_area .tracking_box_inner .tracking_form .form-group:last-child {
     margin-bottom: 0px; }
@@ -4711,7 +4714,7 @@ label {
   z-index: 9;
   cursor: pointer;
   -webkit-transition: all 0.25s linear;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-text);
   font-weight: 500;
   color: #222222;
   font-size: 13px;
@@ -4827,7 +4830,7 @@ label {
     padding: 30px 35px 40px 30px; }
     .causes_item .causes_text h4 {
       color: #222222;
-      font-family: "Roboto", sans-serif;
+      font-family: var(--font-text);
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 15px;
@@ -4848,7 +4851,7 @@ label {
     line-height: 50px;
     background: #c5322d;
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-text);
     font-size: 14px;
     font-weight: 500; }
     .causes_item .causes_bottom a + a {
@@ -4950,14 +4953,14 @@ label {
   .blog_info .post_tag {
     padding-bottom: 20px; }
     .blog_info .post_tag a {
-      font: 300 14px/21px "Roboto", sans-serif;
+      font: 300 14px/21px var(--font-text);
       color: #222222; }
       .blog_info .post_tag a:hover {
         color: #777777; }
       .blog_info .post_tag a.active {
         color: #ffba00; }
   .blog_info .blog_meta li a {
-    font: 300 14px/20px "Roboto", sans-serif;
+    font: 300 14px/20px var(--font-text);
     color: #777777;
     vertical-align: middle;
     padding-bottom: 12px;
@@ -5431,7 +5434,7 @@ label {
   .contact_info .info_item h6 {
     font-size: 16px;
     line-height: 24px;
-    color: "Roboto", sans-serif;
+    color: var(--font-text);
     font-weight: bold;
     margin-bottom: 0px;
     color: #222222; }
@@ -5449,7 +5452,7 @@ label {
     line-height: 26px;
     color: #999;
     border: 1px solid #eeeeee;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-text);
     border-radius: 0px;
     padding-left: 20px; }
     .contact_form .form-group .form-control:focus {
@@ -5503,7 +5506,7 @@ label {
       text-align: center;
       color: #ffba00;
       padding-bottom: 10px;
-      font-family: "Roboto", sans-serif; }
+      font-family: var(--font-text); }
     .modal-message .modal-dialog .modal-content .modal-header p {
       display: block; }
 
@@ -5653,6 +5656,49 @@ label {
   border-radius: 10px;
   background-color: #fff;
 }
+#header .search-group #icon__search {
+  position: relative;
+}
+#header #form_search {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  opacity: 0;
+  transform: translate(-50%, 80%);
+  transition: .5s ease-in-out;
+}
+#header #form_search.active {
+  opacity: 1;
+  transform: translate(0, 80%);
+  transition: .5s ease-in-out;
+}
+#header #form_search input.input_search {
+  height: 35px;
+  width: 200px;
+  border: 1px solid var(--color-red);
+  outline: none;
+  padding: 0 10px;
+  position: relative;
+  border-radius: 15px;
+  caret-color: var(--color-red);
+}
+#header #form_search button.sub_search {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+#header #form_search input.input_search::placeholder {
+  font-size: 14px;
+}
 #header .search-group #icon__shopping ,
 #header .search-group #icon__heart  {
   position: relative;
@@ -5660,10 +5706,11 @@ label {
   justify-content: center;
   align-items: center;
 }
-#header .search-group #icon__search .fa-search,
-#header .search-group #icon__shopping .fa-shopping-bag,
-#header .search-group #icon__heart .fa-heart {
-  font-size: 1.3rem;
+#header .search-group #icon__search .bx-search,
+#header .search-group #icon__shopping .bx-shopping-bag,
+#header .search-group #icon__heart .bx-heart {
+  font-size: 1.5rem;
+  color: var(--color-primary);
 }
 
 #header .search-group #icon__shopping #quality,
@@ -5677,7 +5724,7 @@ label {
   color: #fff;
   font-size: 12px;
   border-radius: 50%;
-  background-color: black;
+  background-color: var(--color-red);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5685,29 +5732,29 @@ label {
 
 @media (max-width: 456px){
   html{
-  font-size: 50%;
-}
- .heading{
-  font-size: 2.5rem;
- }
- .footer{
-  text-align: center;
- }
- #header .search-group #icon__search .fa-search,
-#header .search-group #icon__shopping .fa-shopping-bag,
-#header .search-group #icon__heart .fa-heart {
-  font-size: unset;
-}
-#header .search-group #icon__shopping #quality,
-#header .search-group #icon__heart #quality  {
-  height: 18px;
-  width: 18px;
-  left: 8px;
-  top: -10px;
-}
-#top-bar {
-  padding: 8px 40px;
-}
+    font-size: 50%;
+  }
+  .heading{
+    font-size: 2.5rem;
+  }
+  .footer{
+    text-align: center;
+  }
+  #header .search-group #icon__search .bx-search,
+  #header .search-group #icon__shopping .bx-shopping-bag,
+  #header .search-group #icon__heart .bx-heart {
+    font-size: 2.5rem;
+  }
+  #header .search-group #icon__shopping #quality,
+  #header .search-group #icon__heart #quality  {
+    height: 18px;
+    width: 18px;
+    left: 8px;
+    top: -10px;
+  }
+  #top-bar {
+    padding: 8px 40px;
+  }
 }
 
 #section__social #section__blog .img__blog {

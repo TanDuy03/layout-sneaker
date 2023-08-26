@@ -181,8 +181,7 @@ button:focus {
   margin-bottom: 30px;
   font-size: 24px; }
 
-b, sup, sub, u, del {
-  color: #ffba00; }
+
 
 h1 {
   font-size: 36px; }
@@ -1133,22 +1132,134 @@ h1, h2, h3, h4, h5, h6 {
     color: #222222; }
 
 .organic-breadcrumb {
-  background: url(../img/banner/common-banner.jpg) center no-repeat;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://storage.sg.content-cdn.io/in-resources/aa3918c2-47e7-41fb-9ea1-975f7750a0e7/Images/userimages/plp-banner/july-2022/Cat-Banner-Desktop-Dynablast.jpg) center no-repeat;
   background-size: cover;
-  padding-top: 130px; }
-  @media (max-width: 991px) {
+  margin-top: 50px;
+  height: 250px;
+
+  }
+   
+  
+  @media (max-width: 1223px) {
     .organic-breadcrumb {
-      padding-top: 80px; } }
+       } 
+  }
   @media (max-width: 767px) {
     .organic-breadcrumb {
       background: none;
-      background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-      background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-      background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-      background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); } }
+      background-color: #D9D9D9;
+    }
+  }
+  .list-loai ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Sử dụng Flexbox để nằm ngang */
+}
+
+.list-loai li {
+    margin-right: 10px; /* Khoảng cách giữa các mục */
+    margin-left: 20px;
+}
+
+.list-loai a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    
+}
+.active{
+  background-color: white;
+  border-radius: 20px ;
+  padding: 5px 20px 5px 20px;
+}
+.list-loai{
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #D9D9D9;
+}
+@media (max-width: 1223px) {
+  .timkiem{
+    padding-left: 25px;
+  }
+  .list-loai {
+      display: block;
+      height: 300px;
+      border-radius: 0px;
+      width: 100%;
+  }
+  .flex-container{
+    padding-top: 30px;
+  }
+  .list-loai ul {
+      display: block;
+      text-align: center;
+  }
+
+  .list-loai li {
+      margin-right: 0; /* Loại bỏ khoảng cách giữa các mục */
+      margin-bottom: 10px; /* Thêm khoảng cách dưới mỗi mục */
+      margin-left: 0px;
+  }
+  .list-loai li:hover {
+    background-color: white;
+    border-radius: 20px ;
+    padding: 5px 20px 5px 20px;
+}
+.flex-container {
+  flex-direction: column; /* Chuyển sang hiển thị dọc */
+}
+
+
+
+.d-flex {
+  justify-content: center; /* Căn giữa dọc */
+}
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+/* .justify-content-center>input {
+  height: 40px;
+} */
+.d-flex {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.search-container i {
+  margin-right: 10px; /* Khoảng cách giữa biểu tượng và input */
+  color: #757575;
+}
+
+input[type="search"] {
+  border: none;
+  outline: none;
+}
+
 
 #category .organic-breadcrumb {
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
 
 .breadcrumb-banner {
   padding: 90px 0 100px 0; }
@@ -1383,13 +1494,26 @@ h1, h2, h3, h4, h5, h6 {
       -o-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s;
       overflow: hidden; }
+      .single-product .product-details .prd-bottom button{
+        border: none;
+        border-radius: 5px;
+        padding: 5px 50px 5px 50px;
+        background-color: #E45F45;
+        color: #fff;
+      }
+      .single-product .product-details .prd-bottom button:hover{
+        background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+        background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+        background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+        background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); 
+      }
       .single-product .product-details .prd-bottom .social-info span {
         position: relative;
         height: 30px;
         width: 30px;
         line-height: 30px;
         text-align: center;
-        background: #828bb2;
+        background: #E45F45;
         border-radius: 50%;
         display: inline-block;
         color: #fff;
@@ -2966,7 +3090,7 @@ label {
 
 .filter-bar {
   padding: 0px 20px 10px 20px;
-  background: #828bb3; }
+  background: #D9D9D9; }
   .filter-bar a, .filter-bar i {
     color: #000; }
 
@@ -3142,11 +3266,13 @@ label {
 
 .sidebar-categories .head {
   line-height: 60px;
-  background: #828bb3;
+  background: #D9D9D9;
   padding: 0 30px;
   font-size: 16px;
   font-weight: 400;
-  color: #fff; }
+  color: #000;
+  font-weight: bold;
+ }
 .sidebar-categories .main-categories {
   padding: 0 20px;
   background: #fff;
@@ -3172,7 +3298,7 @@ label {
   margin-top: 50px; }
   .sidebar-filter .top-filter-head {
     line-height: 60px;
-    background: #828bb3;
+    background: #D9D9D9;
     padding: 0 30px;
     font-size: 16px;
     font-weight: 400;
@@ -3783,7 +3909,7 @@ label {
     margin-bottom: 70px; }
   .s_product_text .card_area .primary-btn {
     line-height: 38px;
-    padding: 0px 38px;
+    padding: 0px 20px;
     text-transform: uppercase;
     margin-right: 10px;
     border-radius: 5px; }
@@ -4594,14 +4720,84 @@ label {
       text-transform: uppercase; }
       .login_box_area .login_box_img .hover .primary-btn:hover:before {
         left: 260px; }
+.hoac {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+.google-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.google-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.google-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.google-button:hover {
+  background-color: #f0f0f0;
+}
+.fb-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0000AA;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fb-logo {
+  width: 25px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.fb-text {
+  font-size: 16px;
+  color: #fff;
+}
+
+.fb-button:hover {
+  background-color: #000077;
+}
+.line {
+  flex-grow: 1;
+  width: 100%;
+  border-top: 1px solid black;
+}
 .login_form_inner {
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
   height: 100%;
   text-align: center;
-  padding-top: 115px; }
-  .login_form_inner h3 {
+  padding-top: 20px; }
+  .login_form_inner  h3 {
+    margin-top: 30px;
     color: #222222;
+    text-align: left;
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 30px; }
@@ -4903,6 +5099,8 @@ label {
 
 /*========= blog_categorie_area css ===========*/
 .blog_categorie_area {
+  margin: auto;
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 80px; }
 
@@ -4910,6 +5108,23 @@ label {
   position: relative;
   text-align: center;
   cursor: pointer; }
+  .tomtat{
+    width: 300px;
+    text-align: left;
+  }
+  .loai{
+    text-align: left;
+  }
+  .tieude{
+    text-align: left;
+    font-weight: bold;
+  }
+  .docthem{
+    text-align: left;
+    color: #E45F45;
+    text-align: left;
+    font-style: italic;
+  }
   .categories_post img {
     max-width: 100%; }
   .categories_post .categories_details {
@@ -4985,6 +5200,7 @@ label {
   line-height: 34px;
   display: inline-block;
   color: #222222; }
+ 
 
 .blog_details {
   padding-top: 20px; }
@@ -5209,6 +5425,47 @@ label {
   border-color: #eee; }
 
 /*============ Start Blog Single Styles  =============*/
+.anh-post img{
+  max-width: 100%;
+}
+.img-post img{
+  max-width: 100%;
+  padding: 20px;
+}
+#product-container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  overflow: hidden;
+}
+.product {
+  flex: 0 0 33.33%;
+  padding: 20px;
+  text-align: center;
+  
+}
+.btn-listsplq {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  width: 90%;
+}
+
+.btn-listsplq button {
+  background-color: #D9D9D9;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 1px 5px 5px darkgray;
+}
+
+.btn-listsplq button:hover {
+  background-color: #ccc;
+}
+
 .single-post-area .social-links {
   padding-top: 10px; }
   .single-post-area .social-links li {
@@ -5558,6 +5815,14 @@ label {
     padding: 1.5rem ;
   }
   }
+.single-footer-widget  li{
+  padding-bottom: 10px;
+}
+.single-footer-widget .fa-brands{
+  font-size: 20px;
+  padding-right: 8px;
+  color: #fff;
+}
 .single-footer-widget .form-inline {
   display: inline-block;
   width: 100%; }
@@ -5648,14 +5913,15 @@ label {
 /*# sourceMappingURL=main.css.map */
 #top-bar {
   padding: 8px 80px;
-  background-color: var(--color-primary);
+  background-color: var(--secondary);
 }
 #top-bar #line {
   height: 20px;
   width: 2px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #757575;
 }
+<<<<<<< HEAD
 #header .search-group #icon__search {
   position: relative;
 }
@@ -5699,6 +5965,10 @@ label {
 #header #form_search input.input_search::placeholder {
   font-size: 14px;
 }
+=======
+
+
+>>>>>>> b743e674699a89bdc802b5c08b69f7c3510d580c
 #header .search-group #icon__shopping ,
 #header .search-group #icon__heart  {
   position: relative;
@@ -5724,7 +5994,11 @@ label {
   color: #fff;
   font-size: 12px;
   border-radius: 50%;
+<<<<<<< HEAD
   background-color: var(--color-red);
+=======
+  background-color: red;
+>>>>>>> b743e674699a89bdc802b5c08b69f7c3510d580c
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5779,4 +6053,124 @@ label {
   white-space: normal;
   -webkit-line-clamp: 2;
   line-height: 1.6rem;
+}
+.containerhinhtron {
+  display: flex;
+}
+
+.circle {
+  display: none;
+}
+
+.circle + label {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #ccc;
+}
+
+.circle:checked + label {
+  border-color: #000;
+}
+
+.red { background-color: #e74c3c; }
+.green { background-color: #2ecc71; }
+.blue { background-color: #3498db; }
+.yellow { background-color: #f39c12; }
+.purple { background-color: #9b59b6; }
+.slick-prev {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateX(-130%);
+  box-shadow: 0px 4px 4px darkgray;
+  z-index: 2;
+  color: #000;
+  border: none;
+  padding: 0px 8px;
+  border-radius: 50%;
+  background-color: #f0f0f0;;
+}
+.slick-prev:hover {
+  background-color: #999;
+  transition: 1.5s;
+}
+.slick-next:hover {
+  background-color: #999;
+  transition: 1.5s;
+}
+.slick-next{
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: translateX(130%);
+  box-shadow: 0px 0px 10px darkgray;
+  z-index: 2;
+  color: #000;
+  border: none;
+  padding: 0px 8px;
+  border-radius: 50%;
+  background-color: #f0f0f0;;
+}
+.single-prd-item{
+  margin-left: 10px;
+}
+.size-selector {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Hiển thị 4 cột */
+  gap: 10px;
+}
+
+.size-option {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.size-option:hover {
+  background-color: #f0f0f0;
+}
+
+.size-option.selected {
+  background-color: #ffba00;
+  color: white;
+  border-color: #ffba00;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.content {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.expanded {
+  max-height: 500px; /* Số này phụ thuộc vào nội dung thực tế */
+  overflow: hidden;
+  transition: max-height 2s ease-in-out;
+}
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.expanded li{
+  margin-bottom: 10px;
+}
+.expanded ul{
+  margin-bottom: 10px;
 }

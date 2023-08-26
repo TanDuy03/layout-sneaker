@@ -1,9 +1,17 @@
 :root{
     --orange:#ff7800;
     --color-primary: #3DB2FF;
+    --white : #fff;
+    --secondary : #F5F5F5;
 }
 nav:not(.mm-menu) {
     display: none;
+}
+#icon__shopping{
+    color: #757575;
+}
+#icon__heart{
+    color: #757575;
 }
 
 #header {
@@ -17,10 +25,13 @@ nav:not(.mm-menu) {
     text-align: center;
     background: #ffffff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 9999999;
+    transition: 2.5s ease-out;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     transition: 2s ease-out;
 }
 
@@ -38,6 +49,7 @@ nav:not(.mm-menu) {
 #header .menu .flex-menu ul li  a {
     color: var(--color-primary);
     font-size: 1rem;
+    color: black;
 }
 
 #header #logo::before,
@@ -64,12 +76,12 @@ nav:not(.mm-menu) {
 #header a:after {
     content: "";
     display: block;
-    background: #fff;
+    background: black;
     height: 2px;
 }
 
 #header a span {
-    background: #fff;
+    background: black;
     display: block;
     height: 2px;
     margin: 7px 0;

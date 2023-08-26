@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 :root{
-  --color-orange:#FF8164;
+  --color-orange:#FF7F34;
   --color-primary: #3DB2FF;
   --color-red: #F24C3D;
   --font-text: 'Open Sans', sans-serif
@@ -1463,28 +1463,27 @@ input[type="search"] {
       .active-product-area .owl-nav .owl-next {
         margin-top: -20px;
         right: 28%; } }
-
 .single-product {
-  margin-bottom: 50px; }
-  .single-product img {
+  margin-bottom: 50px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+  .single-product #img_product {
     margin-bottom: 20px;
-    width: 100%; }
+    width: 100%; height: 250px; object-fit: cover;}
   .single-product .product-details h6 {
     font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase; }
+    text-transform: uppercase; text-align: center;}
   .single-product .product-details .price h6 {
     font-size: 14px;
-    display: inline-block;
     padding-right: 15px;
     margin: 0; }
   .single-product .product-details .price .l-through {
     text-decoration: line-through;
     color: #cccccc;
-    margin-bottom: 0; }
+    margin-bottom: 0;}
   .single-product .product-details .prd-bottom {
     position: relative;
     margin-top: 20px; }
+    .single-product .product-details .prd-bottom .btn-order {background-color: var(--color-orange);}
     .single-product .product-details .prd-bottom .social-info {
       position: relative;
       display: inline-block;
@@ -5913,15 +5912,14 @@ label {
 /*# sourceMappingURL=main.css.map */
 #top-bar {
   padding: 8px 80px;
-  background-color: var(--secondary);
+  background-color: var(--color-primary);
 }
 #top-bar #line {
   height: 20px;
   width: 2px;
   border-radius: 10px;
-  background-color: #757575;
+  background-color: #fff;
 }
-<<<<<<< HEAD
 #header .search-group #icon__search {
   position: relative;
 }
@@ -5933,7 +5931,7 @@ label {
   transform: translate(-50%, 80%);
   transition: .5s ease-in-out;
 }
-#header #form_search.active {
+#header #form_search.activeSearch {
   opacity: 1;
   transform: translate(0, 80%);
   transition: .5s ease-in-out;
@@ -5965,10 +5963,6 @@ label {
 #header #form_search input.input_search::placeholder {
   font-size: 14px;
 }
-=======
-
-
->>>>>>> b743e674699a89bdc802b5c08b69f7c3510d580c
 #header .search-group #icon__shopping ,
 #header .search-group #icon__heart  {
   position: relative;
@@ -5994,11 +5988,7 @@ label {
   color: #fff;
   font-size: 12px;
   border-radius: 50%;
-<<<<<<< HEAD
   background-color: var(--color-red);
-=======
-  background-color: red;
->>>>>>> b743e674699a89bdc802b5c08b69f7c3510d580c
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6155,7 +6145,6 @@ label {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
-
 
 .expanded {
   max-height: 500px; /* Số này phụ thuộc vào nội dung thực tế */

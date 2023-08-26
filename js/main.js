@@ -33,10 +33,10 @@ $(document).ready(function(){
     // Search Toggle
     var form_search = $('#header #form_search');
     $("#icon__search .bx-search").on("click", function () {
-      if (form_search.hasClass('active')) {
-        form_search.removeClass('active');
+      if (form_search.hasClass('activeSearch')) {
+        form_search.removeClass('activeSearch');
       } else {
-          form_search.addClass('active');
+          form_search.addClass('activeSearch');
       }
     });
 

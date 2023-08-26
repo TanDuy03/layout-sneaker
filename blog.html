@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
 		integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
@@ -79,12 +80,12 @@
 		<div class="d-flex justify-content-end align-items-center gap-3" id="top-bar">
 			<div>
 				<span class="text-white">
-					<a href="login.html" class="text-secondary">Đăng nhập</a>
+					<a href="#" class="text-white">Đăng nhập</a>
 				</span>
 			</div>
 			<span id="line"></span>
 			<div>
-				<span class="text-secondary">Hotline: 0363.955.555</span>
+				<span class="text-white">Hotline: 0363.955.555</span>
 			</div>
 		</div>
 		<div id="header">
@@ -119,17 +120,23 @@
 			</div>
 			<div class="search-group d-flex gap-4">
 				<div id="icon__search" class="d-flex align-items-center">
-					<i class="fas fa-search"></i>
+					<i class='bx bx-search'></i>
+					<div id="form_search">
+						<form>
+							<input type="text" class="input_search" placeholder="Nhập từ khóa">
+							<button class="sub_search"><i class='bx bx-search'></i></button>
+						</form>
+					</div>
 				</div>
 				<div id="icon__heart">
-					<i class="fas fa-heart"></i>
+					<i class='bx bx-heart'></i>
 					<span id="quality">1</span>
 				</div>
 				<div id="icon__shopping">
-					<i class="fas fa-shopping-bag"></i>
+					<i class='bx bx-shopping-bag'></i>
 					<span id="quality">1</span>
 				</div>
-			</div>  
+			</div>
 		</div>
 		<!-- End Header Area -->
     <!-- Start Banner Area -->

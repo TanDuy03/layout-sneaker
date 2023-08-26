@@ -6036,7 +6036,7 @@ label {
 
 .text__truncate {
   display: -webkit-box;
-  max-height: 3.2rem;
+  /* max-height: 3.2rem; */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;

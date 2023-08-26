@@ -1664,7 +1664,11 @@ input[type="search"] {
           padding-bottom: 80px; }
           .exclusive-deal-area .exclusive-right .active-exclusive-product-slider .single-exclusive-slider img {
             max-width: 450px;
-            margin: 0 auto; } }
+            margin: 0 auto; } 
+            .single-product .product-details .prd-bottom .btn-order {
+              padding: 1rem 3rem !important;
+              font-size: 1.3rem;
+            }}
     .exclusive-deal-area .exclusive-right .product-details h4 {
       font-size: 24px;
       text-transform: uppercase; }

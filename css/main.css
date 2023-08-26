@@ -1484,6 +1484,12 @@ input[type="search"] {
     position: relative;
     margin-top: 20px; }
     .single-product .product-details .prd-bottom .btn-order {background-color: var(--color-orange);}
+    @media screen and (max-width: 456px){
+      .single-product .product-details .prd-bottom .btn-order {
+        padding: 1rem 3rem !important;
+        font-size: 1.3rem !important;
+      }
+    }
     .single-product .product-details .prd-bottom .social-info {
       position: relative;
       display: inline-block;
@@ -1665,10 +1671,7 @@ input[type="search"] {
           .exclusive-deal-area .exclusive-right .active-exclusive-product-slider .single-exclusive-slider img {
             max-width: 450px;
             margin: 0 auto; } 
-            .single-product .product-details .prd-bottom .btn-order {
-              padding: 1rem 3rem !important;
-              font-size: 1.3rem;
-            }}
+          }
     .exclusive-deal-area .exclusive-right .product-details h4 {
       font-size: 24px;
       text-transform: uppercase; }

@@ -4717,14 +4717,84 @@ label {
       text-transform: uppercase; }
       .login_box_area .login_box_img .hover .primary-btn:hover:before {
         left: 260px; }
+.hoac {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+.google-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.google-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.google-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.google-button:hover {
+  background-color: #f0f0f0;
+}
+.fb-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0000AA;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fb-logo {
+  width: 25px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.fb-text {
+  font-size: 16px;
+  color: #fff;
+}
+
+.fb-button:hover {
+  background-color: #000077;
+}
+.line {
+  flex-grow: 1;
+  width: 100%;
+  border-top: 1px solid black;
+}
 .login_form_inner {
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
   height: 100%;
   text-align: center;
-  padding-top: 115px; }
-  .login_form_inner h3 {
+  padding-top: 20px; }
+  .login_form_inner  h3 {
+    margin-top: 30px;
     color: #222222;
+    text-align: left;
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 30px; }
@@ -5958,61 +6028,37 @@ label {
 .purple { background-color: #9b59b6; }
 .slick-prev {
   position: absolute;
-  top: 20%;
+  top: 40%;
   left: 0;
   transform: translateX(-130%);
   box-shadow: 0px 4px 4px darkgray;
   z-index: 2;
   color: #000;
   border: none;
-  padding: 10px 18px;
+  padding: 0px 8px;
   border-radius: 50%;
   background-color: #f0f0f0;;
 }
 .slick-prev:hover {
   background-color: #999;
+  transition: 1.5s;
 }
 .slick-next:hover {
   background-color: #999;
+  transition: 1.5s;
 }
 .slick-next{
   position: absolute;
-  top: 20%;
+  top: 40%;
   right: 0;
   transform: translateX(130%);
-  box-shadow: 0px 4px 4px darkgray;
+  box-shadow: 0px 0px 10px darkgray;
   z-index: 2;
   color: #000;
   border: none;
-  padding: 10px 18px;
+  padding: 0px 8px;
   border-radius: 50%;
   background-color: #f0f0f0;;
-}
-/* CSS để biến các nút điều hướng thành hình tròn và nằm ngang */
-ul.slick-dots {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-ul.slick-dots li {
-  margin: 0 5px;
-}
-
-ul.slick-dots button {
-  padding: 0px 10px;
-  border: none;
-  border-radius: 50%;
-  background-color: #ccc;
-  color: #fff; /* Màu chữ trắng trên nền màu xám */
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* Đổi màu nút đang hoạt động */
-ul.slick-dots button.slick-active {
-  background-color: #333;
 }
 .single-prd-item{
   margin-left: 10px;

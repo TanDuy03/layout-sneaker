@@ -41,3 +41,9 @@ $('.img-slider').slick({
     content.classList.toggle('expanded');
     activeSection = activeSection === section ? null : section;
 }
+document.addEventListener("DOMContentLoaded", function() {
+  var slickDots = document.querySelector(".slick-dots");
+  if (slickDots) {
+      slickDots.style.display = "none";
+  }
+});

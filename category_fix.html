@@ -157,7 +157,205 @@
 
 		<!-- start features Area -->
 		<div class="container-fluid p-0 overflow-hidden">
-            <!-- code viết chỗ này nè      -->
+            <div class="container-fluid px-5 my-5">
+				<div class="row justify-content-center">
+					<div class="col-lg-6 text-center"  data-aos="fade-right" data-aos-duration="2000">
+						<div class="section-title">
+							<h1>Thanh toán đơn hàng</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 mb-3">
+								<label for="fname" class="form-label">Họ</label>
+								<input type="text" class="form-control" id="fname" placeholder="Nhập họ">
+							</div>
+							<div class="col-lg-6 col-md-6 mb-3">
+								<label for="lname" class="form-label">Tên</label>
+								<input type="text" class="form-control" id="lname" placeholder="Nhập tên">
+							</div>
+							<div class="col-lg-6 col-md-6 mb-3">
+								<label for="email" class="form-label">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Địa chỉ email">
+							</div>
+							<div class="col-lg-6 col-md-6 mb-3">
+								<label for="phone" class="form-label">Số điện thoại</label>
+								<input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
+							</div>
+							<div class="col-lg-6 col-md-6 mb-3">
+								<label for="province" class="form-label">Tỉnh/Thành phố</label>
+								<select class="w-100" id="province">
+									<option value="0">Hồ Chí Minh</option>
+									<option value="1">Lâm Đồng</option>
+								</select>
+							</div>
+							<div class="col-lg-6 col-md-6 mb-3">
+								<label for="district" class="form-label">Quận/Huyện</label>
+								<select class="w-100" id="district">
+									<option value="0">Quận 1</option>
+									<option value="1">Bảo Lộc</option>
+								</select>
+							</div>
+							<div class="col-lg-6 col-md-6 mb-3">
+								<label for="ward" class="form-label">Phường/Xã</label>
+								<select class="w-100" id="ward">
+									<option value="0">Đại Lào</option>
+									<option value="1">Bảo Lộc</option>
+								</select>
+							</div>
+							<div class="col-lg-6 col-md-6 mb-3">
+								<label for="address" class="form-label">Địa chỉ</label>
+								<input type="text" class="form-control" id="address" placeholder="Địa chỉ cụ thể">
+							</div>
+							<div class="mb-3">
+								<label for="note" class="form-label">Ghi chú</label>
+								<textarea name="" id="note" rows="5" class="form-control"></textarea>
+							</div>
+						</div>
+						<!-- Pay -->
+						<div class="row">
+							<h5 class="text-uppercase fw-bold">Hình thức thanh toán</h5>
+							<div class="col-lg-6 col-md-6 mb-3">
+								<div class="d-flex justify-content-start gap-3 w-100 bg-light p-3 rounded-3">
+									<div class="checkbox-wrapper-12 ">
+										<div class="cbx">
+											<input id="cbx-14" type="checkbox">
+												<label for="cbx-14"></label>
+											<svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+												<path d="M2 8.36364L6.23077 12L13 2"></path>
+											</svg>
+										</div>
+										<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+												<defs>
+												<filter id="goo-12">
+													<feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+													<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+													<feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+												</filter>
+												</defs>
+										</svg>
+									</div>
+									<label for="cbx-14" class="">Thanh toán khi nhận hàng</label>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 mb-3">
+								<div class="d-flex justify-content-start gap-3 w-100 bg-light p-3 rounded-3">
+									<div class="checkbox-wrapper-12">
+										<div class="cbx">
+											<input id="cbx-15" type="checkbox">
+												<label for="cbx-15"></label>
+											<svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+												<path d="M2 8.36364L6.23077 12L13 2"></path>
+											</svg>
+										</div>
+										<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+												<defs>
+												<filter id="goo-12">
+													<feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+													<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+													<feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+												</filter>
+												</defs>
+										</svg>
+									</div>
+									<label for="cbx-15">Chuyển khoản</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<!-- Cart top -->
+						<div class="cart__top mb-3">
+							<h4 class="text-center fw-bold mb-3 text-uppercase">Đơn hàng của bạn</h4>
+							<div class="mb-3 d-flex align-items-center gap-1">
+								<label class="fw-bold text-black fs-6">Mã đơn hàng:</label>
+								<label class="fs-6">BE16258</label>
+							</div>
+							<div class="mb-3 d-flex align-items-center gap-1">
+								<label class="fw-bold text-black fs-6">Ngày mua:</label>
+								<label class="fs-6">28/08/2023</label>
+							</div>
+						</div>
+						<hr class="mb-3">
+
+						<!-- Card body -->
+						<div class="w-100 mb-4">
+							<h4 class="fw-bold mb-3">Sản phẩm đã mua</h4>
+							<!-- Cart product -->
+							<div class="card mb-3 border-0 box__shadow">
+								<div class="row g-0">
+									<div class="col-md-5">
+										<img src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg" class="img-fluid rounded-start h-100 w-100" alt="...">
+									</div>
+									<div class="col-md-7">
+										<div class="card-body">
+											<h5 class="card-title fw-bold mb-3 text__truncate">Nike Air Jordan</h5>
+											<div class="d-flex align-items-center gap-1">
+												<label class="fw-bold text-black">Size:</label>
+												<label>31</label>
+											</div>
+											<div class="d-flex align-items-center gap-1">
+												<label class="fw-bold text-black">Số lượng:</label>
+												<label>1</label>
+											</div>
+											<div class="d-flex align-items-center gap-1">
+												<label class="fw-bold text-black">Thành tiền:</label>
+												<label>3.000.000 VNĐ</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Cart product -->
+							<div class="card mb-3 border-0 box__shadow">
+								<div class="row g-0">
+									<div class="col-md-5">
+										<img src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg" class="img-fluid rounded-start h-100 w-100" alt="...">
+									</div>
+									<div class="col-md-7">
+										<div class="card-body">
+											<h5 class="card-title fw-bold mb-3 text__truncate">Nike Air Jordan</h5>
+											<div class="d-flex align-items-center gap-1">
+												<label class="fw-bold text-black">Size:</label>
+												<label>31</label>
+											</div>
+											<div class="d-flex align-items-center gap-1">
+												<label class="fw-bold text-black">Số lượng:</label>
+												<label>1</label>
+											</div>
+											<div class="d-flex align-items-center gap-1">
+												<label class="fw-bold text-black">Thành tiền:</label>
+												<label>3.000.000 VNĐ</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="mb-3">
+						<!-- Cart bottom -->
+						<div class="cart__bottom mb-3">
+							<div class="mb-3 d-flex align-items-center gap-1">
+								<label class="fw-bold text-black fs-6">Giá trị sản phẩm:</label>
+								<label class="fs-6">6.000.000 VNĐ</label>
+							</div>
+							<div class="mb-3 d-flex align-items-center gap-1">
+								<label class="fw-bold text-black fs-6">Phí vận chuyển:</label>
+								<label class="fs-6">Miễn phí</label>
+							</div>
+							<hr class="mb-3">
+							<div class="d-flex justify-content-end gap-3">
+								<label class="fw-bold text-black fs-5">Tổng tiền:</label>
+								<label class="btn btn-danger fs-6">6.000.000 VNĐ</label>
+							</div>
+						</div>
+						<button class="btn btn-primary border-0 w-100 mt-3 btn-checkout text-white">Thanh toán</button>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- start footer Area -->
 		<footer class="footer-area">

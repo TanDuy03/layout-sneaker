@@ -11,8 +11,8 @@
   font-family: inherit;
   font-size: 14px;
   font-weight: normal;
-  height: 42px;
-  line-height: 40px;
+  height: 38px;
+  line-height: 38px;
   outline: none;
   padding-left: 18px;
   padding-right: 30px;
@@ -29,7 +29,7 @@
   .nice-select:hover {
     border-color: #dbdbdb; }
   .nice-select:active, .nice-select.open, .nice-select:focus {
-    border-color: #999; }
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25); }
   .nice-select:after {
     border-bottom: 2px solid #999;
     border-right: 2px solid #999;

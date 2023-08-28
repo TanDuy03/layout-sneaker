@@ -6334,6 +6334,7 @@ label {
 }
 .btn-checkout {
   background-color: var(--color-orange) !important;
+  padding: 8px 0;
 }
 .btn-primary:hover {
   transform: translateY(-1px);

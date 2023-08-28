@@ -5967,6 +5967,10 @@ label {
   overflow: hidden;
 }
 
+section#brand-area {
+  padding-bottom: 100px !important;
+}
+
 .zoom {
   transform: scale(1);
   transition: .5s;

@@ -5839,21 +5839,21 @@ label {
 .footer-area .social-footer .social-item:hover .bi-instagram{
   color: var(--color-orange);transition: .3s ease-in;
 }
+.footer-area .social-footer .social-item i {
+  font-size: 20px;
+}
 @media (max-width: 991px) {
   .single-footer-widget {
     margin-bottom: 40px; }
   #section__social .social__info {
     padding: 1.5rem ;
+    margin-bottom: unset !important;
   }
   }
 @media screen and (max-width: 576px){
   .footer-area .footer-gap {
     padding-left: 2.5rem !important;
   }
-  .footer-area .social-footer .social-item i {
-    font-size: 2.5rem !important;
-  }
-  
 }
 
 /*# sourceMappingURL=main.css.map */

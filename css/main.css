@@ -19,6 +19,9 @@ input.form-control::placeholder {
   font-family: inherit !important;
   font-weight: normal !important;
 }
+input.form-control {
+  height: 38px !important;
+}
 .section_gap {
   padding: 100px 0; }
   @media (max-width: 991px) {
@@ -1120,12 +1123,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 450px;
 
   }
-   
   
-  @media (max-width: 1223px) {
-    .organic-breadcrumb {
-       } 
-  }
   @media (max-width: 767px) {
     .organic-breadcrumb {
       background: none;
@@ -5973,6 +5971,9 @@ label {
   }
 }
 
+.font__size {
+  font-size: 15px;
+}
 #section__social #section__blog .img__blog {
   overflow: hidden;
 }

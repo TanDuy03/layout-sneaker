@@ -1122,12 +1122,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #222222; }
 
 .organic-breadcrumb {
-  background:url(../img/banner/banner_organic.png) center no-repeat;
+  overflow: hidden;
+  background: linear-gradient(rgba(126, 126, 131, 0.5), rgba(88, 85, 86, 0.8)), url("../img/banner/banner_organic.png"); 
   background-size: cover;
+  background-position: center;
   height: 450px;
-
-  }
-  
+  background-repeat: no-repeat;
+}
   @media (max-width: 767px) {
     .organic-breadcrumb {
       background-image: url(../img/banner/banner_organic.png) !important;

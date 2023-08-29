@@ -1132,7 +1132,7 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 767px) {
     .organic-breadcrumb {
       background: linear-gradient(rgba(126, 126, 131, 0.5), rgba(88, 85, 86, 0.8)), url("../img/banner/banner_organic.png"); 
-      height: 220px;
+      height: 160px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;

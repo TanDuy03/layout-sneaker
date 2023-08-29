@@ -6040,7 +6040,7 @@ label {
 #header #form_search input.input_search {
   height: 35px;
   width: 200px;
-  border: 1px solid var(--color-orange);
+  border: 2px solid var(--color-orange);
   outline: none;
   padding: 0 10px;
   position: relative;

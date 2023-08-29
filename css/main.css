@@ -1261,7 +1261,12 @@ input[type="search"] {
               padding: 60px 0 100px 0;
             }
             .breadcrumb-banner h1 {
-              font-size: 20px;  }}
+              font-size: 20px;  }
+              #item__blog {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+              }
+            }
   .breadcrumb-banner p {
     margin-bottom: 0;
     color: #fff; }

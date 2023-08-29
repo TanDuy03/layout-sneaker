@@ -1340,7 +1340,7 @@ input[type="search"] {
 ============================================================================================ */
 .single-deal {
   position: relative;
-  margin-bottom: 20px; }
+}
   .single-deal .overlay {
     position: absolute;
     left: 0;

@@ -3253,22 +3253,13 @@ label {
       transform: scaleY(1); }
     .single-organic-product-list:hover .product-details span {
       color: #fff; }
+      .single-product-slider .single-product .product-details {
+        padding-left: 0 !important;
+      }
     .single-organic-product-list:hover .product-details p {
       color: #fff; }
     .single-organic-product-list:hover .product-details h4 {
       color: #fff; }
-    .single-organic-product-list:hover .product-details .rattings {
-      margin-bottom: 20px; }
-      .single-organic-product-list:hover .product-details .rattings span {
-        color: #fff; }
-    .single-organic-product-list:hover .product-details .collect-info li {
-      color: #fff; }
-      .single-organic-product-list:hover .product-details .collect-info li i {
-        color: #fff; }
-    .single-organic-product-list:hover .price-wrap .avalability {
-      color: #fff; }
-      .single-organic-product-list:hover .price-wrap .avalability span {
-        color: #fff; }
     .single-organic-product-list:hover .price-wrap .price {
       color: #fff; }
     .single-organic-product-list:hover .price-wrap .compare p {

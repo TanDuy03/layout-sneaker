@@ -1131,7 +1131,7 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 767px) {
     .organic-breadcrumb {
       background-image: url(../img/banner/banner_organic.png) !important;
-      height: 180px;
+      height: 200px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -1197,12 +1197,10 @@ h1, h2, h3, h4, h5, h6 {
 .flex-container {
   flex-direction: column; /* Chuyển sang hiển thị dọc */
 }
-
-
-
+/* 
 .d-flex {
-  justify-content: center; /* Căn giữa dọc */
-}
+  justify-content: center; 
+} */
 }
 
 .flex-container {
@@ -1249,13 +1247,22 @@ input[type="search"] {
   margin-bottom: 50px; }
 
 .breadcrumb-banner {
-  padding: 90px 0 100px 0; }
+  padding: 100px 0 100px 0; }
   .breadcrumb-banner h1 {
     font-weight: 600;
     color: #fff; }
     @media (max-width: 767px) {
       .breadcrumb-banner h1 {
-        font-size: 30px; } }
+        font-size: 30px; }
+        .breadcrumb-banner {
+          padding: 60px 0 100px 30px;
+        } }
+        @media (max-width: 456px) {
+            .breadcrumb-banner {
+              padding: 60px 0 100px 0;
+            }
+            .breadcrumb-banner h1 {
+              font-size: 20px;  }}
   .breadcrumb-banner p {
     margin-bottom: 0;
     color: #fff; }
@@ -6330,6 +6337,9 @@ section#brand-area {
 }
 
 @media screen and (max-width: 576px){
+  #category-area .preview_pro {
+    grid-template-rows: repeat(5, 250px);
+  }
   #category-area .preview_pro .preview_img:first-child,
   #category-area .preview_pro .preview_img:nth-child(2){
     grid-column: 1/5;

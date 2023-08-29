@@ -1130,8 +1130,11 @@ h1, h2, h3, h4, h5, h6 {
   
   @media (max-width: 767px) {
     .organic-breadcrumb {
-      background: none;
-      background-color: #D9D9D9;
+      background-image: url(../img/banner/banner_organic.png) !important;
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
   .list-loai ul {
@@ -3260,7 +3263,7 @@ label {
       transform: scaleY(1); }
     .single-organic-product-list:hover .product-details span {
       color: #fff; }
-      .single-product-slider .single-product .product-details {
+      .single-product .product-details {
         padding-left: 0 !important;
       }
     .single-organic-product-list:hover .product-details p {

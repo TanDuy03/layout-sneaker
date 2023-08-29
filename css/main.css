@@ -7,10 +7,13 @@
 :root{
   --color-orange:#FF7F34;
   --color-primary: #3DB2FF;
+  --color-primary2: #7abfff;
   --color-red: #F24C3D;
   --font-text: 'Open Sans', sans-serif;
   --color-text: #777777;
   --color-input: #66BB6A;
+  --color-secondary: #423F3E;
+  /* A2D2FF primary new*/
 }
 .no-padding {
   padding: 0; }
@@ -1464,7 +1467,7 @@ input[type="search"] {
     .single-product .product-details h6.price__product {
       font-size: 15px;
     }
-    .single-product .product-details .prd-bottom .btn-order {background-color: var(--color-orange);}
+    .single-product .product-details .prd-bottom .btn-order {background-color: var(--color-orange); transition: .3s ease;}
     .single-product .product-details .prd-bottom .social-info {
       position: relative;
       display: inline-block;
@@ -3070,8 +3073,8 @@ label {
     right: 0; }
 
 .filter-bar {
-  padding: 0px 20px 12px 20px;
-  background: #D9D9D9; }
+  padding: 0px 20px 10px 20px;
+  background: var(--color-primary2); }
   .filter-bar a, .filter-bar i {
     color: #000; }
 #filter-bar .box {
@@ -3273,13 +3276,29 @@ label {
 
 .sidebar-categories .head {
   line-height: 60px;
-  background: #D9D9D9;
+  background: var(--color-primary2);
   padding: 0 30px;
   font-size: 16px;
   font-weight: 400;
-  color: #000;
+  color: #fff;
   font-weight: bold;
+  text-transform: uppercase;
  }
+.accordion-button::after {
+  display: none;
+}
+.accordion-button .fa-chevron-down {
+  position: absolute;
+  right: 30px;
+}
+.accordion.open .fa-chevron-down {
+  transform: translateY(-50%) rotate(180deg);
+}
+.accordion-button[aria-expanded="true"] .fa-chevron-down {
+  transform: rotate(180deg);
+  transition: 0.5s ease;
+}
+
 .sidebar-categories .main-categories {
   padding: 0 20px;
   background: #fff;
@@ -5939,16 +5958,18 @@ label {
     .instafeed li img {
       margin: 5px; }
 .footer-area .social-footer .social-item {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   color: var(--color-text);
-  padding: 6px;
-  border: 1px solid var(--color-text);
+  border: 2px solid var(--color-text);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .3s ease-in;
+  transition: .2s ease;
+}
+.footer-area .social-footer .social-item:hover {
+  border-color: #fff;
 }
 .footer-area .footer-bottom a.link_team {
   color: var(--color-orange);
@@ -6045,7 +6066,13 @@ label {
 #header .search-group #icon__shopping .bx-shopping-bag,
 #header .search-group #icon__heart .bx-heart {
   font-size: 1.5rem;
-  color: var(--color-primary);
+  color: var(--color-secondary);
+  transition: .25s ease-in;
+}
+#header .search-group #icon__search .bx-search:hover,
+#header .search-group #icon__shopping .bx-shopping-bag:hover,
+#header .search-group #icon__heart .bx-heart:hover {
+  color: var(--color-orange);
 }
 #header .search-group {
   gap: 15px;
@@ -6105,7 +6132,6 @@ section#brand-area {
 
 .text__truncate {
   display: -webkit-box;
-  /* max-height: 3.2rem; */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6247,6 +6273,7 @@ section#brand-area {
 #category-area .preview_pro .preview_img img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 #category-area .preview_pro .preview_img:first-child{
@@ -6455,7 +6482,8 @@ section#brand-area {
   background-color: var(--color-orange) !important;
   padding: 8px 0;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-order:hover {
   transform: translateY(-1px);
   transition: .3s ease;
 }

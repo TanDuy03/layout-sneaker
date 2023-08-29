@@ -1,19 +1,6 @@
-:root{
-    --orange:#ff7800;
-    --color-primary: #3DB2FF;
-    --white : #fff;
-    --secondary : #F5F5F5;
-}
 nav:not(.mm-menu) {
     display: none;
 }
-#icon__shopping{
-    color: #757575;
-}
-#icon__heart{
-    color: #757575;
-}
-
 #header {
     position: sticky;
     height: 80px;
@@ -43,13 +30,20 @@ nav:not(.mm-menu) {
 
 #header .menu .flex-menu ul li {
     list-style: none;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 #header .menu .flex-menu ul li  a {
-    color: var(--color-primary);
+    color: var(--color-secondary);
     font-size: 1rem;
-    color: black;
+    transition: .3s ease-in;
+}
+
+#header .menu .flex-menu ul li:hover > a {
+    color: var(--color-orange);
+}
+#header .menu .flex-menu ul li.text-menu a.active {
+    color: var(--color-orange);
 }
 
 #header #logo::before,

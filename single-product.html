@@ -22,11 +22,16 @@
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
+<<<<<<< HEAD
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+=======
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+>>>>>>> c29cf85c1488f835aebde822ce9ce1b50e5cac8e
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
 		integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/nouislider.min.css">
@@ -39,6 +44,7 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./wowslider/engine1/style.css" />
 	<script type="text/javascript" src="./wowslider/engine1/jquery.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -46,44 +52,46 @@
 	<nav id="menu">
 		<ul>
 			<li>
-				<a href="#">Home</a>
+				<a href="#">Bộ sưu tập</a>
 				<ul>
 					<li>
-						<a href="#">Trang chủ</a>
+						<a href="#">Nike</a>
 						<ul>
 							<li>
-								<a href="#">Trang chủ</a>
+								<a href="#">Nike 1</a>
 							</li>
 							<li>
-								<a href="#">Giới thiệu</a>
+								<a href="#">Nike 2</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="#">Giới thiệu</a>
+						<a href="#">Vans</a>
 					</li>
 				</ul>
 			</li>
-			<li><a href="#">About us</a>
+			<li><a href="#">Giới thiệu</a>
 				<ul>
-					<li><a href="#">History</a></li>
-					<li><a href="#">The team</a></li>
-					<li><a href="#">Our address</a></li>
+					<li><a href="#">Sneaker Square 1</a></li>
+					<li><a href="#">Sneaker Square 2</a></li>
+					<li><a href="#">Sneaker Square 3</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#">Dịch vụ</a></li>
+			<li><a href="#">Sale OFF</a></li>
+			<li><a href="#">Liên hệ</a></li>
 		</ul>
 	</nav>
 	<div class="mm-page">
 		<div class="d-flex justify-content-end align-items-center" id="top-bar">
 			<div>
 				<span class="text-white">
-					<a href="login.html" class="text-secondary">Đăng nhập</a>
+					<a href="#" class="text-white">Đăng nhập</a>
 				</span>
 			</div>
 			<span id="line"></span>
 			<div>
-				<span class="text-secondary">Hotline: 0363.955.555</span>
+				<span class="text-white">Hotline: 0363.955.555</span>
 			</div>
 		</div>
 		<div id="header">
@@ -91,7 +99,7 @@
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
 					role="button"><span></span></a>
 			</div>
-			<a href="index.html" id="logo" class="text-dark">Sneaker Square</a>
+			<a href="#" id="logo" class="text-primary">Sneaker Square</a>
 			<div class="menu">
 				<div class="flex-menu">
 					<ul class="p-0 m-0">
@@ -105,10 +113,10 @@
 							<a href="#">Dịch vụ</a>
 						</li>
 						<li class="text-danger">
-							<a href="blog.html">Blog</a>
-						</li>
-						<li class="text-danger">
 							<a href="#">Sale off</a>
+						</li>
+                        <li class="text-danger">
+							<a href="blog.html">Blog</a>
 						</li>
 						<li class="text-danger">
 							<a href="#">Liên hệ</a>
@@ -118,17 +126,23 @@
 			</div>
 			<div class="search-group d-flex">
 				<div id="icon__search" class="d-flex align-items-center">
-					<i class="fas fa-search"></i>
+					<i class='bx bx-search'></i>
+					<div id="form_search">
+						<form>
+							<input type="text" class="input_search" placeholder="Nhập từ khóa">
+							<button class="sub_search"><i class='bx bx-search'></i></button>
+						</form>
+					</div>
 				</div>
 				<div id="icon__heart">
-					<i class="fas fa-heart"></i>
+					<i class='bx bx-heart'></i>
 					<span id="quality">1</span>
 				</div>
 				<div id="icon__shopping">
-					<i class="fas fa-shopping-bag"></i>
+					<i class='bx bx-shopping-bag'></i>
 					<span id="quality">1</span>
 				</div>
-			</div>  
+			</div>
 		</div>
 	<!-- End Header Area -->
 
@@ -255,7 +269,7 @@
 					</div>
 					<div class="content-wrapper">
 						<div class="content" onclick="toggleContent(1)">
-						  <h3>Giao hàng miễn phí <i class="fa-solid fa-angle-down"></i></h3>
+						  <p>Giao hàng miễn phí <i class="fa-solid fa-angle-down"></i></p>
 						  <div class="hidden" id="content1">
 							<ul>
 								Đơn hàng của bạn được vận chuyển tiêu chuẩn với đơn hàng từ 1.000.000 VND
@@ -271,7 +285,7 @@
 						</div>
 					
 						<div class="content" onclick="toggleContent(2)">
-						  <h3>Quy định đổi trả sản phẩm<i class="fa-solid fa-angle-down"></i></h3>
+						  <p>Quy định đổi trả sản phẩm<i class="fa-solid fa-angle-down"></i></p>
 						  <div class="hidden" id="content2">
 							<ul>
 								<li>
@@ -297,7 +311,7 @@
 						</div>
 					
 						<div class="content" onclick="toggleContent(3)">
-						  <h3>Bảo hành như thế nào <i class="fa-solid fa-angle-down"></i></h3>
+						  <p>Bảo hành như thế nào <i class="fa-solid fa-angle-down"></i></p>
 						  <div class="hidden" id="content3">
 							<p>Nội dung </p>
 						  </div>
@@ -804,6 +818,7 @@
         </div>
     </footer>
 	<!-- End footer Area -->
+</div>
 	<script
 	  type="text/javascript"
 	  src="https://code.jquery.com/jquery-1.11.0.min.js"

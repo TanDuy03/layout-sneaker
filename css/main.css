@@ -1912,6 +1912,7 @@ input[type="search"] {
     margin-bottom: 0; }
   .single-related-product a {
     color: #222222;
+    font-weight: bold;
     text-transform: uppercase; }
   .single-related-product:hover .desc a {
     color: var(--color-orange); }

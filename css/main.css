@@ -21,7 +21,7 @@
   position: fixed;
   display: none;
   right: 30px;
-  bottom: 30px;
+  bottom: 40px;
   z-index: 999;
 }
 /* spinner loading */
@@ -6715,7 +6715,7 @@ section#brand-area {
   margin: 0 auto;
   position: fixed;
   border-radius: 50px;
-  bottom: 50px;
+  bottom: 40px;
   background: red;
   left: 30px;
   color: #fff;

@@ -24,6 +24,7 @@
   bottom: 30px;
   z-index: 999;
 }
+/* spinner loading */
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -37,20 +38,16 @@
   opacity: 1;
   z-index: 999999;
 }
-/* spinner loading */
 .cssload-container * {
   box-sizing: border-box;
 }
-
 .cssload-container {
   margin: 38px auto 0 auto;
   max-width: 1048px;
 }
-
 .cssload-container ul li {
   list-style: none;
 }
-
 .cssload-flex-container {
   display: flex;
   display: -o-flex;
@@ -61,7 +58,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .cssload-flex-container li {
   padding: 19px;
   height: 188px;
@@ -70,7 +66,6 @@
   position: relative;
   text-align: center;
 }
-
 .cssload-loading-center {
   display: inline-block;
   position: absolute;
@@ -83,7 +78,6 @@
   border-radius: 6px;
   animation: pulse 1.3s ease infinite;
 }
-
 .cssload-loading {
   display: inline-block;
   position: relative;
@@ -92,7 +86,6 @@
   margin-top: 6px;
   transform: rotate(45deg);
 }
-
 .cssload-loading:after, .cssload-loading:before {
   position: absolute;
   content: '';
@@ -103,38 +96,31 @@
   background: var(--color-primary);
   border-radius: 6px;
 }
-
 .cssload-loading:after {
   right: 0;
   animation: square-tr 2.6s ease infinite;
   animation-delay: .162.5s;
 }
-
 .cssload-loading:before {
   animation: square-tl 2.6s ease infinite;
   animation-delay: .162.5s;
 }
-
 .cssload-loading.cssload-two {
   position: relative;
   top: -150px;
 }
-
 .cssload-loading.cssload-two:after, .cssload-loading.cssload-two:before {
   bottom: 0;
   top: initial;
 }
-
 .cssload-loading.cssload-two:after {
   animation: square-br 2.6s ease infinite;
   animation-direction: reverse;
 }
-
 .cssload-loading.cssload-two:before {
   animation: square-bl 2.6s ease infinite;
   animation-direction: reverse;
 }
-
 @keyframes square-tl {
   0% {
     transform: translate(0, 0);
@@ -152,7 +138,6 @@
     transform: translate(117.5px, 0);
   }
 }
-
 @keyframes square-bl {
   0% {
     transform: translate(0, 0);
@@ -170,7 +155,6 @@
     transform: translate(117.5px, 0);
   }
 }
-
 @keyframes square-tr {
   0% {
     transform: translate(0, 0);
@@ -188,7 +172,6 @@
     transform: translate(0, 117.5px);
   }
 }
-
 @keyframes square-br {
   0% {
     transform: translate(0, 0);
@@ -206,7 +189,6 @@
     transform: translate(0, -117.5px);
   }
 }
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -216,7 +198,6 @@
     transform: rotate(360deg);
   }
 }
-
 @keyframes pulse {
   0%, 100% {
     transform: scale(inherit) rotate(45deg);
@@ -227,7 +208,6 @@
   }
 }
 /*  */
-
 .no-padding {
   padding: 0; }
 input.form-control::placeholder {

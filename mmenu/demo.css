@@ -21,7 +21,10 @@ nav:not(.mm-menu) {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     transition: 2s ease-out;
 }
-
+#header a#logo {
+    height: 60px;
+    width: 100px;
+}
 #header.active_top {
     position: sticky;
     top: 0;
@@ -36,8 +39,9 @@ nav:not(.mm-menu) {
 
 #header .menu .flex-menu ul li  a {
     color: var(--color-secondary);
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: .3s ease-in;
+    text-transform: uppercase;
 }
 #header .menu .flex-menu ul li:hover > a {
     color: var(--color-orange);
@@ -168,9 +172,9 @@ nav:not(.mm-menu) {
     margin: 7px 0;
 }
 
-@media screen and (max-width: 1060px){
+@media screen and (max-width: 1150px){
     #header {
-        padding: 0;
+        padding: 0; 
     }
     #header .menu_burger,
     #header .menu_burger a#hambuger {

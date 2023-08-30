@@ -43,37 +43,57 @@
 </head>
 
 <body>
-
+	<!-- Spinner Start -->
+	<div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<ul class="cssload-flex-container">
+			   <li>
+				  <span class="cssload-loading cssload-one"></span>
+				  <span class="cssload-loading cssload-two"></span>
+				  <span class="cssload-loading-center"></span>
+			   </li>
+			</ul>
+		</div>
+	</div>
+	<!-- Spinner End -->
 	<!-- Start Header Area -->
 	<nav id="menu">
 		<ul>
+			<li><a href="index.html">Trang chủ</a></li>
 			<li>
-				<a href="#">Home</a>
+				<a href="#">Về chúng tôi</a>
 				<ul>
-					<li>
-						<a href="#">Trang chủ</a>
-						<ul>
-							<li>
-								<a href="#">Trang chủ</a>
-							</li>
-							<li>
-								<a href="#">Giới thiệu</a>
-							</li>
-						</ul>
-					</li>
 					<li>
 						<a href="#">Giới thiệu</a>
 					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">Tin tức</a>
+					</li>
 				</ul>
 			</li>
-			<li><a href="#">About us</a>
+			<li>
+				<a href="category.html">Sản phẩm</a>
 				<ul>
-					<li><a href="#">History</a></li>
-					<li><a href="#">The team</a></li>
-					<li><a href="#">Our address</a></li>
+					<li>
+						<a href="#">Giày Adidas</a>
+					</li>
+					<li>
+						<a href="#">Giày Vans</a>
+					</li>
+					<li>
+						<a href="#">Giày Nike</a>
+					</li>
+					<li>
+						<a href="#">Phụ kiện</a>
+					</li>
 				</ul>
 			</li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#">Sale OFF</a></li>
+			<li><a href="#">Dịch vụ</a></li>
+			<li><a href="#">Liên hệ</a></li>
 		</ul>
 	</nav>
 	<div class="mm-page">
@@ -88,32 +108,45 @@
 				<span class="text-white">Hotline: 0363.955.555</span>
 			</div>
 		</div>
-		<div id="header">
+        <div id="header">
 			<div class="menu_burger">
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
 					role="button"><span></span></a>
 			</div>
-			<a href="index.html" id="logo" class="text-dark">Sneaker Square</a>
+			<a href="index.html" id="logo" class="text-primary">
+				<img class="w-100 h-100" src="https://cdn.pixabay.com/photo/2023/05/03/11/57/lofoten-7967448_1280.jpg" alt="">
+			</a>
 			<div class="menu">
 				<div class="flex-menu">
 					<ul class="p-0 m-0">
-                        <li class="text-danger">
-							<a href="#">Giới thiệu</a>
+						<li class="text-menu">
+							<a href="index.html" class="menu-item">Trang chủ</a>
 						</li>
-						<li class="text-danger">
-							<a href="category.html">Sản phẩm</a>
+						<li class="text-menu">
+							<a href="#" class="active menu-item">Về chúng tôi</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giới thiệu</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="#">Tin tức</a></li>
+							</ul>
 						</li>
-						<li class="text-danger">
-							<a href="#">Dịch vụ</a>
+						<li class="text-menu">
+							<a href="category.html" class="menu-item">Sản phẩm</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giày Adidas</a></li>
+								<li><a href="#">Giày Vans</a></li>
+								<li><a href="#">Giày Nike</a></li>
+								<li><a href="#">Phụ kiện</a></li>
+							</ul>
 						</li>
-						<li class="text-danger">
-							<a href="#">Sale off</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Sale OFF</a>
 						</li>
-                        <li class="text-danger">
-							<a href="blog.html">Blog</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Dịch vụ</a>
 						</li>
-						<li class="text-danger">
-							<a href="#">Liên hệ</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Liên hệ</a>
 						</li>
 					</ul>
 				</div>
@@ -123,7 +156,7 @@
 					<i class='bx bx-search'></i>
 					<div id="form_search">
 						<form>
-							<input type="text" class="input_search" placeholder="Nhập từ khóa">
+							<input type="text" class="input_search" placeholder="Nhập từ khóa...">
 							<button class="sub_search"><i class='bx bx-search'></i></button>
 						</form>
 					</div>

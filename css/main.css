@@ -24,6 +24,9 @@
   bottom: 40px;
   z-index: 999;
 }
+.btn-custom-pr {
+  background-color: var(--color-orange) !important;
+}
 /* spinner loading */
 #spinner {
     opacity: 0;
@@ -6694,6 +6697,7 @@ section#brand-area {
   padding: 8px 0;
 }
 .btn-primary:hover,
+.btn-custom-pr:hover,
 .btn-order:hover {
   transform: translateY(-1px);
   transition: .3s ease;
@@ -7034,4 +7038,9 @@ section#brand-area {
   100% {
       -o-transform: rotate(0) scale(1) skew(1deg)
   }
+}
+
+/* contact page */
+.contact-page .contact_banner {
+  height: 400px;
 }

@@ -39,11 +39,24 @@
 	<link rel="stylesheet" href="./mmenu/mmenu.css">
 	<link rel="stylesheet" href="aos/aos.css">
 	<link rel="stylesheet" type="text/css" href="./wowslider/engine1/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="./wowslider/engine1/jquery.js"></script>
 </head>
 
 <body>
-
+	<!-- Spinner Start -->
+	<div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<ul class="cssload-flex-container">
+			   <li>
+				  <span class="cssload-loading cssload-one"></span>
+				  <span class="cssload-loading cssload-two"></span>
+				  <span class="cssload-loading-center"></span>
+			   </li>
+			</ul>
+		</div>
+	</div>
+	<!-- Spinner End -->
 	<!-- Start Header Area -->
 	<nav id="menu">
 		<ul>
@@ -100,7 +113,7 @@
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
 					role="button"><span></span></a>
 			</div>
-			<a href="#" id="logo" class="text-primary">
+			<a href="index.html" id="logo" class="text-primary">
 				<img class="w-100 h-100" src="https://cdn.pixabay.com/photo/2023/05/03/11/57/lofoten-7967448_1280.jpg" alt="">
 			</a>
 			<div class="menu">
@@ -923,7 +936,6 @@
 			</div>
 		</footer>
 		<!-- End footer Area -->
-
 	</div>
 
 	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
@@ -943,6 +955,7 @@
 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script> -->
 	<script src="js/main.js"></script>
+	<script src="js/easing.js"></script>
 	<script src="./mmenu/mmenu.js"></script>
 	<!--  -->
 	<script type="text/javascript" src="./wowslider/engine1/wowslider.js"></script>
@@ -959,7 +972,10 @@
 			}
 		});
 		AOS.init();
+
 	</script>
+	<!-- Back to Top -->
+	<div class="btn btn-primary btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></div>
 </body>
 
 </html>

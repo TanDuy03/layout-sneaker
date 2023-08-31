@@ -22,13 +22,9 @@
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
-<<<<<<< HEAD
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-=======
 	<link rel="stylesheet" href="css/bootstrap.min.css">
->>>>>>> c29cf85c1488f835aebde822ce9ce1b50e5cac8e
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
 		integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -41,48 +37,74 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="./mmenu/demo.css">
 	<link rel="stylesheet" href="./mmenu/mmenu.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="aos/aos.css">
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+	/>
 	<link rel="stylesheet" type="text/css" href="./wowslider/engine1/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="./wowslider/engine1/jquery.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+	<!-- Spinner Start -->
+	<div id="spinner"
+		class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<ul class="cssload-flex-container">
+				<li>
+					<span class="cssload-loading cssload-one"></span>
+					<span class="cssload-loading cssload-two"></span>
+					<span class="cssload-loading-center"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Spinner End -->
 	<!-- Start Header Area -->
 	<nav id="menu">
 		<ul>
+			<li><a href="index.html">Trang chủ</a></li>
 			<li>
-				<a href="#">Bộ sưu tập</a>
+				<a href="#">Về chúng tôi</a>
 				<ul>
 					<li>
-						<a href="#">Nike</a>
-						<ul>
-							<li>
-								<a href="#">Nike 1</a>
-							</li>
-							<li>
-								<a href="#">Nike 2</a>
-							</li>
-						</ul>
+						<a href="#">Giới thiệu</a>
 					</li>
 					<li>
-						<a href="#">Vans</a>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="#">Tin tức</a>
 					</li>
 				</ul>
 			</li>
-			<li><a href="#">Giới thiệu</a>
+			<li>
+				<a href="category.html">Sản phẩm</a>
 				<ul>
-					<li><a href="#">Sneaker Square 1</a></li>
-					<li><a href="#">Sneaker Square 2</a></li>
-					<li><a href="#">Sneaker Square 3</a></li>
+					<li>
+						<a href="#">Giày Adidas</a>
+					</li>
+					<li>
+						<a href="#">Giày Vans</a>
+					</li>
+					<li>
+						<a href="#">Giày Nike</a>
+					</li>
+					<li>
+						<a href="#">Phụ kiện</a>
+					</li>
 				</ul>
 			</li>
-			<li><a href="#">Dịch vụ</a></li>
 			<li><a href="#">Sale OFF</a></li>
-			<li><a href="#">Liên hệ</a></li>
+			<li><a href="#">Dịch vụ</a></li>
+			<li><a href="contact.html">Liên hệ</a></li>
 		</ul>
 	</nav>
 	<div class="mm-page">
+		<!-- start topbar Area -->
 		<div class="d-flex justify-content-end align-items-center" id="top-bar">
 			<div>
 				<span class="text-white">
@@ -94,32 +116,49 @@
 				<span class="text-white">Hotline: 0363.955.555</span>
 			</div>
 		</div>
+		<!-- End topbar Area -->
+
+		<!-- start Header Area -->
 		<div id="header">
 			<div class="menu_burger">
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
 					role="button"><span></span></a>
 			</div>
-			<a href="#" id="logo" class="text-primary">Sneaker Square</a>
+			<a href="index.html" id="logo" class="text-primary">
+				<img class="w-100 h-100" src="https://cdn.pixabay.com/photo/2023/05/03/11/57/lofoten-7967448_1280.jpg"
+					alt="">
+			</a>
 			<div class="menu">
 				<div class="flex-menu">
 					<ul class="p-0 m-0">
-						<li class="text-danger">
-							<a href="#">Giới thiệu</a>
+						<li class="text-menu">
+							<a href="index.html" class="menu-item">Trang chủ</a>
 						</li>
-						<li class="text-danger">
-							<a href="category.html">Sản phẩm</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Về chúng tôi</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giới thiệu</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="#">Tin tức</a></li>
+							</ul>
 						</li>
-						<li class="text-danger">
-							<a href="#">Dịch vụ</a>
+						<li class="text-menu">
+							<a href="category.html" class="menu-item">Sản phẩm</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giày Adidas</a></li>
+								<li><a href="#">Giày Vans</a></li>
+								<li><a href="#">Giày Nike</a></li>
+								<li><a href="#">Phụ kiện</a></li>
+							</ul>
 						</li>
-						<li class="text-danger">
-							<a href="#">Sale off</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Sale OFF</a>
 						</li>
-                        <li class="text-danger">
-							<a href="blog.html">Blog</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Dịch vụ</a>
 						</li>
-						<li class="text-danger">
-							<a href="#">Liên hệ</a>
+						<li class="text-menu">
+							<a href="contact.html" class="menu-item">Liên hệ</a>
 						</li>
 					</ul>
 				</div>
@@ -129,7 +168,7 @@
 					<i class='bx bx-search'></i>
 					<div id="form_search">
 						<form>
-							<input type="text" class="input_search" placeholder="Nhập từ khóa">
+							<input type="text" class="input_search" placeholder="Nhập từ khóa...">
 							<button class="sub_search"><i class='bx bx-search'></i></button>
 						</form>
 					</div>
@@ -144,720 +183,676 @@
 				</div>
 			</div>
 		</div>
-	<!-- End Header Area -->
+		<!-- End Header Area -->
 
-	<!-- Start Banner Area -->
-	<section class="banner-area organic-breadcrumb">
-		<div class="container">
-			<div class="breadcrumb-banner d-flex flex-wrap align-items-center">
-				<div class="col-first">
-					<h1>Product Details Page</h1>
-					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-						<a href="single-product.html">product-details</a>
-					</nav>
+		<!-- start banner Area -->
+		<section class="banner-area organic-breadcrumb">
+			<div class="container">
+				<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+					<div class="col-first">
+						<h1>Shop Category page</h1>
+						<nav class="d-flex align-items-center">
+							<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
+							<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
+							<a href="category.html">Fashon Category</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End banner Area -->
+		<!--================Single Product Area =================-->
+		<div class="product_image_area">
+			<div class="container">
+				<div class="row s_product_inner">
+					<div class="col-lg-6">
+						<div class="img-slider">
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/00375837-849f-4f17-ba24-d201d27be49b/air-force-1-07-shoes-GjGXSP.png"
+									width="80%%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-GjGXSP.png"
+									width="80%%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/33533fe2-1157-4001-896e-1803b30659c8/air-force-1-07-shoes-GjGXSP.png"
+									width="80%%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0a300da-2e16-4483-ba64-9815cf0598ac/air-force-1-07-shoes-GjGXSP.png"
+									width="80%%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/82aa97ed-98bf-4b6f-9d0b-31a9f907077b/air-force-1-07-shoes-GjGXSP.png"
+									width="80%%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/120a31b0-efa7-41c7-9a84-87b1e56ab9c3/air-force-1-07-shoes-GjGXSP.png"
+									width="80%%" alt="">
+							</div>
+						</div>
+						<div class="img-sliders w-75 m-auto">
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/00375837-849f-4f17-ba24-d201d27be49b/air-force-1-07-shoes-GjGXSP.png"
+									width="100%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-GjGXSP.png"
+									width="100%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/33533fe2-1157-4001-896e-1803b30659c8/air-force-1-07-shoes-GjGXSP.png"
+									width="100%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0a300da-2e16-4483-ba64-9815cf0598ac/air-force-1-07-shoes-GjGXSP.png"
+									width="100%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/82aa97ed-98bf-4b6f-9d0b-31a9f907077b/air-force-1-07-shoes-GjGXSP.png"
+									width="100%" alt="">
+							</div>
+							<div class="single-prd-item">
+								<img class="img-fluid m-auto pb-3"
+									src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/120a31b0-efa7-41c7-9a84-87b1e56ab9c3/air-force-1-07-shoes-GjGXSP.png"
+									width="100%" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 offset-lg-1">
+						<div class="s_product_text">
+							<h3>Faded SkyBlu Denim Jeans</h3>
+							<strike class="text-secondary">10.000.000</strike> VND
+							<h2>3.000.000 VNĐ</h2>
+							<b>SKU: A1234</b>
+							<ul class="list">
+								<li><a class="" href="#"><span>Loại</span> : Nike</a></li>
+								<li><a href=""><span>Màu sắc</span>
+
+										:<input type="radio" id="circle1" class="circle" name="color">
+										<label for="circle1" class="red"></label>
+
+										<input type="radio" id="circle2" class="circle" name="color">
+										<label for="circle2" class="green"></label>
+
+										<input type="radio" id="circle3" class="circle" name="color">
+										<label for="circle3" class="blue"></label>
+
+										<input type="radio" id="circle4" class="circle" name="color">
+										<label for="circle4" class="yellow"></label>
+
+										<input type="radio" id="circle5" class="circle" name="color">
+										<label for="circle5" class="purple"></label>
+
+									</a></li>
+								<li><a class="" href="#"><span>Chọn size</span> :</a>
+									<div class="size-selector">
+										<div class="size-option" onclick="selectSize('US 5')">35</div>
+										<div class="size-option" onclick="selectSize('US 6')">36</div>
+										<div class="size-option" onclick="selectSize('US 7')">37</div>
+										<div class="size-option" onclick="selectSize('US 5')">38</div>
+										<div class="size-option" onclick="selectSize('US 6')">39</div>
+										<div class="size-option" onclick="selectSize('US 7')">40</div>
+										<div class="size-option" onclick="selectSize('US 5')">41</div>
+										<div class="size-option" onclick="selectSize('US 6')">42</div>
+										<div class="size-option" onclick="selectSize('US 7')">43</div>
+
+										<!-- Thêm các tùy chọn size khác -->
+									</div>
+								</li>
+							</ul>
+							<p>Lấy cảm hứng từ món đồ chơi xếp hình quen thuộc cùng phong cách thời trang Color Block cá
+								tính, Urbas "Lego" với sự kết hợp của những mảng màu nổi bật sẽ tạo nên một bức tranh đa
+								sắc màu ngay dưới chân bạn, cùng bạn thu hút mọi ánh nhìn trên đường phố.</p>
+							<div class="product_count">
+								<label for="qty">Số lượng:</label>
+								<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+									class="input-text qty">
+								<button
+									onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+									class="increase items-count" type="button"><i
+										class="lnr lnr-chevron-up"></i></button>
+								<button
+									onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+									class="reduced items-count" type="button"><i
+										class="lnr lnr-chevron-down"></i></button>
+							</div>
+							<div class="card_area d-flex align-items-center">
+								<a class="primary-btn" href="#">Thêm vào giỏ hàng</a>
+							</div>
+							<div class="card_area d-flex align-items-center pt-2">
+								<a class="primary-btn" href="#">Thanh toán</a>
+								<a class="primary-btn" href=""><i class="fa-regular fa-heart"></i></a>
+							</div>
+						</div>
+						<div class="content-wrapper">
+							<div class="content" onclick="toggleContent(1)">
+								<p>Giao hàng miễn phí <i class="fa-solid fa-angle-down"></i></p>
+								<div class="hidden" id="content1">
+									<ul>
+										Đơn hàng của bạn được vận chuyển tiêu chuẩn với đơn hàng từ 1.000.000 VND
+										<li>
+											- Giao hàng tiêu chuẩn từ 4-5 ngày làm việc
+										</li>
+										<li>
+											- Giao hàng nhanh từ 2-3 ngày làm việc
+										</li>
+										Đơn hàng được sử lí và vận chuyển từ thứ 2 đến thứ 6 (Trừ ngày lễ)
+									</ul>
+								</div>
+							</div>
+
+							<div class="content" onclick="toggleContent(2)">
+								<p>Quy định đổi trả sản phẩm<i class="fa-solid fa-angle-down"></i></p>
+								<div class="hidden" id="content2">
+									<ul>
+										<li>
+											- Chỉ đổi hàng 1 lần duy nhất, mong bạn cân nhắc kĩ trước khi quyết định.
+											Thời hạn đổi sản phẩm khi mua trực tiếp tại cửa hàng là 07 ngày, kể từ ngày
+											mua.
+										</li>
+										<li>
+											- Đổi sản phẩm khi mua online là 14 ngày, kể từ ngày nhận hàng.
+											Sản phẩm đổi phải kèm hóa đơn. Bắt buộc phải còn nguyên tem, hộp, nhãn mác.
+										</li>
+										<li>
+											- Sản phẩm đổi không có dấu hiệu đã qua sử dụng, không giặt tẩy, bám bẩn,
+											biến dạng.
+										</li>
+										<li>
+											- Snecker Squad chỉ ưu tiên hỗ trợ đổi size. Trong trường hợp sản phẩm hết
+											size cần đổi, bạn có thể đổi sang 01 sản phẩm khác.- Nếu sản phẩm muốn đổi
+											ngang giá trị hoặc có giá trị cao hơn, bạn sẽ cần bù khoảng chênh lệch tại
+											thời điểm đổi (nếu có).- Nếu bạn mong muốn đổi sản phẩm có giá trị thấp hơn,
+											chúng tôi sẽ không hoàn lại tiền.
+										</li>
+										<li>
+											- Trong trường hợp sản phẩm - size bạn muốn đổi không còn hàng trong hệ
+											thống. Vui lòng chọn sản phẩm khác.
+											Không hoàn trả bằng tiền mặt dù bất cứ trong trường hợp nào. Mong bạn thông
+											cảm.
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="content" onclick="toggleContent(3)">
+								<p>Bảo hành như thế nào <i class="fa-solid fa-angle-down"></i></p>
+								<div class="hidden" id="content3">
+									<p>Nội dung </p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- End Banner Area -->
-	<!--================Single Product Area =================-->
-	<div class="product_image_area">
-		<div class="container">
-			<div class="row s_product_inner">
-				<div class="col-lg-6">
-					<div class="img-slider">
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/00375837-849f-4f17-ba24-d201d27be49b/air-force-1-07-shoes-GjGXSP.png"  width="80%%" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-GjGXSP.png"  width="80%%" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/33533fe2-1157-4001-896e-1803b30659c8/air-force-1-07-shoes-GjGXSP.png"  width="80%%" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0a300da-2e16-4483-ba64-9815cf0598ac/air-force-1-07-shoes-GjGXSP.png"  width="80%%" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/82aa97ed-98bf-4b6f-9d0b-31a9f907077b/air-force-1-07-shoes-GjGXSP.png"  width="80%%" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/120a31b0-efa7-41c7-9a84-87b1e56ab9c3/air-force-1-07-shoes-GjGXSP.png"  width="80%%" alt="">
+		<!--================End Single Product Area =================-->
+
+		<!--================Product Description Area =================-->
+		<section class="product_description_area">
+			<div class="container">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+							aria-selected="true">Mô tả sản phẩm</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+							aria-controls="profile" aria-selected="false">Thông số</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+							aria-controls="contact" aria-selected="false">Bình luận</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<p>Air Force 1 - Biểu tượng Vượt thời gian và Phong cách
+						</p>
+						<p>Sản phẩm Air Force 1 không chỉ là một đôi giày thể thao, mà còn là biểu tượng vượt thời gian
+							và phong cách của thương hiệu Nike. Với thiết kế độc đáo và vẻ đẹp tinh tế, Air Force 1 đã
+							từng bước đi vào huyền thoại trong làng thời trang và vượt qua năm thập kỷ với sự độc đáo và
+							tinh thần sáng tạo không ngừng.</p>
+						<p>
+							Với nguồn cảm hứng từ máy bay chiến đấu của Hoa Kỳ cùng tên, Air Force 1 mang trong mình nét
+							mạnh mẽ và sự đồng điệu với sự hiện diện mạnh mẽ. Đôi giày này nổi bật với phần mũi giày cao
+							và đế đặc trưng, tạo nên sự ấn tượng mạnh mẽ mỗi bước chân.
+						</p>
+						<p>
+							Chất liệu da bền bỉ hoặc vải dệt chất lượng cao được sử dụng để tạo nên sự sang trọng và độ
+							bền của sản phẩm. Những đường may tỉ mỉ và các chi tiết tinh xảo thể hiện sự tinh tế trong
+							thiết kế của giày. Logo Nike Swoosh, được đặt ở hai bên hông, là biểu tượng thể hiện niềm tự
+							hào về thương hiệu và sự tương thích với phong cách thể thao cũng như thời trang đương đại.
+							Air Force 1 có sự đa dạng trong màu sắc và phiên bản, từ các tông màu trung tính dễ dàng kết
+							hợp đến các biến thể màu sắc đầy sáng tạo, đảm bảo rằng mọi người có thể tìm thấy đôi giày
+							phù hợp với phong cách cá nhân. Điều này đã khiến cho Air Force 1 trở thành một biểu tượng
+							không chỉ trong thế giới thể thao mà còn trong văn hóa đường phố và thời trang hàng ngày.
+						</p>
+						<p>Với sự kết hợp hoàn hảo giữa thiết kế ấn tượng, chất liệu chất lượng và ý nghĩa vượt thời
+							gian, Air Force 1 tiếp tục là một trong những sản phẩm được yêu thích và khao khát bởi cả
+							những người đam mê thể thao và những người yêu thời trang trên khắp thế giới.</p>
+					</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="table-responsive">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>
+											<h5>Chất liệu</h5>
+										</td>
+										<td>
+											<h5>Upper: Da hoặc vải dệt chất lượng cao, tạo cảm giác sang trọng và độ
+												bền.</h5>
+											<h5>Lớp lót: Vải mềm mại tạo sự thoải mái cho chân.</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Đế giày</h5>
+										</td>
+										<td>
+											<h5>Đế ngoài: Có thiết kế đặc trưng với kết cấu bám đất tốt, cung cấp độ bền
+												và đảm bảo độ bám trên nhiều bề mặt.</h5>
+											<h5>Đế giữa: Công nghệ đệm tối ưu hóa sự thoải mái và hỗ trợ khi di chuyển.
+											</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Thiết kế</h5>
+										</td>
+										<td>
+											<h5>Mũi giày cao, tạo sự mạnh mẽ và ấn tượng.</h5>
+											<h5>Logo Nike Swoosh ở hai bên hông giày thể hiện thương hiệu.</h5>
+											<h5>Đường may tỉ mỉ và các chi tiết tinh xảo thể hiện sự tinh tế trong thiết
+												kế.</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Màu sắc và phiên bản</h5>
+										</td>
+										<td>
+											<h5>Có sự đa dạng trong màu sắc, từ các tông màu trung tính đến các biến thể
+												màu sắc đa dạng, phù hợp với nhiều phong cách và sở thích cá nhân.</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Kích cỡ</h5>
+										</td>
+										<td>
+											<h5>Có nhiều lựa chọn về kích cỡ để phù hợp với nhiều loại chân khác nhau.
+											</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Phong cách</h5>
+										</td>
+										<td>
+											<h5>Phù hợp với cả thời trang hàng ngày và hoạt động thể thao</h5>
+											<h5>Thể hiện tính cá nhân và phong cách thông qua sự kết hợp của thiết kế và
+												màu sắc.</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Xuất xứ</h5>
+										</td>
+										<td>
+											<h5>Sản xuất và phân phối bởi Nike, một trong những thương hiệu thể thao
+												hàng đầu thế giới.</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Mục đích sử dụng</h5>
+										</td>
+										<td>
+											<h5>Thích hợp cho cả các hoạt động thể thao như bóng rổ và hàng ngày đi lại
+											</h5>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
-					<div class="img-sliders w-75 m-auto">
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/00375837-849f-4f17-ba24-d201d27be49b/air-force-1-07-shoes-GjGXSP.png"  width="100%" alt="">
+					<div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="comment_list">
+									<div class="review_item">
+										<div class="media">
+											<div class="d-flex">
+												<img src="img/product/review-1.png" alt="">
+											</div>
+											<div class="media-body">
+												<h4>Quân Trần</h4>
+												<h5>2/1/2023 0 phút trước</h5>
+												<a class="reply_btn" href="#">Trả lời</a>
+											</div>
+										</div>
+										<p>Sản phẩm này ngon đấy</p>
+									</div>
+									<div class="review_item reply">
+										<div class="media">
+											<div class="d-flex">
+												<img src="img/product/review-2.png" alt="">
+											</div>
+											<div class="media-body">
+												<h4>Hiếu Trung 606</h4>
+												<h5>0 phút trước</h5>
+												<a class="reply_btn" href="#">Trả lời</a>
+											</div>
+										</div>
+										<p>Ya sua chắc chắn là như vậy rồi</p>
+									</div>
+									<div class="review_item">
+										<div class="media">
+											<div class="d-flex">
+												<img src="img/product/review-3.png" alt="">
+											</div>
+											<div class="media-body">
+												<h4>Tấn Ruy</h4>
+												<h5>12 phút trước</h5>
+												<a class="reply_btn" href="#">Trả lời</a>
+											</div>
+										</div>
+										<p>Xuất sắc</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 ">
+								<div class="review_box">
+									<h4>Thêm bình luận</h4>
+									<form class="row contact_form" action="contact_process.php" method="post"
+										id="contactForm" novalidate="novalidate">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="name" name="name"
+													placeholder="Nhập tên">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="email" class="form-control" id="email" name="email"
+													placeholder="Nhập địa chỉ">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="number" name="number"
+													placeholder="Nhập số điện thoại">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="form-control" name="message" id="message" rows="1"
+													placeholder="Nọi dung"></textarea>
+											</div>
+										</div>
+										<div class="col-md-12 text-right">
+											<button type="submit" value="submit" class="btn primary-btn">Gửi</button>
+										</div>
+									</form>
+								</div>
+							</div>
 						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-GjGXSP.png"  width="100%" alt="">
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!--================End Product Description Area =================-->
+		<!-- ==================== SP lien Quan ===================== -->
+		<div class="d-flex justify-content-center">
+			<h2> Sản phẩm liên quan</h2>
+		</div>
+		<div class="btn-listsplq d-flex justify-content-end">
+			<button id="prev-button">
+				<
+			</button>
+			<button id="next-button">></button>
+		</div>
+		<div id="product-container">
+			<!-- single product -->
+			<div class="product col-lg-4 col-md-6">
+				<div class="single-product rounded">
+					<div class="overflow-hidden rounded-top" id="img_product">
+						<a href="#">
+							<img class="img-fluid w-100 h-100 zoom" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
+						</a>
+					</div>
+					<div class="product-details">
+						<a href="#">
+							<h6 class="px-2 text__truncate">addidas New Hammer sole
+								for Sports person
+							</h6>
+						</a>
+						<div class="price d-flex gap-3 justify-content-center mb-3">
+							<h6 class="price__product">$150.00</h6>
+							<h6 class="price__product l-through px-0">$210.00</h6>
 						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/33533fe2-1157-4001-896e-1803b30659c8/air-force-1-07-shoes-GjGXSP.png"  width="100%" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0a300da-2e16-4483-ba64-9815cf0598ac/air-force-1-07-shoes-GjGXSP.png"  width="100%" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/82aa97ed-98bf-4b6f-9d0b-31a9f907077b/air-force-1-07-shoes-GjGXSP.png"  width="100%" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid m-auto pb-3" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/120a31b0-efa7-41c7-9a84-87b1e56ab9c3/air-force-1-07-shoes-GjGXSP.png"  width="100%" alt="">
+						<div class="prd-bottom d-flex justify-content-center">
+							<a href="#" class="btn btn-order mb-3 px-3 text-white">
+								Mua ngay
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-5 offset-lg-1">
-					<div class="s_product_text">
-						<h3>Faded SkyBlu Denim Jeans</h3>
-						<strike class="text-secondary">10.000.000</strike> VND
-						<h2>3.000.000 VNĐ</h2>
-						<b>SKU: A1234</b>
-						<ul class="list">
-							<li><a class="" href="#"><span>Loại</span> : Nike</a></li>
-							<li><a href=""><span>Màu sắc</span>
-								
-									:<input type="radio" id="circle1" class="circle" name="color">
-									<label for="circle1" class="red"></label>
-								
-									<input type="radio" id="circle2" class="circle" name="color">
-									<label for="circle2" class="green"></label>
-								
-									<input type="radio" id="circle3" class="circle" name="color">
-									<label for="circle3" class="blue"></label>
-								
-									<input type="radio" id="circle4" class="circle" name="color">
-									<label for="circle4" class="yellow"></label>
-								
-									<input type="radio" id="circle5" class="circle" name="color">
-									<label for="circle5" class="purple"></label>
-								
-							</a></li>
-							<li><a class="" href="#"><span>Chọn size</span> :</a>
-								<div class="size-selector">
-									<div class="size-option" onclick="selectSize('US 5')">35</div>
-									<div class="size-option" onclick="selectSize('US 6')">36</div>
-									<div class="size-option" onclick="selectSize('US 7')">37</div>
-									<div class="size-option" onclick="selectSize('US 5')">38</div>
-									<div class="size-option" onclick="selectSize('US 6')">39</div>
-									<div class="size-option" onclick="selectSize('US 7')">40</div>
-									<div class="size-option" onclick="selectSize('US 5')">41</div>
-									<div class="size-option" onclick="selectSize('US 6')">42</div>
-									<div class="size-option" onclick="selectSize('US 7')">43</div>
+			</div>
+			<!-- single product -->
+			<div class="product col-lg-4 col-md-6">
+				<div class="single-product rounded">
+					<div class="overflow-hidden rounded-top" id="img_product">
+						<a href="#">
+							<img class="img-fluid w-100 h-100 zoom" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
+						</a>
+					</div>
+					<div class="product-details">
+						<a href="#">
+							<h6 class="px-2 text__truncate">addidas New Hammer sole
+								for Sports person
+							</h6>
+						</a>
+						<div class="price d-flex gap-3 justify-content-center mb-3">
+							<h6 class="price__product">$150.00</h6>
+							<h6 class="price__product l-through px-0">$210.00</h6>
+						</div>
+						<div class="prd-bottom d-flex justify-content-center">
+							<a href="#" class="btn btn-order mb-3 px-3 text-white">
+								Mua ngay
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- single product -->
+			<div class="product col-lg-4 col-md-6">
+				<div class="single-product rounded">
+					<div class="overflow-hidden rounded-top" id="img_product">
+						<a href="#">
+							<img class="img-fluid w-100 h-100 zoom" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
+						</a>
+					</div>
+					<div class="product-details">
+						<a href="#">
+							<h6 class="px-2 text__truncate">addidas New Hammer sole
+								for Sports person
+							</h6>
+						</a>
+						<div class="price d-flex gap-3 justify-content-center mb-3">
+							<h6 class="price__product">$150.00</h6>
+							<h6 class="price__product l-through px-0">$210.00</h6>
+						</div>
+						<div class="prd-bottom d-flex justify-content-center">
+							<a href="#" class="btn btn-order mb-3 px-3 text-white">
+								Mua ngay
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- single product -->
+			<div class="product col-lg-4 col-md-6">
+				<div class="single-product rounded">
+					<div class="overflow-hidden rounded-top" id="img_product">
+						<a href="#">
+							<img class="img-fluid w-100 h-100 zoom" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
+						</a>
+					</div>
+					<div class="product-details">
+						<a href="#">
+							<h6 class="px-2 text__truncate">addidas New Hammer sole
+								for Sports person
+							</h6>
+						</a>
+						<div class="price d-flex gap-3 justify-content-center mb-3">
+							<h6 class="price__product">$150.00</h6>
+							<h6 class="price__product l-through px-0">$210.00</h6>
+						</div>
+						<div class="prd-bottom d-flex justify-content-center">
+							<a href="#" class="btn btn-order mb-3 px-3 text-white">
+								Mua ngay
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- single product -->
+			<div class="product col-lg-4 col-md-6">
+				<div class="single-product rounded">
+					<div class="overflow-hidden rounded-top" id="img_product">
+						<a href="#">
+							<img class="img-fluid w-100 h-100 zoom" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
+						</a>
+					</div>
+					<div class="product-details">
+						<a href="#">
+							<h6 class="px-2 text__truncate">addidas New Hammer sole
+								for Sports person
+							</h6>
+						</a>
+						<div class="price d-flex gap-3 justify-content-center mb-3">
+							<h6 class="price__product">$150.00</h6>
+							<h6 class="price__product l-through px-0">$210.00</h6>
+						</div>
+						<div class="prd-bottom d-flex justify-content-center">
+							<a href="#" class="btn btn-order mb-3 px-3 text-white">
+								Mua ngay
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-									<!-- Thêm các tùy chọn size khác -->
-								  </div>
-							</li>
+
+		<!-- ==================== SP lien Quan ===================== -->
+		<!-- Start related-product Area -->
+
+		<!-- End related-product Area -->
+
+		<!-- start footer Area -->
+		<footer class="footer-area">
+			<div class="container">
+				<div class="row justify-content-start">
+					<div class="col-lg-2 col-md-6 px-0 mb-3 footer-gap">
+						<h6>Về chúng tôi</h6>
+						<ul class="footer-link">
+							<li class="mb-2"><a href="#">Giới thiệu</a></li>
+							<li class="mb-2"><a href="#">Liên hệ</a></li>
+							<li class="mb-2"><a href="#">Tin tức</a></li>
 						</ul>
-						<p>Lấy cảm hứng từ món đồ chơi xếp hình quen thuộc cùng phong cách thời trang Color Block cá tính, Urbas "Lego" với sự kết hợp của những mảng màu nổi bật sẽ tạo nên một bức tranh đa sắc màu ngay dưới chân bạn, cùng bạn thu hút mọi ánh nhìn trên đường phố.</p>
-						<div class="product_count">
-							<label for="qty">Số lượng:</label>
-							<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-							 class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
-							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-							 class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+					</div>
+					<div class="col-lg-3 col-md-6 px-0 mb-3 footer-gap">
+						<h6>Chính sách & điều khoản</h6>
+						<ul class="footer-link">
+							<li class="mb-2"><a href="#">Chính sách bảo hành & đổi trả</a></li>
+							<li class="mb-2"><a href="#">FAQ & câu hỏi thường gặp</a></li>
+							<li class="mb-2"><a href="#">Chính sách giao hàng</a></li>
+							<li class="mb-2"><a href="#">Chính sách thanh toán</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 px-0 mb-3 footer-gap">
+						<h6>Thông tin liên hệ</h6>
+						<div class="d-flex justify-content-start gap-2 mb-2">
+							<i class="bi bi-telephone-fill"></i>
+							<span>0369.469.525</span>
 						</div>
-						<div class="card_area d-flex align-items-center">
-							<a class="primary-btn" href="#">Thêm vào giỏ hàng</a>
+						<div class="d-flex justify-content-start gap-2 mb-2">
+							<i class="bi bi-envelope"></i>
+							<span>cskh.square@gmail.com</span>
 						</div>
-						<div class="card_area d-flex align-items-center pt-2">
-							<a class="primary-btn" href="#">Thanh toán</a>
-							<a class="primary-btn" href=""><i class="fa-regular fa-heart"></i></a>
+						<div class="d-flex justify-content-start gap-2 mb-2">
+							<i class="bi bi-geo-alt-fill"></i>
+							<span>99 Tôn Đản, Bến Nghé, Quận 1, TP.Hồ Chí Minh</span>
 						</div>
 					</div>
-					<div class="content-wrapper">
-						<div class="content" onclick="toggleContent(1)">
-						  <p>Giao hàng miễn phí <i class="fa-solid fa-angle-down"></i></p>
-						  <div class="hidden" id="content1">
-							<ul>
-								Đơn hàng của bạn được vận chuyển tiêu chuẩn với đơn hàng từ 1.000.000 VND
-								<li>
-									- Giao hàng tiêu chuẩn từ 4-5 ngày làm việc
-								</li>
-								<li>
-									- Giao hàng nhanh từ 2-3 ngày làm việc
-								</li>
-								Đơn hàng được sử lí và vận chuyển từ thứ 2 đến thứ 6 (Trừ ngày lễ)
-							</ul>
-						  </div>
+					<div class="col-lg-3 col-md-6 px-0 mb-3 footer-gap">
+						<h6>Theo dõi chúng tôi</h6>
+						<div class="d-flex gap-3 social-footer justify-content-start">
+							<a href="#" target="_blank">
+								<div class="social-item">
+									<i class="bi bi-facebook"></i>
+								</div>
+							</a>
+							<a href="#" target="_blank">
+								<div class="social-item">
+									<i class="bi bi-youtube"></i>
+								</div>
+							</a>
+							<a href="#" target="_blank">
+								<div class="social-item">
+									<i class="bi bi-instagram"></i>
+								</div>
+							</a>
 						</div>
-					
-						<div class="content" onclick="toggleContent(2)">
-						  <p>Quy định đổi trả sản phẩm<i class="fa-solid fa-angle-down"></i></p>
-						  <div class="hidden" id="content2">
-							<ul>
-								<li>
-									- Chỉ đổi hàng 1 lần duy nhất, mong bạn cân nhắc kĩ trước khi quyết định.
-									Thời hạn đổi sản phẩm khi mua trực tiếp tại cửa hàng là 07 ngày, kể từ ngày mua.
-								</li>
-								<li>
-									- Đổi sản phẩm khi mua online là 14 ngày, kể từ ngày nhận hàng.
-									Sản phẩm đổi phải kèm hóa đơn. Bắt buộc phải còn nguyên tem, hộp, nhãn mác.
-								</li>
-								<li>
-									- Sản phẩm đổi không có dấu hiệu đã qua sử dụng, không giặt tẩy, bám bẩn, biến dạng.
-								</li>
-								<li>
-									- Snecker Squad chỉ ưu tiên hỗ trợ đổi size. Trong trường hợp sản phẩm hết size cần đổi, bạn có thể đổi sang 01 sản phẩm khác.- Nếu sản phẩm muốn đổi ngang giá trị hoặc có giá trị cao hơn, bạn sẽ cần bù khoảng chênh lệch tại thời điểm đổi (nếu có).- Nếu bạn mong muốn đổi sản phẩm có giá trị thấp hơn, chúng tôi sẽ không hoàn lại tiền.
-								</li>
-								<li>
-									- Trong trường hợp sản phẩm - size bạn muốn đổi không còn hàng trong hệ thống. Vui lòng chọn sản phẩm khác.
-									Không hoàn trả bằng tiền mặt dù bất cứ trong trường hợp nào. Mong bạn thông cảm.
-								</li>
-							</ul>
-						  </div>
-						</div>
-					
-						<div class="content" onclick="toggleContent(3)">
-						  <p>Bảo hành như thế nào <i class="fa-solid fa-angle-down"></i></p>
-						  <div class="hidden" id="content3">
-							<p>Nội dung </p>
-						  </div>
-						</div>
-					  </div>
+					</div>
+					<hr class="w-100 mt-3 px-0">
+				</div>
+				<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+					<p class="mb-3 text-center">
+						&copy; <script>document.write(new Date().getFullYear());</script> -
+						All rights reserved. Designed by <a href="#" target="_blank" class="link_team">6Flames.</a>
+					</p>
 				</div>
 			</div>
-		</div>
+		</footer>
+		<!-- End footer Area -->
 	</div>
-	<!--================End Single Product Area =================-->
-
-	<!--================Product Description Area =================-->
-	<section class="product_description_area">
-		<div class="container">
-			<ul class="nav nav-tabs" id="myTab" role="tablist">
-				<li class="nav-item">
-					<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mô tả sản phẩm</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-					 aria-selected="false">Thông số</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-					 aria-selected="false">Bình luận</a>
-				</li>
-			</ul>
-			<div class="tab-content" id="myTabContent">
-				<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-					<p>Air Force 1 - Biểu tượng Vượt thời gian và Phong cách
-					</p>
-					<p>Sản phẩm Air Force 1 không chỉ là một đôi giày thể thao, mà còn là biểu tượng vượt thời gian và phong cách của thương hiệu Nike. Với thiết kế độc đáo và vẻ đẹp tinh tế, Air Force 1 đã từng bước đi vào huyền thoại trong làng thời trang và vượt qua năm thập kỷ với sự độc đáo và tinh thần sáng tạo không ngừng.</p>
-					<p>
-						Với nguồn cảm hứng từ máy bay chiến đấu của Hoa Kỳ cùng tên, Air Force 1 mang trong mình nét mạnh mẽ và sự đồng điệu với sự hiện diện mạnh mẽ. Đôi giày này nổi bật với phần mũi giày cao và đế đặc trưng, tạo nên sự ấn tượng mạnh mẽ mỗi bước chân.
-					</p>
-					<p>
-						Chất liệu da bền bỉ hoặc vải dệt chất lượng cao được sử dụng để tạo nên sự sang trọng và độ bền của sản phẩm. Những đường may tỉ mỉ và các chi tiết tinh xảo thể hiện sự tinh tế trong thiết kế của giày. Logo Nike Swoosh, được đặt ở hai bên hông, là biểu tượng thể hiện niềm tự hào về thương hiệu và sự tương thích với phong cách thể thao cũng như thời trang đương đại.
-						Air Force 1 có sự đa dạng trong màu sắc và phiên bản, từ các tông màu trung tính dễ dàng kết hợp đến các biến thể màu sắc đầy sáng tạo, đảm bảo rằng mọi người có thể tìm thấy đôi giày phù hợp với phong cách cá nhân. Điều này đã khiến cho Air Force 1 trở thành một biểu tượng không chỉ trong thế giới thể thao mà còn trong văn hóa đường phố và thời trang hàng ngày.
-					</p>
-					<p>Với sự kết hợp hoàn hảo giữa thiết kế ấn tượng, chất liệu chất lượng và ý nghĩa vượt thời gian, Air Force 1 tiếp tục là một trong những sản phẩm được yêu thích và khao khát bởi cả những người đam mê thể thao và những người yêu thời trang trên khắp thế giới.</p>
-				</div>
-				<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-					<div class="table-responsive">
-						<table class="table">
-							<tbody>
-								<tr>
-									<td>
-										<h5>Chất liệu</h5>
-									</td>
-									<td>
-										<h5>Upper: Da hoặc vải dệt chất lượng cao, tạo cảm giác sang trọng và độ bền.</h5>
-										<h5>Lớp lót: Vải mềm mại tạo sự thoải mái cho chân.</h5>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<h5>Đế giày</h5>
-									</td>
-									<td>
-										<h5>Đế ngoài: Có thiết kế đặc trưng với kết cấu bám đất tốt, cung cấp độ bền và đảm bảo độ bám trên nhiều bề mặt.</h5>
-										<h5>Đế giữa: Công nghệ đệm tối ưu hóa sự thoải mái và hỗ trợ khi di chuyển.</h5>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<h5>Thiết kế</h5>
-									</td>
-									<td>
-										<h5>Mũi giày cao, tạo sự mạnh mẽ và ấn tượng.</h5>
-										<h5>Logo Nike Swoosh ở hai bên hông giày thể hiện thương hiệu.</h5>
-										<h5>Đường may tỉ mỉ và các chi tiết tinh xảo thể hiện sự tinh tế trong thiết kế.</h5>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<h5>Màu sắc và phiên bản</h5>
-									</td>
-									<td>
-										<h5>Có sự đa dạng trong màu sắc, từ các tông màu trung tính đến các biến thể màu sắc đa dạng, phù hợp với nhiều phong cách và sở thích cá nhân.</h5>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<h5>Kích cỡ</h5>
-									</td>
-									<td>
-										<h5>Có nhiều lựa chọn về kích cỡ để phù hợp với nhiều loại chân khác nhau.</h5>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<h5>Phong cách</h5>
-									</td>
-									<td>
-										<h5>Phù hợp với cả thời trang hàng ngày và hoạt động thể thao</h5>
-										<h5>Thể hiện tính cá nhân và phong cách thông qua sự kết hợp của thiết kế và màu sắc.</h5>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<h5>Xuất xứ</h5>
-									</td>
-									<td>
-										<h5>Sản xuất và phân phối bởi Nike, một trong những thương hiệu thể thao hàng đầu thế giới.</h5>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<h5>Mục đích sử dụng</h5>
-									</td>
-									<td>
-										<h5>Thích hợp cho cả các hoạt động thể thao như bóng rổ và hàng ngày đi lại</h5>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="comment_list">
-								<div class="review_item">
-									<div class="media">
-										<div class="d-flex">
-											<img src="img/product/review-1.png" alt="">
-										</div>
-										<div class="media-body">
-											<h4>Quân Trần</h4>
-											<h5>2/1/2023 0 phút trước</h5>
-											<a class="reply_btn" href="#">Trả lời</a>
-										</div>
-									</div>
-									<p>Sản phẩm này ngon đấy</p>
-								</div>
-								<div class="review_item reply">
-									<div class="media">
-										<div class="d-flex">
-											<img src="img/product/review-2.png" alt="">
-										</div>
-										<div class="media-body">
-											<h4>Hiếu Trung 606</h4>
-											<h5>0 phút trước</h5>
-											<a class="reply_btn" href="#">Trả lời</a>
-										</div>
-									</div>
-									<p>Ya sua chắc chắn là như vậy rồi</p>
-								</div>
-								<div class="review_item">
-									<div class="media">
-										<div class="d-flex">
-											<img src="img/product/review-3.png" alt="">
-										</div>
-										<div class="media-body">
-											<h4>Tấn Ruy</h4>
-											<h5>12 phút trước</h5>
-											<a class="reply_btn" href="#">Trả lời</a>
-										</div>
-									</div>
-									<p>Xuất sắc</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 ">
-							<div class="review_box">
-								<h4>Thêm bình luận</h4>
-								<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Nhập tên">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="email" class="form-control" id="email" name="email" placeholder="Nhập địa chỉ">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="text" class="form-control" id="number" name="number" placeholder="Nhập số điện thoại">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<textarea class="form-control" name="message" id="message" rows="1" placeholder="Nọi dung"></textarea>
-										</div>
-									</div>
-									<div class="col-md-12 text-right">
-										<button type="submit" value="submit" class="btn primary-btn">Gửi</button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!--================End Product Description Area =================-->
-<!-- ==================== SP lien Quan ===================== -->
-<div class="d-flex justify-content-center">
-    <h2> Sản phẩm liên quan</h2>
-</div>
-<div class="btn-listsplq d-flex justify-content-end">
-    <button id="prev-button"><</button>
-    <button id="next-button">></button>
-</div>
-<div id="product-container">
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Thêm các sản phẩm khác tại đây -->
-</div>
 
 
-  <script src="js/sanphamlienquang.js"></script>
-  <!-- ==================== SP lien Quan ===================== -->
-	<!-- Start related-product Area -->
-
-	<!-- End related-product Area -->
-
-	<!-- start footer Area -->
-	<footer class="footer-area section_gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-grid justify-content-center">
-                        <h1 class="text-light">Logo</h1>
-                        <br>
-                        <br>
-                        <p class="">
-                            Thương hiệu phân phối giầy đọc quyền trên toàn quốc Việt Nam. <br>
-                            Uy tín - Trách nhiệm - Độc Quyền
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2  col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-lg-grid justify-content-center">
-                        <h6>Về chúng tôi</h6>
-                        <ul>
-                            <li><a class="text-light" href="">Giới Thiệu</a></li>
-                            <li><a class="text-light" href="">Tin tức</a></li>
-                            <li><a class="text-light" href="">Liên hệ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3  col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-lg-grid justify-content-center">
-                        <h6>Chính sách & điều khoản</h6>
-                        <ul>
-                            <li><a class="text-light" href="">Chính sách bảo hành & đổi trả</a></li>
-                            <li><a class="text-light" href="">FAQ & câu hỏi thường gặp</a></li>
-                            <li><a class="text-light" href="">Chính sách giao hàng</a></li>
-                            <li><a class="text-light" href="">Chính sách thanh toán</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-lg-grid justify-content-center">
-                        <h6>Thông tin liên hệ</h6>
-                        <ul>
-                            <li><a class="text-light" href=""><i class="fa-solid fa-phone pe-2"></i> +84 383 144 668</a></li>
-                            <li><a class="text-light" href=""><i class="fa-regular fa-envelope pe-2"></i> Cskh.snaeker@gmail.com</a></li>
-                            <li><a class="text-light" href=""> <i class="fa-solid fa-location-dot pe-2"></i>Công viên phầm mềm Quang Trung, TCH, Quận 12, TPHCM</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-lg-grid justify-content-center">
-                        <h6>Theo giỏi chúng tôi</h6>
-                        
-                        <ul class="f-icon">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-skype"></i>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    <hr>
-            <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
-                <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    
- @Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
-            </div>
-        </div>
-    </footer>
-	<!-- End footer Area -->
-</div>
-	<script
-	  type="text/javascript"
-	  src="https://code.jquery.com/jquery-1.11.0.min.js"
-	></script>
-	<script
-	  type="text/javascript"
-	  src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-	></script>
-	<script
-	  type="text/javascript"
-	  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-	></script>
-	<script src="js/app.js"></script>
-	<link
-		rel="stylesheet"
-		type="text/css"
-		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-	  />
-	<script src="js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-	 crossorigin="anonymous"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/jquery.nice-select.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/nouislider.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
-	<script src="js/main.js"></script>
+	
+	<!-- slick -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
 	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
 		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 		crossorigin="anonymous"></script>
+	
 	<!-- <script src="js/vendor/bootstrap.min.js"></script> -->
 	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/jquery.nice-select.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/nouislider.min.js"></script>
@@ -865,14 +860,16 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<!--gmaps Js-->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script> -->
 	<script src="js/main.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/app.js"></script>
 	<script src="./mmenu/mmenu.js"></script>
+	<script src="js/product_slide.js"></script>
+
 	<!--  -->
 	<script type="text/javascript" src="./wowslider/engine1/wowslider.js"></script>
 	<script type="text/javascript" src="./wowslider/engine1/script.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="aos/aos.js"></script>
 
 	<script>
 		new Mmenu(document.querySelector("#menu"));
@@ -885,6 +882,23 @@
 		});
 		AOS.init();
 	</script>
+	
+	<!-- Back to Top -->
+	<div class="btn btn-primary btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></div>
+
+	<!-- Button call -->
+	<div class="call-now-button">
+        <div>
+            <p class="call-text"><a href="tel:0369 469 525" title="0903 412 411">0369 469 525</a></p>
+            <a href="tel:0369 469 525" title="0369 469 525">
+				<div class="quick-alo-ph-circle"></div>
+				<div class="quick-alo-ph-circle-fill"></div>
+				<div class="quick-alo-ph-btn-icon quick-alo-phone-img-circle">
+					<i class="bi bi-telephone-fill"></i>
+				</div>
+            </a>
+        </div>
+    </div>
 </body>
 </body>
 

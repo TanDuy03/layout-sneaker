@@ -6350,6 +6350,15 @@ section#brand-area {
   -webkit-line-clamp: 2;
   line-height: 1.6rem;
 }
+.title__truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 1;
+  line-height: 1.6rem;
+}
 .containerhinhtron {
   display: flex;
 }

@@ -169,11 +169,7 @@ $(document).ready(function(){
         }
       }
     });
-
-
-
       // -------   Mail Send ajax
-
          $(document).ready(function() {
             var form = $('#booking'); // contact form
             var submit = $('.submit-btn'); // submit button

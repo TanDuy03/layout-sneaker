@@ -6926,7 +6926,7 @@ section#brand-area {
 
 .product-page_detail .product-detail_gallery .product-gallery_image:not(.slick-current) img {
   opacity: 0.2;
-  transition: .25s ease;
+  transition: .1s;
 }
 .product-page_detail .navigation-breadcumb .breadcrumb .breadcrumb-item a{
   color: #272829;

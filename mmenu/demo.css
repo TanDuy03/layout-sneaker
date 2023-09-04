@@ -21,10 +21,10 @@ nav:not(.mm-menu) {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     transition: 2s ease-out;
 }
-/* #header a#logo {
+#header a#logo {
     height: 60px;
-    width: 100px;
-} */
+    width: 60px;
+}
 #header.active_top {
     position: sticky;
     top: 0;

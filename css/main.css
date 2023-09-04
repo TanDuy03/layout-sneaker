@@ -6909,7 +6909,16 @@ section#brand-area {
   height: 100%;
   width: 100%;
 }
-
+.contact-page .icon-c {
+  height: 40px;
+  width: 40px;
+  border: 1px dashed var(--color-orange);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-orange);
+}
 /* style proudct detail page */
 .product-page_detail .product-detail_thumb .product-detail_image img {
   height: 500px;

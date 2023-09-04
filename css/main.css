@@ -6553,7 +6553,8 @@ section#brand-area {
 }
 
 .box__shadow {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 .btn-checkout {
   background-color: var(--color-orange) !important;

@@ -6218,10 +6218,10 @@ label {
   #header .search-group {
     gap: 8px;
   }
-  .container-fluid {
+  /* .container-fluid {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
-  }
+  } */
 }
 
 .font__size {

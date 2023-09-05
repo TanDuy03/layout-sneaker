@@ -17,12 +17,12 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Shoes26</title>
+	<title>Sneaker Square | Chính sách thanh toán</title>
 	<!--CSS============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
-	<link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
@@ -37,8 +37,16 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="./mmenu/demo.css">
 	<link rel="stylesheet" href="./mmenu/mmenu.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="aos/aos.css">
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+	/>
 	<link rel="stylesheet" type="text/css" href="./wowslider/engine1/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="./wowslider/engine1/jquery.js"></script>
 </head>
 
@@ -57,7 +65,7 @@
 		</div>
 	</div>
 	<!-- Spinner End -->
-	<nav id="menu"> 
+	<nav id="menu">
 		<ul>
 			<li><a href="index.html">Trang chủ</a></li>
 			<li>
@@ -108,20 +116,20 @@
 				<span class="text-white">Hotline: 0363.955.555</span>
 			</div>
 		</div>
+
 		<div id="header">
 			<div class="menu_burger">
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
 					role="button"><span></span></a>
 			</div>
 			<a href="index.html" id="logo" class="text-primary">
-				<img class="w-100 h-100" src="./img/logo_sn.png"
-					alt="">
+				<img class="w-100 h-100" src="./img/logo_sn.png" alt="">
 			</a>
 			<div class="menu">
 				<div class="flex-menu">
 					<ul class="p-0 m-0">
 						<li class="text-menu">
-							<a href="index.html" class="menu-item">Trang chủ</a>
+							<a href="index.html" class="active menu-item">Trang chủ</a>
 						</li>
 						<li class="text-menu">
 							<a href="#" class="menu-item">Về chúng tôi</a>
@@ -147,7 +155,7 @@
 							<a href="#" class="menu-item">Dịch vụ</a>
 						</li>
 						<li class="text-menu">
-							<a href="contact.html" class="active menu-item">Liên hệ</a>
+							<a href="contact.html" class="menu-item">Liên hệ</a>
 						</li>
 					</ul>
 				</div>
@@ -179,10 +187,10 @@
 			<div class="container">
 				<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 					<div class="col-first">
-						<h1>Liên hệ</h1>
+						<h1>Thanh toán</h1>
 						<nav class="d-flex align-items-center">
 							<a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
-							<a href="contact.html">Liên hệ</a>
+							<a href="#">Chính sách thanh toán</a>
 						</nav>
 					</div>
 				</div>
@@ -192,106 +200,108 @@
 
 		<!-- start contact Area -->
 		<section class="contact-page">
-			<div class="container-fluid px-5 mt-5">
-				<div class="row justify-content-center overflow-hidden">
-					<div class="col-lg-6 text-center" data-aos="fade-up" data-aos-duration="2000">
-						<div class="container-fluid px-0">
-							<div class="section-title">
-								<h1>Liên hệ</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-							</div>
+			<div class="container-fluid px-5 my-5">
+				<div class="row justify-content-center">
+					<div class="col-lg-6 text-center"  data-aos="fade-up" data-aos-duration="2000">
+						<div class="section-title">
+							<h1>Chính sách thanh toán</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+							</p>
 						</div>
 					</div>
 				</div>
-				<div class="row mb-4 overflow-x-hidden">
-					<div class="col-xl-6 col-lg-6 mb-3">
-						<div class="container-fluid px-0">
-							<div class="row justify-content-center">
-								<div class="col-12 mb-3" data-aos="fade-right" data-aos-duration="1000">
-									<div class="bg-primary-subtle rounded p-3">
-										<div class="bg-white d-flex px-3 py-2 rounded gap-2">
-											<div class="icon-c">
-												<i class="bi bi-geo-alt-fill"></i>
-											</div>
-											<span>99 Nguyễn Du, Quận 1</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 mb-3" data-aos="fade-right" data-aos-duration="1500">
-									<div class="bg-primary-subtle rounded p-3">
-										<div class="bg-white d-flex px-3 py-2 rounded gap-2">
-											<div class="icon-c">
-												<i class="bi bi-telephone-fill"></i>
-											</div>
-											<span>0369.469.525</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 mb-3" data-aos="fade-right" data-aos-duration="2000">
-									<div class="bg-primary-subtle rounded p-3">
-										<div class="bg-white d-flex px-3 py-2 rounded gap-2">
-											<div class="icon-c">
-												<i class="bi bi-envelope-fill"></i>
-											</div>
-											<span>cskh.brand@gmail.com</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 mb-3" data-aos="fade-right" data-aos-duration="2500">
-									<div class="bg-primary-subtle rounded p-3">
-										<div class="bg-white d-flex px-3 py-2 rounded gap-2">
-											<div class="icon-c">
-												<i class="fas fa-fax"></i>
-											</div>
-											<span>(+84 0) 28-3620-1378</span>
-										</div>
-									</div>
-								</div>
-							</div>
+				<div class="row mb-4">
+					<div class="col">
+						<div class="w-100 box__shadow p-4">
+							<h5 class="text-uppercase fw-bold mt-2">Chính sách thanh toán</h5>
+							<p>
+                                Sneaker Square hiện đang hỗ trợ thanh toán qua các hình thức: <br>
+                                1. Thanh toán online bằng hình thức chuyển khoản (Áp dụng cho toàn bộ ngân hàng tại Việt Nam). <br>
+                                2. Thanh toán online qua ví điện tử Momo. <br>
+                                3. Thanh toán trả góp online qua thẻ tín dụng (Visa, Mastercard,...). <br>
+                                4. Thanh toán khi nhận hàng (COD). <br>
+                            </p>
+                            <p class="fw-bold mb-0">
+                                Thanh toán online qua thẻ ATM nội địa <br>
+                            </p>
+                            <p class="mb-0">
+                                - Khách hàng thanh toán số tiền mua hàng bằng thẻ ATM nội địa của 49 ngân hàng trong nước phát hành. <br>
+                                - Hình thức thanh toán đơn giản, dễ sử dụng, trực quan và an toàn chỉ trong 3 bước: <br>
+                            </p>
+                            <p class="mb-0">&#8226; Nhập thông tin thẻ</p>
+                            <p class="mb-0">&#8226; Xác thực khách hàng</p>
+                            <p class="mb-0">&#8226; Thanh toán và nhận hóa đơn</p>
+                            <p>
+                                Ngoài ra, để thanh toán bằng thẻ ngân hàng nội địa, thẻ của khách hàng phải được đăng ký sử dụng tính năng thanh toán trực tuyến, hoặc ngân hàng điện tử của Ngân hàng. Giao dịch được ghi nhận là thành công khi khách hàng nhận được thông báo từ hệ thống Snecker Square.
+                                Nội dung chuyển khoản quý khách chỉ ghi mã đơn hàng hoặc tên sử dụng của các trang mạng xã hội.
+                            </p>
+                            <p class="fw-bold mb-0">
+                                Thanh toán online qua ứng dụng ví điện tử Momo <br>
+                            </p>
+                            <p>
+                                Ứng dụng thanh toán di động giúp đáp ứng nhu cầu thanh toán của quý khách hàng mà không cần tiền mặt hay qua ngân hàng.
+                                Quý khách có thể lựa chọn thêm phương thức thanh toán qua ví điện tử bằng cách liên hệ với Fanpage hoặc hotline của <label class="fw-bold">Sneaker Square</label> để được hỗ trợ.
+                            </p>
+                            <p class="fw-bold mb-0">
+                                Thanh toán qua thẻ tín dụng/thẻ ghi nợ Visa, Mastercard, JCB <br>
+                            </p>
+                            <p>
+                                Khách hàng sử dụng các các loại thẻ tín dụng/ghi nợ/trả trước VISA, MasterCard, JCB của các 
+                                ngân hàng trong và ngoài nước phát hành. <br>
+                                Toàn bộ hệ thống thanh toán được bảo mật theo tiêu chuẩn quốc tế PCI - DSS, khách hàng hoàn toàn có thể yên 
+                                tâm khi thanh toán bằng hình thức trả trước qua thẻ tín dụng/thẻ ghi nợ tại website. <br>
+                                Qúy khách có thể lựa chọn theo phương thức thanh toán trả góp qua thẻ tín dụng/thẻ ghi nợ bằng cách liên hệ với chúng tôi qua 
+                                Fanpage hoặc hotline để chúng tôi hỗ trợ.
+                            </p>
+                            <p class="fw-bold mb-0">
+                                Thanh toán khi nhận hàng (COD) <br>
+                            </p>
+                            <p>
+                                Thanh toán khi nhận hàng (COD): Khách hàng vui lòng chuyển khoản cọc trước 500.000 VNĐ đối với đơn hàng trên 2.000.000 VNĐ
+                                Quý khách có quyền kiểm tra đơn hàng, sản phẩm trước khi nhận hàng và thanh toán.
+                            </p>
+							<p class="fst-italic">
+								* Mọi chi tiết hoặc thắc mắc quý khách vui lòng liên hệ với <label class="fw-bold">Sneaker Square</label> để được hỗ trợ. Xin chân thành cảm ơn.
+							</p>
 						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6" data-aos="fade-left" data-aos-duration="2000">
-						<div class="container-fluid px-0">
-							<form action="">
-								<div class="row">
-									<div class="col-lg-6 form-group mb-3">
-										<label for="fullname" class="form-label">Họ và tên</label>
-										<input type="text" class="form-control" placeholder="Nhập tại đây..." id="fullname">
-									</div>
-									<div class="col-lg-6 form-group mb-3">
-										<label for="email" class="form-label">Email</label>
-										<input type="email" class="form-control" placeholder="Nhập tại đây..." id="email">
-									</div>
-									<div class="col-lg-6 form-group mb-3">
-										<label for="phone" class="form-label">Số điện thoại</label>
-										<input type="text" class="form-control" placeholder="Nhập tại đây..." id="phone">
-									</div>
-									<div class="col-lg-6 form-group mb-3">
-										<label for="problem" class="form-label">Tiêu đề</label>
-										<input type="text" class="form-control" placeholder="Nhập tại đây..." id="problem">
-									</div>
-									<div class="col form-group mb-3">
-										<label for="content" class="form-label">Nội dung</label>
-										<textarea class="form-control" name="" id="content" rows="5"></textarea>
-									</div>
-								</div>
-								<div class="d-flex justify-content-center mb-3">
-									<button class="btn btn-custom-pr text-white" style="padding: 5px 3rem">Gửi</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="row mb-3 overflow-hidden">
-					<div class="container-fluid">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2770.755005277463!2d106.62671884674846!3d10.85415320776005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a20d8555e69%3A0x743b1e9558fb89e0!2sQTSC%209%20Building!5e0!3m2!1svi!2s!4v1693803926332!5m2!1svi!2s" 
-							width="100%" height="450" class="border-0 rounded" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-						</iframe>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- end contact Area -->
+
+		<section>
+			<div class="container-fluid bg-light p-5">
+				<div class="row">
+					<div class="col-lg-3 d-flex mb-3 align-items-center gap-2">
+						<img src="./img/email.png" alt="">
+						<div class="">
+							<h5 class="fw-bold">Đăng ký</h5>
+							<span>nhận tin Sneaker Square.</span>
+						</div>
+					</div>
+					<div class="col-lg-3 d-flex mb-3 align-items-center gap-2">
+						<span>
+							Cập nhập thông tin khuyến mãi nhanh nhất <br>
+							Hưởng quyền lợi riêng biệt
+						</span>
+					</div>
+					<div class="col-lg-6 d-flex align-items-center">
+						<form action="#" class="w-100">
+							<div class="row">
+								<div class="col-lg-7 mb-3">
+									<input type="text" class="form-control" placeholder="Địa chỉ email">
+								</div>
+								<div class="col-lg-5">
+									<button class="btn btn-primary">Đăng ký</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- start footer Area -->
 		<footer class="footer-area">
@@ -301,7 +311,7 @@
 						<h6>Về chúng tôi</h6>
 						<ul class="footer-link">
 							<li class="mb-2"><a href="#">Giới thiệu</a></li>
-							<li class="mb-2"><a href="contact.html">Liên hệ</a></li>
+							<li class="mb-2"><a href="#">Liên hệ</a></li>
 							<li class="mb-2"><a href="#">Tin tức</a></li>
 						</ul>
 					</div>
@@ -310,8 +320,8 @@
 						<ul class="footer-link">
 							<li class="mb-2"><a href="#">Chính sách bảo hành & đổi trả</a></li>
 							<li class="mb-2"><a href="#">FAQ & câu hỏi thường gặp</a></li>
-							<li class="mb-2"><a href="delivery-policy.html">Chính sách giao hàng</a></li>
-							<li class="mb-2"><a href="delivery-pay.html">Chính sách thanh toán</a></li>
+							<li class="mb-2"><a href="#">Chính sách giao hàng</a></li>
+							<li class="mb-2"><a href="#">Chính sách thanh toán</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-4 col-md-6 mb-3">
@@ -361,13 +371,17 @@
 		</footer>
 		<!-- End footer Area -->
 	</div>
+
 	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
 		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 		crossorigin="anonymous"></script>
+	<!-- slick -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<!-- <script src="js/vendor/bootstrap.min.js"></script> -->
 	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/jquery.nice-select.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/nouislider.min.js"></script>
@@ -375,14 +389,16 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<!--gmaps Js-->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script> -->
 	<script src="js/main.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/app.js"></script>
 	<script src="./mmenu/mmenu.js"></script>
+	<script src="js/product_slide.js"></script>
+
 	<!--  -->
 	<script type="text/javascript" src="./wowslider/engine1/wowslider.js"></script>
 	<script type="text/javascript" src="./wowslider/engine1/script.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="aos/aos.js"></script>
 
 	<script>
 		new Mmenu(document.querySelector("#menu"));
@@ -395,10 +411,9 @@
 		});
 		AOS.init();
 	</script>
-
 	<!-- Back to Top -->
 	<div class="btn btn-primary btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></div>
-	
+
 	<!-- Button call -->
 	<div class="call-now-button">
 		<div>
@@ -413,4 +428,5 @@
 		</div>
 	</div>
 </body>
+
 </html>

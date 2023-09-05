@@ -7016,12 +7016,12 @@ input[type=number]::-webkit-outer-spin-button {
 .product-list__relate .product-relate_item .arrow_prev {
   position: absolute ;
   top: -10%;
-  left: 95%;
+  left: 93%;
 }
 .product-list__relate .product-relate_item .arrow_next {
   position: absolute ;
   top: -10%;
-  right: 5%;
+  right: 7%;
 }
 .product-list__relate .product-relate_item .item__product {
   margin-right: 10px;

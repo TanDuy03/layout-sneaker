@@ -5413,7 +5413,9 @@ label {
     font-style: italic;
   }
   .categories_post img {
-    max-width: 100%; }
+    width: 100%;
+    height: 300px;
+   }
   .categories_post .categories_details {
     position: absolute;
     top: 20px;
@@ -5451,7 +5453,8 @@ label {
   margin-bottom: 40px; }
 
 .blog_info {
-  padding-top: 30px; }
+  padding-top: 30px;
+ }
   .blog_info .post_tag {
     padding-bottom: 20px; }
     .blog_info .post_tag a {
@@ -5712,6 +5715,9 @@ label {
   border-color: #eee; }
 
 /*============ Start Blog Single Styles  =============*/
+.img-post img{
+  width: 100%;
+}
 .single-post-area .social-links {
   padding-top: 10px; }
   .single-post-area .social-links li {
@@ -5823,6 +5829,7 @@ label {
   .comments-area a {
     color: #222222; }
   .comments-area .comment-list {
+    
     padding-bottom: 48px; }
     .comments-area .comment-list:last-child {
       padding-bottom: 0px; }
@@ -6306,8 +6313,54 @@ section#brand-area {
   padding: 0px 8px;
   border-radius: 50%;
   background-color: #f0f0f0;
+<<<<<<< HEAD
+}
+
+.size-option.selected {
+  background-color: var(--color-orange);
+  color: white;
+  border-color: var(--color-orange);
+}
+.content-wrapper {
+  transform: translateX(-4%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+.content-wrapper p {
+  font-size: 20px;
+}
+
+.content {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.expanded {
+  max-height: 500px; /* Số này phụ thuộc vào nội dung thực tế */
+  overflow: hidden;
+  transition: max-height 3s ease-in-out;
+}
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s ease-in-out;
+}
+.expanded li{
+  margin-bottom: 10px;
+}
+.expanded ul{
+  margin-bottom: 10px;
+=======
   height: 30px;
   width: 30px;
+>>>>>>> 27c37c67e75516b389b10701bdfbdf3b83e54d2e
 }
 
 #category-area .preview_pro {

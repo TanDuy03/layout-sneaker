@@ -5,7 +5,7 @@
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no" />
 	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
+	<link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
 	<!--  -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<!-- Author Meta -->
@@ -17,7 +17,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Shoes26</title>
+	<title>Sneaker Square</title>
 	<!--CSS============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -38,8 +38,15 @@
 	<link rel="stylesheet" href="./mmenu/demo.css">
 	<link rel="stylesheet" href="./mmenu/mmenu.css">
 	<link rel="stylesheet" href="aos/aos.css">
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+	/>
 	<link rel="stylesheet" type="text/css" href="./wowslider/engine1/style.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="./wowslider/engine1/jquery.js"></script>
 </head>
 
@@ -68,7 +75,7 @@
 						<a href="#">Giới thiệu</a>
 					</li>
 					<li>
-						<a href="#">Blog</a>
+						<a href="blog.html">Blog</a>
 					</li>
 					<li>
 						<a href="#">Tin tức</a>
@@ -94,10 +101,12 @@
 			</li>
 			<li><a href="#">Sale OFF</a></li>
 			<li><a href="#">Dịch vụ</a></li>
-			<li><a href="#">Liên hệ</a></li>
+			<li><a href="contact.html">Liên hệ</a></li>
 		</ul>
 	</nav>
 	<div class="mm-page">
+
+		<!-- start topbar Area -->
 		<div class="d-flex justify-content-end align-items-center" id="top-bar">
 			<div>
 				<span class="text-white">
@@ -109,22 +118,25 @@
 				<span class="text-white">Hotline: 0363.955.555</span>
 			</div>
 		</div>
-        <div id="header">
+		<!-- End topbar Area -->
+
+		<!-- start Header Area -->
+		<div id="header">
 			<div class="menu_burger">
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
 					role="button"><span></span></a>
 			</div>
 			<a href="index.html" id="logo" class="text-primary">
-				<img class="w-100 h-100" src="https://cdn.pixabay.com/photo/2023/05/03/11/57/lofoten-7967448_1280.jpg" alt="">
+				<img class="w-100 h-100" src="./img/logo_sn.png" alt="">
 			</a>
 			<div class="menu">
 				<div class="flex-menu">
 					<ul class="p-0 m-0">
 						<li class="text-menu">
-							<a href="index.html" class="menu-item">Trang chủ</a>
+							<a href="index.html" class="active menu-item">Trang chủ</a>
 						</li>
 						<li class="text-menu">
-							<a href="#" class="active menu-item">Về chúng tôi</a>
+							<a href="#" class="menu-item">Về chúng tôi</a>
 							<ul class="sub-menu">
 								<li><a href="#">Giới thiệu</a></li>
 								<li><a href="blog.html">Blog</a></li>
@@ -152,9 +164,9 @@
 					</ul>
 				</div>
 			</div>
-            <div class="search-group d-flex">
+			<div class="search-group d-flex">
 				<div id="icon__search" class="d-flex align-items-center">
-					<i class='bx bx-search'></i>
+					<i class='bx bx-search' title="Tìm kiếm"></i>
 					<div id="form_search">
 						<form>
 							<input type="text" class="input_search" placeholder="Nhập từ khóa...">
@@ -163,11 +175,11 @@
 					</div>
 				</div>
 				<div id="icon__heart">
-					<i class='bx bx-heart'></i>
+					<i class='bx bx-heart' title="Yêu thích"></i>
 					<span id="quality">1</span>
 				</div>
 				<div id="icon__shopping">
-					<i class='bx bx-shopping-bag'></i>
+					<i class='bx bx-shopping-bag' title="Giỏ hàng"></i>
 					<span id="quality">1</span>
 				</div>
 			</div>
@@ -273,7 +285,7 @@
                     <div class="col-lg-4">
                         <a class="text-dark" href="single-blog.html">
                         <div class="categories_post">
-                            <img src="https://dasbui.com/wp-content/uploads/2020/06/Gi%C3%A0y-th%E1%BB%83-thao-n%E1%BB%AF-Adidas.png" alt="post">
+                            <img src="https://authentic-shoes.com/wp-content/uploads/2023/05/untitled_design__5__46ba7605ee964f11abef3f67c04e8b2d_1024x1024.jpg" alt="post">
                         <p class="loai">Bộ sưu tập</p>
                         <p class="tieude">Vintas SaiGon 1980s</p>
                         <p class="tomtat">Ahead of the 2023 FIBA Basketball World Cup, Nike is opening an outdoor basketball court to give local</p>

@@ -5459,7 +5459,8 @@ label {
   margin-bottom: 40px; }
 
 .blog_info {
-  padding-top: 30px; }
+  padding-top: 30px;
+ }
   .blog_info .post_tag {
     padding-bottom: 20px; }
     .blog_info .post_tag a {
@@ -5834,6 +5835,7 @@ label {
   .comments-area a {
     color: #222222; }
   .comments-area .comment-list {
+    
     padding-bottom: 48px; }
     .comments-area .comment-list:last-child {
       padding-bottom: 0px; }

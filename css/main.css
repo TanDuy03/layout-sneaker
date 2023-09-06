@@ -1432,9 +1432,6 @@ input[type="search"] {
           padding: 60px 0 100px 30px;
         } }
         @media (max-width: 456px) {
-            .breadcrumb-banner {
-              padding: 60px 0 100px 0;
-            }
             .breadcrumb-banner .col-first {
               padding-right: 0 !important;
             }
@@ -1463,9 +1460,6 @@ input[type="search"] {
     @media (max-width: 1680px) {
       .breadcrumb-banner .col-first {
         padding-right: 40px; } }
-    @media (max-width: 991px) {
-      .breadcrumb-banner .col-first {
-        width: 48%; } }
     @media (max-width: 767px) {
       .breadcrumb-banner .col-first {
         width: 100%; } }
@@ -6202,10 +6196,6 @@ label {
   #header .search-group {
     gap: 8px;
   }
-  /* .container-fluid {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  } */
 }
 
 .font__size {

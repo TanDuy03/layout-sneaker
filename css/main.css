@@ -23,9 +23,11 @@
   right: 30px;
   bottom: 40px;
   z-index: 999;
-  height: 40px;
-  width: 40px;
   cursor: pointer;
+  background-color: #7A7979;
+}
+.back-to-top:hover {
+  background-color: #7A7979;
 }
 .btn-custom-pr {
   background-color: var(--color-orange) !important;

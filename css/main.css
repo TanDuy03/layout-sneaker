@@ -6313,7 +6313,6 @@ section#brand-area {
   padding: 0px 8px;
   border-radius: 50%;
   background-color: #f0f0f0;
-<<<<<<< HEAD
 }
 
 .size-option.selected {
@@ -6357,10 +6356,8 @@ section#brand-area {
 }
 .expanded ul{
   margin-bottom: 10px;
-=======
   height: 30px;
   width: 30px;
->>>>>>> 27c37c67e75516b389b10701bdfbdf3b83e54d2e
 }
 
 #category-area .preview_pro {

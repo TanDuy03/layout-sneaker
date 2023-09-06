@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
-	<link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
@@ -37,42 +37,72 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="./mmenu/demo.css">
 	<link rel="stylesheet" href="./mmenu/mmenu.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="aos/aos.css">
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+	/>
 	<link rel="stylesheet" type="text/css" href="./wowslider/engine1/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="./wowslider/engine1/jquery.js"></script>
 </head>
+
 <body>
-    <nav id="menu">
+	<!-- Spinner Start -->
+	<div id="spinner"
+		class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<ul class="cssload-flex-container">
+				<li>
+					<span class="cssload-loading cssload-one"></span>
+					<span class="cssload-loading cssload-two"></span>
+					<span class="cssload-loading-center"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Spinner End -->
+	<!-- Start Header Area -->
+	<nav id="menu">
 		<ul>
+			<li><a href="index.html">Trang chủ</a></li>
 			<li>
-				<a href="#">Bộ sưu tập</a>
+				<a href="#">Về chúng tôi</a>
 				<ul>
 					<li>
-						<a href="#">Nike</a>
-						<ul>
-							<li>
-								<a href="#">Nike 1</a>
-							</li>
-							<li>
-								<a href="#">Nike 2</a>
-							</li>
-						</ul>
+						<a href="#">Giới thiệu</a>
 					</li>
 					<li>
-						<a href="#">Vans</a>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="#">Tin tức</a>
 					</li>
 				</ul>
 			</li>
-			<li><a href="#">Giới thiệu</a>
+			<li>
+				<a href="category.html">Sản phẩm</a>
 				<ul>
-					<li><a href="#">Sneaker Square 1</a></li>
-					<li><a href="#">Sneaker Square 2</a></li>
-					<li><a href="#">Sneaker Square 3</a></li>
+					<li>
+						<a href="#">Giày Adidas</a>
+					</li>
+					<li>
+						<a href="#">Giày Vans</a>
+					</li>
+					<li>
+						<a href="#">Giày Nike</a>
+					</li>
+					<li>
+						<a href="#">Phụ kiện</a>
+					</li>
 				</ul>
 			</li>
-			<li><a href="#">Dịch vụ</a></li>
 			<li><a href="#">Sale OFF</a></li>
-			<li><a href="#">Liên hệ</a></li>
+			<li><a href="#">Dịch vụ</a></li>
+			<li><a href="contact.html">Liên hệ</a></li>
 		</ul>
 	</nav>
 	<div class="mm-page">
@@ -92,27 +122,40 @@
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
 					role="button"><span></span></a>
 			</div>
-			<a href="#" id="logo" class="text-primary">Sneaker Square</a>
+			<a href="index.html" id="logo" class="text-primary">
+				<img class="w-100 h-100" src="img/logo_sn.png" alt="">
+			</a>
 			<div class="menu">
 				<div class="flex-menu">
 					<ul class="p-0 m-0">
-						<li class="text-danger">
-							<a href="#">Giới thiệu</a>
+						<li class="text-menu">
+							<a href="index.html" class="menu-item">Trang chủ</a>
 						</li>
-						<li class="text-danger">
-							<a href="category.html">Sản phẩm</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Về chúng tôi</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giới thiệu</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="#">Tin tức</a></li>
+							</ul>
 						</li>
-						<li class="text-danger">
-							<a href="#">Dịch vụ</a>
+						<li class="text-menu">
+							<a href="category.html" class="menu-item">Sản phẩm</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giày Adidas</a></li>
+								<li><a href="#">Giày Vans</a></li>
+								<li><a href="#">Giày Nike</a></li>
+								<li><a href="#">Phụ kiện</a></li>
+							</ul>
 						</li>
-						<li class="text-danger">
-							<a href="#">Sale off</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Sale OFF</a>
 						</li>
-                        <li class="text-danger">
-							<a href="blog.html">Blog</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Dịch vụ</a>
 						</li>
-						<li class="text-danger">
-							<a href="#">Liên hệ</a>
+						<li class="text-menu">
+							<a href="contact.html" class="menu-item">Liên hệ</a>
 						</li>
 					</ul>
 				</div>
@@ -122,7 +165,7 @@
 					<i class='bx bx-search'></i>
 					<div id="form_search">
 						<form>
-							<input type="text" class="input_search" placeholder="Nhập từ khóa">
+							<input type="text" class="input_search" placeholder="Nhập từ khóa...">
 							<button class="sub_search"><i class='bx bx-search'></i></button>
 						</form>
 					</div>
@@ -139,27 +182,27 @@
 		</div>
 		<!-- End Header Area -->
 		<!-- start banner Area -->
-        <section class="banner-area organic-breadcrumb">
-            <div class="container">
-                <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
-                    <div class="col-first">
-                        <h1>Shop Category page</h1>
-                        <nav class="d-flex align-items-center">
-                            <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-                            <a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-                            <a href="category.html">Fashon Category</a>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<section class="banner-area organic-breadcrumb">
+			<div class="container">
+				<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+					<div class="col-first">
+						<h1>Shop Category page</h1>
+						<nav class="d-flex align-items-center">
+							<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
+							<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
+							<a href="category.html">Fashion Category</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- End banner Area -->
 
 		<!-- start features Area -->
 		<div class="container-fluid p-0 overflow-hidden">
-            <div class="container-fluid px-4 my-5">
+			<div class="container-fluid px-5 my-5">
 				<div class="row justify-content-center">
-					<div class="col-lg-6 text-center"  data-aos="fade-right" data-aos-duration="2000">
+					<div class="col-lg-6 text-center" data-aos="fade-right" data-aos-duration="2000">
 						<div class="section-title">
 							<h1>Thanh toán đơn hàng</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
@@ -223,19 +266,22 @@
 									<div class="checkbox-wrapper-12 ">
 										<div class="cbx">
 											<input id="cbx-14" type="checkbox">
-												<label for="cbx-14"></label>
+											<label for="cbx-14"></label>
 											<svg width="15" height="14" viewBox="0 0 15 14" fill="none">
 												<path d="M2 8.36364L6.23077 12L13 2"></path>
 											</svg>
 										</div>
 										<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-												<defs>
+											<defs>
 												<filter id="goo-12">
-													<feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
-													<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+													<feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur">
+													</feGaussianBlur>
+													<feColorMatrix in="blur" mode="matrix"
+														values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7"
+														result="goo-12"></feColorMatrix>
 													<feBlend in="SourceGraphic" in2="goo-12"></feBlend>
 												</filter>
-												</defs>
+											</defs>
 										</svg>
 									</div>
 									<label for="cbx-14" class="">Thanh toán khi nhận hàng</label>
@@ -246,19 +292,22 @@
 									<div class="checkbox-wrapper-12">
 										<div class="cbx">
 											<input id="cbx-15" type="checkbox">
-												<label for="cbx-15"></label>
+											<label for="cbx-15"></label>
 											<svg width="15" height="14" viewBox="0 0 15 14" fill="none">
 												<path d="M2 8.36364L6.23077 12L13 2"></path>
 											</svg>
 										</div>
 										<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-												<defs>
+											<defs>
 												<filter id="goo-12">
-													<feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
-													<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+													<feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur">
+													</feGaussianBlur>
+													<feColorMatrix in="blur" mode="matrix"
+														values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7"
+														result="goo-12"></feColorMatrix>
 													<feBlend in="SourceGraphic" in2="goo-12"></feBlend>
 												</filter>
-												</defs>
+											</defs>
 										</svg>
 									</div>
 									<label for="cbx-15">Chuyển khoản</label>
@@ -288,11 +337,13 @@
 							<div class="card mb-4 border-0 box__shadow">
 								<div class="row g-0">
 									<div class="col-md-5">
-										<img src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg" class="img-fluid rounded h-100 w-100" alt="...">
+										<img src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg"
+											class="img-fluid rounded h-100 w-100" alt="...">
 									</div>
 									<div class="col-md-7">
 										<div class="card-body">
-											<h5 class="card-title fw-bold mb-3 text__truncate text-uppercase">Nike Air Jordan</h5>
+											<h5 class="card-title fw-bold mb-3 text__truncate text-uppercase">Nike Air
+												Jordan</h5>
 											<div class="d-flex justify-content-start align-items-center gap-1">
 												<label class="fw-bold text-black font__size">Size:</label>
 												<label class="font__size">31</label>
@@ -313,11 +364,13 @@
 							<div class="card mb-4 border-0 box__shadow">
 								<div class="row g-0">
 									<div class="col-md-5">
-										<img src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg" class="img-fluid rounded h-100 w-100" alt="...">
+										<img src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg"
+											class="img-fluid rounded h-100 w-100" alt="...">
 									</div>
 									<div class="col-md-7">
 										<div class="card-body">
-											<h5 class="card-title fw-bold mb-3 text__truncate text-uppercase">Nike Air Jordan</h5>
+											<h5 class="card-title fw-bold mb-3 text__truncate text-uppercase">Nike Air
+												Jordan</h5>
 											<div class="d-flex justify-content-start align-items-center gap-1">
 												<label class="fw-bold text-black font__size">Size:</label>
 												<label class="font__size">31</label>
@@ -352,16 +405,17 @@
 								<label class="btn btn-danger font__size">6.000.000 VNĐ</label>
 							</div>
 						</div>
-						<button class="btn btn-primary border-0 w-100 mt-3 btn-checkout text-white font__size">Thanh toán</button>
+						<button class="btn btn-primary border-0 w-100 mt-3 btn-checkout text-white font__size">Thanh
+							toán</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- start footer Area -->
 		<footer class="footer-area">
-			<div class="container">
+			<div class="container-fluid px-5">
 				<div class="row justify-content-start">
-					<div class="col-lg-2 col-md-6 px-0 mb-3 footer-gap">
+					<div class="col-lg-2 col-md-6 mb-3">
 						<h6>Về chúng tôi</h6>
 						<ul class="footer-link">
 							<li class="mb-2"><a href="#">Giới thiệu</a></li>
@@ -369,16 +423,16 @@
 							<li class="mb-2"><a href="#">Tin tức</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-3 col-md-6 px-0 mb-3 footer-gap">
+					<div class="col-lg-3 col-md-6 mb-3">
 						<h6>Chính sách & điều khoản</h6>
 						<ul class="footer-link">
 							<li class="mb-2"><a href="#">Chính sách bảo hành & đổi trả</a></li>
-							<li class="mb-2"><a href="#">FAQ & câu hỏi thường gặp</a></li>
-							<li class="mb-2"><a href="#">Chính sách giao hàng</a></li>
-							<li class="mb-2"><a href="#">Chính sách thanh toán</a></li>
+							<li class="mb-2"><a href="privacy-policy.html">Chính sách bảo mật</a></li>
+							<li class="mb-2"><a href="delivery-policy.html">Chính sách giao hàng</a></li>
+							<li class="mb-2"><a href="delivery-pay.html">Chính sách thanh toán</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-4 col-md-6 px-0 mb-3 footer-gap">
+					<div class="col-lg-4 col-md-6 mb-3">
 						<h6>Thông tin liên hệ</h6>
 						<div class="d-flex justify-content-start gap-2 mb-2">
 							<i class="bi bi-telephone-fill"></i>
@@ -390,34 +444,34 @@
 						</div>
 						<div class="d-flex justify-content-start gap-2 mb-2">
 							<i class="bi bi-geo-alt-fill"></i>
-							<span>99 Tôn Đản, Bến Nghé, Quận 1, TP.Hồ Chí Minh</span>
+							<span>99 Nguyễn Du, Bến Thành, Quận 1, TP.Hồ Chí Minh</span>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 px-0 mb-3 footer-gap">
+					<div class="col-lg-3 col-md-6 mb-3">
 						<h6>Theo dõi chúng tôi</h6>
 						<div class="d-flex gap-3 social-footer justify-content-start">
 							<a href="#" target="_blank">
 								<div class="social-item">
-									<i class="bi bi-facebook fs-5"></i>
+									<i class="bi bi-facebook"></i>
 								</div>
 							</a>
 							<a href="#" target="_blank">
 								<div class="social-item">
-									<i class="bi bi-youtube fs-5"></i>
+									<i class="bi bi-youtube"></i>
 								</div>
 							</a>
 							<a href="#" target="_blank">
 								<div class="social-item">
-									<i class="bi bi-instagram fs-5"></i>
+									<i class="bi bi-instagram"></i>
 								</div>
 							</a>
 						</div>
 					</div>
 					<hr class="w-100 mt-3 px-0">
 				</div>
-				<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap footer-gap">
-					<p class="mb-3">
-						&copy; Copyright - <script>document.write(new Date().getFullYear());</script>. 
+				<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+					<p class="mb-3 text-center">
+						&copy; <script>document.write(new Date().getFullYear());</script> -
 						All rights reserved. Designed by <a href="#" target="_blank" class="link_team">6Flames.</a>
 					</p>
 				</div>
@@ -425,36 +479,64 @@
 		</footer>
 		<!-- End footer Area -->
 	</div>
-    	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
+	
+	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
-    <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="./mmenu/mmenu.js"></script>
-    <!--  -->
-    <script type="text/javascript" src="./wowslider/engine1/wowslider.js"></script>
-    <script type="text/javascript" src="./wowslider/engine1/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
+	<!-- slick -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- <script src="js/vendor/bootstrap.min.js"></script> -->
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<!--gmaps Js-->
+	<script src="js/main.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/app.js"></script>
+	<script src="./mmenu/mmenu.js"></script>
+	<script src="js/product_slide.js"></script>
 
-    <script>
-        new Mmenu(document.querySelector("#menu"));
-        document.addEventListener("click", function (evnt) {
-            var anchor = evnt.target.closest('a[href="#/"]');
-            if (anchor) {
-                alert("Thank you for clicking, but that's a demo link.");
-                evnt.preventDefault();
-            }
-        });
-        AOS.init();
-    </script>
+	<!--  -->
+	<script type="text/javascript" src="./wowslider/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="./wowslider/engine1/script.js"></script>
+	<script src="aos/aos.js"></script>
+
+	<script>
+		new Mmenu(document.querySelector("#menu"));
+		document.addEventListener("click", function (evnt) {
+			var anchor = evnt.target.closest('a[href="#/"]');
+			if (anchor) {
+				alert("Thank you for clicking, but that's a demo link.");
+				evnt.preventDefault();
+			}
+		});
+		AOS.init();
+	</script>
+
+	<!-- Back to Top -->
+	<div class="btn btn-primary border-0 btn-lg-square back-to-top">
+		<i class="fas fa-arrow-up"></i>
+	</div>
+
+	<!-- Button call -->
+	<div class="call-now-button">
+		<div>
+			<p class="call-text"><a href="tel:0369 469 525" title="0903 412 411">0369 469 525</a></p>
+			<a href="tel:0369 469 525" title="0369 469 525">
+				<div class="quick-alo-ph-circle"></div>
+				<div class="quick-alo-ph-circle-fill"></div>
+				<div class="quick-alo-ph-btn-icon quick-alo-phone-img-circle">
+					<i class="bi bi-telephone-fill"></i>
+				</div>
+			</a>
+		</div>
+	</div>
 </body>
 </html>

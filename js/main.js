@@ -1,6 +1,15 @@
 
 $(document).ready(function(){
 	"use strict";
+  // Spinner
+  var spinner = function () {
+    setTimeout(function () {
+        if ($('#spinner').length > 0) {
+            $('#spinner').removeClass('show');
+        }
+    }, 1);
+  };
+  spinner();
 
 	var window_width 	 = $(window).width(),
 	window_height 		 = window.innerHeight,
@@ -39,12 +48,11 @@ $(document).ready(function(){
           form_search.addClass('activeSearch');
       }
     });
-
     /*==========================
 		javaScript for sticky header
 		============================*/
     var header = $("#header");
-		$(window).scroll(function() {
+		$(window).on('scroll', function() {
 			var scroll = $(window).scrollTop();
 			if (scroll >= 150) {
 				header.addClass('active_top');
@@ -53,7 +61,19 @@ $(document).ready(function(){
 			}
 		});
 
-
+    var $backToTop = $(".back-to-top");
+    $backToTop.hide();
+    $(window).on('scroll', function() {
+      if ($(this).scrollTop() > 100) {
+        $backToTop.fadeIn();
+      } else {
+        $backToTop.fadeOut();
+      }
+    });
+    
+    $backToTop.on('click', function(e) {
+      $("html, body").animate({scrollTop: 0}, 500);
+    });
     /*=================================
     Javascript for banner area carousel
     ==================================*/
@@ -149,11 +169,7 @@ $(document).ready(function(){
         }
       }
     });
-
-
-
       // -------   Mail Send ajax
-
          $(document).ready(function() {
             var form = $('#booking'); // contact form
             var submit = $('.submit-btn'); // submit button

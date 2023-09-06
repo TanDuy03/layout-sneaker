@@ -1,23 +1,10 @@
-:root{
-    --orange:#ff7800;
-    --color-primary: #3DB2FF;
-    --white : #fff;
-    --secondary : #F5F5F5;
-}
 nav:not(.mm-menu) {
     display: none;
 }
-#icon__shopping{
-    color: #757575;
-}
-#icon__heart{
-    color: #757575;
-}
-
 #header {
     position: sticky;
     height: 80px;
-    padding: 0 80px;
+    padding: 0 3rem;
     top: -100px;
     font-size: 16px;
     font-weight: bold;
@@ -29,29 +16,127 @@ nav:not(.mm-menu) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 9999999;
+    z-index: 99999;
     transition: 2.5s ease-out;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     transition: 2s ease-out;
 }
-
+#header a#logo {
+    height: 60px;
+    width: 60px;
+}
 #header.active_top {
     position: sticky;
     top: 0;
     transition: 2s ease-out ;
 }
 
-#header .menu .flex-menu ul li {
+#header .menu .flex-menu ul li.text-menu {
     list-style: none;
-    padding: 0 20px;
+    padding: 20px;
+    position: relative;
 }
 
 #header .menu .flex-menu ul li  a {
-    color: var(--color-primary);
-    font-size: 1rem;
-    color: black;
+    color: var(--color-secondary);
+    font-size: 0.9rem;
+    transition: .3s ease-in;
+    text-transform: uppercase;
 }
-
+#header .menu .flex-menu ul li:hover > a {
+    color: var(--color-orange);
+}
+#header .menu .flex-menu ul li.text-menu a.active {
+    color: var(--color-orange);
+}
+#header .menu .flex-menu ul li.text-menu a.menu-item {
+    position: relative;
+    padding: 30px 8px;
+}
+/* submenu */
+#header .menu .flex-menu ul li.text-menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    background-color: var(--color-orange);
+    min-width: 160px;
+    box-shadow: 0 3px 11px 0 rgba(0,0,0,0.1);
+    /* opacity:0; */
+    visibility: hidden;
+    /* transition:all .5s; */
+    display: block;
+    /* border-radius: 5px; */
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -moz-transform: scale(1,0);
+    -ms-transform: scale(1,0);
+    -o-transform: scale(1,0);
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+}
+#header .menu .flex-menu ul li.text-menu .sub-menu li:hover {
+    background-color: #e26f2c;
+    transition: all .3s;
+}
+#header .menu .flex-menu ul li.text-menu .sub-menu li{
+    text-align: left;
+    border-bottom: 1px solid #fff;
+}
+#header .menu .flex-menu ul li.text-menu .sub-menu li:last-child{
+    border-bottom: none;
+}
+#header .menu .flex-menu ul li.text-menu .sub-menu li a {
+    padding: 10px 15px;
+    color: #ffffff;
+}
+#header .menu .flex-menu ul li:hover ul.sub-menu {
+    visibility: visible;
+    moz-transition: all .6s cubic-bezier(0,.95,.8,.99);
+    -o-transition: all .6s cubic-bezier(0,.95,.8,.99);
+    -webkit-transition: all .6s cubic-bezier(0,.95,.8,.99);
+    transition: all .6s cubic-bezier(0,.95,.8,.99);
+    -moz-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+/* menu hover lines */
+#header .menu .flex-menu ul li a.menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-orange);
+    display: block;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+}
+#header .menu .flex-menu ul li.text-menu a.active.menu-item::after,
+#header .menu .flex-menu ul li:hover> a.menu-item::after {
+    width: 100%;
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
 #header #logo::before,
 #header .menu_burger,
 #header .menu .flex-menu ul li a::before,
@@ -87,9 +172,9 @@ nav:not(.mm-menu) {
     margin: 7px 0;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1150px){
     #header {
-        padding: 0;
+        padding: 0; 
     }
     #header .menu_burger,
     #header .menu_burger a#hambuger {

@@ -5,7 +5,7 @@
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no" />
 	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
+	<link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
 	<!--  -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<!-- Author Meta -->
@@ -17,16 +17,17 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Shoes26</title>
+	<title>Sneaker Square</title>
 	<!--CSS============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
 		integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/nouislider.min.css">
@@ -36,47 +37,77 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="./mmenu/demo.css">
 	<link rel="stylesheet" href="./mmenu/mmenu.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="aos/aos.css">
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+	/>
 	<link rel="stylesheet" type="text/css" href="./wowslider/engine1/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="./wowslider/engine1/jquery.js"></script>
 </head>
 
 <body>
+	<!-- Spinner Start -->
+	<div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<ul class="cssload-flex-container">
+			   <li>
+				  <span class="cssload-loading cssload-one"></span>
+				  <span class="cssload-loading cssload-two"></span>
+				  <span class="cssload-loading-center"></span>
+			   </li>
+			</ul>
+		</div>
+	</div>
+	<!-- Spinner End -->
+	<!-- Start Header Area -->
+	<nav id="menu">
+		<ul>
+			<li><a href="index.html">Trang chủ</a></li>
+			<li>
+				<a href="#">Về chúng tôi</a>
+				<ul>
+					<li>
+						<a href="#">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="#">Tin tức</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="category.html">Sản phẩm</a>
+				<ul>
+					<li>
+						<a href="#">Giày Adidas</a>
+					</li>
+					<li>
+						<a href="#">Giày Vans</a>
+					</li>
+					<li>
+						<a href="#">Giày Nike</a>
+					</li>
+					<li>
+						<a href="#">Phụ kiện</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Sale OFF</a></li>
+			<li><a href="#">Dịch vụ</a></li>
+			<li><a href="contact.html">Liên hệ</a></li>
+		</ul>
+	</nav>
+	<div class="mm-page">
 
-    <!-- Start Header Area -->
-    <nav id="menu">
-        <ul>
-            <li>
-                <a href="#">Home</a>
-                <ul>
-                    <li>
-                        <a href="#">Trang chủ</a>
-                        <ul>
-                            <li>
-                                <a href="#">Trang chủ</a>
-                            </li>
-                            <li>
-                                <a href="#">Giới thiệu</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Giới thiệu</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#">About us</a>
-                <ul>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">The team</a></li>
-                    <li><a href="#">Our address</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="mm-page">
-        <div class="d-flex justify-content-end align-items-center" id="top-bar">
+		<!-- start topbar Area -->
+		<div class="d-flex justify-content-end align-items-center" id="top-bar">
 			<div>
 				<span class="text-white">
 					<a href="#" class="text-white">Đăng nhập</a>
@@ -87,63 +118,85 @@
 				<span class="text-white">Hotline: 0363.955.555</span>
 			</div>
 		</div>
-        <div id="header">
-            <div class="menu_burger">
-                <a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
-                    role="button"><span></span></a>
-            </div>
-            <a href="index.html" id="logo" class="text-dark">Sneaker Square</a>
-            <div class="menu">
-                <div class="flex-menu">
-                    <ul class="p-0 m-0">
-                        <li class="text-danger">
-                            <a href="#">Giới thiệu</a>
-                        </li>
-                        <li class="text-danger">
-                            <a href="category.html">Sản phẩm</a>
-                        </li>
-                        <li class="text-danger">
-                            <a href="#">Dịch vụ</a>
-                        </li>
-                        <li class="text-danger">
-                            <a href="blog.html">Blog</a>
-                        </li>
-                        <li class="text-danger">
-                            <a href="#">Sale off</a>
-                        </li>
-                        <li class="text-danger">
-                            <a href="#">Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="search-group d-flex">
-                <div id="icon__search" class="d-flex align-items-center">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div id="icon__heart">
-                    <i class="fas fa-heart"></i>
-                    <span id="quality">1</span>
-                </div>
-                <div id="icon__shopping">
-                    <i class="fas fa-shopping-bag"></i>
-                    <span id="quality">1</span>
-                </div>
-            </div>  
-        </div>
-	<!-- End Header Area -->
+		<!-- End topbar Area -->
+
+		<!-- start Header Area -->
+		<div id="header">
+			<div class="menu_burger">
+				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
+					role="button"><span></span></a>
+			</div>
+			<a href="index.html" id="logo" class="text-primary">
+				<img class="w-100 h-100" src="./img/logo_sn.png" alt="">
+			</a>
+			<div class="menu">
+				<div class="flex-menu">
+					<ul class="p-0 m-0">
+						<li class="text-menu">
+							<a href="index.html" class="active menu-item">Trang chủ</a>
+						</li>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Về chúng tôi</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giới thiệu</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="#">Tin tức</a></li>
+							</ul>
+						</li>
+						<li class="text-menu">
+							<a href="category.html" class="menu-item">Sản phẩm</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giày Adidas</a></li>
+								<li><a href="#">Giày Vans</a></li>
+								<li><a href="#">Giày Nike</a></li>
+								<li><a href="#">Phụ kiện</a></li>
+							</ul>
+						</li>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Sale OFF</a>
+						</li>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Dịch vụ</a>
+						</li>
+						<li class="text-menu">
+							<a href="contact.html" class="menu-item">Liên hệ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="search-group d-flex">
+				<div id="icon__search" class="d-flex align-items-center">
+					<i class='bx bx-search' title="Tìm kiếm"></i>
+					<div id="form_search">
+						<form>
+							<input type="text" class="input_search" placeholder="Nhập từ khóa...">
+							<button class="sub_search"><i class='bx bx-search'></i></button>
+						</form>
+					</div>
+				</div>
+				<div id="icon__heart">
+					<i class='bx bx-heart' title="Yêu thích"></i>
+					<span id="quality">1</span>
+				</div>
+				<div id="icon__shopping">
+					<i class='bx bx-shopping-bag' title="Giỏ hàng"></i>
+					<span id="quality">1</span>
+				</div>
+			</div>
+		</div>
+		<!-- End Header Area -->
 
     <!-- Start Banner Area -->
  
     <!-- End Banner Area -->
 
     <!--================Blog Area =================-->
-    <section class="blog_area single-post-area section_gap">
+    <section class="blog_area single-post-area">
         <div class="container">
             <div class="">
                 <div class="posts-list">
                     <div class="single-post row">
-                        <div class="anh-post  d-flex justify-content-center">
+                        <div class="anh-post d-flex justify-content-center">
                             <img src="https://ananas.vn/wp-content/uploads/Blog-1980s_0.jpg" alt="">
                         </div>
                         <div class="col-lg-3  col-md-3">
@@ -326,316 +379,289 @@
 </section>
   <!-- ===================Blog lien quan=========================== -->
 <!-- ==================== SP lien Quan ===================== -->
-<div class="d-flex justify-content-center">
-    <h2> Sản phẩm liên quan</h2>
-</div>
-<div class="btn-listsplq d-flex justify-content-end">
-    <button id="prev-button"><</button>
-    <button id="next-button">></button>
-</div>
-<div id="product-container">
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
+<section class="product-list__relate">
+    <div class="container-fluid px-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center"  data-aos="fade-right" data-aos-duration="2000">
+                <div class="section-title">
+                    <h1>Sản phẩm liên quan</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et
+                        dolore
+                        magna aliqua.</p>
                 </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
+            </div>
+        </div>
+        <div class="product-relate_item mb-5">
+            <div class="rounded item__product border">
+                <div class="overflow-hidden rounded-top" id="img_product">
+                    <a href="#">
+                        <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
                     </a>
+                </div>
+                <div class="product-details">
+                    <a href="#">
+                        <h6 class="px-2 text__truncate">addidas New Hammer sole
+                            for Sports person
+                        </h6>
+                    </a>
+                    <div class="price d-flex gap-3 justify-content-center mb-3">
+                        <h6 class="price__product">$150.00</h6>
+                        <h6 class="price__product l-through px-0">$210.00</h6>
+                    </div>
+                    <div class="prd-bottom d-flex justify-content-center">
+                        <a href="#" class="btn btn-order mb-3 px-3 text-white">
+                            Mua ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded item__product border">
+                <div class="overflow-hidden rounded-top" id="img_product">
+                    <a href="#">
+                        <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-details">
+                    <a href="#">
+                        <h6 class="px-2 text__truncate">addidas New Hammer sole
+                            for Sports person
+                        </h6>
+                    </a>
+                    <div class="price d-flex gap-3 justify-content-center mb-3">
+                        <h6 class="price__product">$150.00</h6>
+                        <h6 class="price__product l-through px-0">$210.00</h6>
+                    </div>
+                    <div class="prd-bottom d-flex justify-content-center">
+                        <a href="#" class="btn btn-order mb-3 px-3 text-white">
+                            Mua ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded item__product border">
+                <div class="overflow-hidden rounded-top" id="img_product">
+                    <a href="#">
+                        <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-details">
+                    <a href="#">
+                        <h6 class="px-2 text__truncate">addidas New Hammer sole
+                            for Sports person
+                        </h6>
+                    </a>
+                    <div class="price d-flex gap-3 justify-content-center mb-3">
+                        <h6 class="price__product">$150.00</h6>
+                        <h6 class="price__product l-through px-0">$210.00</h6>
+                    </div>
+                    <div class="prd-bottom d-flex justify-content-center">
+                        <a href="#" class="btn btn-order mb-3 px-3 text-white">
+                            Mua ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded item__product border">
+                <div class="overflow-hidden rounded-top" id="img_product">
+                    <a href="#">
+                        <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-details">
+                    <a href="#">
+                        <h6 class="px-2 text__truncate">addidas New Hammer sole
+                            for Sports person
+                        </h6>
+                    </a>
+                    <div class="price d-flex gap-3 justify-content-center mb-3">
+                        <h6 class="price__product">$150.00</h6>
+                        <h6 class="price__product l-through px-0">$210.00</h6>
+                    </div>
+                    <div class="prd-bottom d-flex justify-content-center">
+                        <a href="#" class="btn btn-order mb-3 px-3 text-white">
+                            Mua ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded item__product border">
+                <div class="overflow-hidden rounded-top" id="img_product">
+                    <a href="#">
+                        <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-details">
+                    <a href="#">
+                        <h6 class="px-2 text__truncate">addidas New Hammer sole
+                            for Sports person
+                        </h6>
+                    </a>
+                    <div class="price d-flex gap-3 justify-content-center mb-3">
+                        <h6 class="price__product">$150.00</h6>
+                        <h6 class="price__product l-through px-0">$210.00</h6>
+                    </div>
+                    <div class="prd-bottom d-flex justify-content-center">
+                        <a href="#" class="btn btn-order mb-3 px-3 text-white">
+                            Mua ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded item__product border">
+                <div class="overflow-hidden rounded-top" id="img_product">
+                    <a href="#">
+                        <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-details">
+                    <a href="#">
+                        <h6 class="px-2 text__truncate">addidas New Hammer sole
+                            for Sports person
+                        </h6>
+                    </a>
+                    <div class="price d-flex gap-3 justify-content-center mb-3">
+                        <h6 class="price__product">$150.00</h6>
+                        <h6 class="price__product l-through px-0">$210.00</h6>
+                    </div>
+                    <div class="prd-bottom d-flex justify-content-center">
+                        <a href="#" class="btn btn-order mb-3 px-3 text-white">
+                            Mua ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded item__product border">
+                <div class="overflow-hidden rounded-top" id="img_product">
+                    <a href="#">
+                        <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-details">
+                    <a href="#">
+                        <h6 class="px-2 text__truncate">addidas New Hammer sole
+                            for Sports person
+                        </h6>
+                    </a>
+                    <div class="price d-flex gap-3 justify-content-center mb-3">
+                        <h6 class="price__product">$150.00</h6>
+                        <h6 class="price__product l-through px-0">$210.00</h6>
+                    </div>
+                    <div class="prd-bottom d-flex justify-content-center">
+                        <a href="#" class="btn btn-order mb-3 px-3 text-white">
+                            Mua ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded item__product border">
+                <div class="overflow-hidden rounded-top" id="img_product">
+                    <a href="#">
+                        <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="product-details">
+                    <a href="#">
+                        <h6 class="px-2 text__truncate">addidas New Hammer sole
+                            for Sports person
+                        </h6>
+                    </a>
+                    <div class="price d-flex gap-3 justify-content-center mb-3">
+                        <h6 class="price__product">$150.00</h6>
+                        <h6 class="price__product l-through px-0">$210.00</h6>
+                    </div>
+                    <div class="prd-bottom d-flex justify-content-center">
+                        <a href="#" class="btn btn-order mb-3 px-3 text-white">
+                            Mua ngay
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product col-lg-4 col-md-6">
-        <div class="single-product">
-            <img class="img-fluid" src="https://shopgiayreplica.com/wp-content/uploads/2022/11/af1-cream-black-swoosh.jpg" alt="">
-            <div class="product-details text-center">
-                <h6>Giày Nike Air Force 1 Low Cream Black Swoosh</h6>
-                <div class="price">
-                    <h6>3.500.000</h6>
-                    <h6 class="l-through">3.000.000</h6>
-                </div>
-                <div class="prd-bottom d-flex justify-content-center">
-                    <button>
-                        Mua
-                    </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Thêm các sản phẩm khác tại đây -->
-</div>
+</section>
 
 
-  <script src="js/sanphamlienquang.js"></script>
   <!-- ==================== SP lien Quan ===================== -->
     <!-- start footer Area -->
+		<footer class="footer-area">
+			<div class="container-fluid px-5">
+				<div class="row justify-content-start">
+					<div class="col-lg-2 col-md-6 mb-3">
+						<h6>Về chúng tôi</h6>
+						<ul class="footer-link">
+							<li class="mb-2"><a href="#">Giới thiệu</a></li>
+							<li class="mb-2"><a href="contact.html">Liên hệ</a></li>
+							<li class="mb-2"><a href="#">Tin tức</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-3">
+						<h6>Chính sách & điều khoản</h6>
+						<ul class="footer-link">
+							<li class="mb-2"><a href="#">Chính sách bảo hành & đổi trả</a></li>
+							<li class="mb-2"><a href="privacy-policy.html">Chính sách bảo mật</a></li>
+							<li class="mb-2"><a href="delivery-policy.html">Chính sách giao hàng</a></li>
+							<li class="mb-2"><a href="delivery-pay.html">Chính sách thanh toán</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 mb-3">
+						<h6>Thông tin liên hệ</h6>
+						<div class="d-flex justify-content-start gap-2 mb-2">
+							<i class="bi bi-telephone-fill"></i>
+							<span>0369.469.525</span>
+						</div>
+						<div class="d-flex justify-content-start gap-2 mb-2">
+							<i class="bi bi-envelope"></i>
+							<span>cskh.square@gmail.com</span>
+						</div>
+						<div class="d-flex justify-content-start gap-2 mb-2">
+							<i class="bi bi-geo-alt-fill"></i>
+							<span>99 Nguyễn Du, Bến Thành, Quận 1, TP.Hồ Chí Minh</span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-3">
+						<h6>Theo dõi chúng tôi</h6>
+						<div class="d-flex gap-3 social-footer justify-content-start">
+							<a href="#" target="_blank">
+								<div class="social-item">
+									<i class="bi bi-facebook"></i>
+								</div>
+							</a>
+							<a href="#" target="_blank">
+								<div class="social-item">
+									<i class="bi bi-youtube"></i>
+								</div>
+							</a>
+							<a href="#" target="_blank">
+								<div class="social-item">
+									<i class="bi bi-instagram"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+					<hr class="w-100 mt-3 px-0">
+				</div>
+				<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+					<p class="mb-3 text-center">
+						&copy; <script>document.write(new Date().getFullYear());</script> -
+						All rights reserved. Designed by <a href="#" target="_blank" class="link_team">6Flames.</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- End footer Area -->
 
-    <footer class="footer-area section_gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-grid justify-content-center">
-                        <h1 class="text-light">Logo</h1>
-                        <br>
-                        <br>
-                        <p class="">
-                            Thương hiệu phân phối giầy đọc quyền trên toàn quốc Việt Nam. <br>
-                            Uy tín - Trách nhiệm - Độc Quyền
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2  col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-lg-grid justify-content-center">
-                        <h6>Về chúng tôi</h6>
-                        <ul>
-                            <li><a class="text-light" href="">Giới Thiệu</a></li>
-                            <li><a class="text-light" href="">Tin tức</a></li>
-                            <li><a class="text-light" href="">Liên hệ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3  col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-lg-grid justify-content-center">
-                        <h6>Chính sách & điều khoản</h6>
-                        <ul>
-                            <li><a class="text-light" href="">Chính sách bảo hành & đổi trả</a></li>
-                            <li><a class="text-light" href="">FAQ & câu hỏi thường gặp</a></li>
-                            <li><a class="text-light" href="">Chính sách giao hàng</a></li>
-                            <li><a class="text-light" href="">Chính sách thanh toán</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-lg-grid justify-content-center">
-                        <h6>Thông tin liên hệ</h6>
-                        <ul>
-                            <li><a class="text-light" href=""><i class="fa-solid fa-phone pe-2"></i> +84 383 144 668</a></li>
-                            <li><a class="text-light" href=""><i class="fa-regular fa-envelope pe-2"></i> Cskh.snaeker@gmail.com</a></li>
-                            <li><a class="text-light" href=""> <i class="fa-solid fa-location-dot pe-2"></i>Công viên phầm mềm Quang Trung, TCH, Quận 12, TPHCM</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="single-footer-widget d-lg-grid justify-content-center">
-                        <h6>Theo giỏi chúng tôi</h6>
-                        
-                        <ul class="f-icon">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-skype"></i>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    <hr>
-            <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
-                <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    
- @Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer Area -->
-</div>
+	</div>
+	
 	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
 		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 		crossorigin="anonymous"></script>
-	<!-- <script src="js/vendor/bootstrap.min.js"></script> -->
+	<!-- slick -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/jquery.nice-select.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/nouislider.min.js"></script>
@@ -643,14 +669,16 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<!--gmaps Js-->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script> -->
 	<script src="js/main.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/app.js"></script>
 	<script src="./mmenu/mmenu.js"></script>
+	<script src="js/product_slide.js"></script>
+
 	<!--  -->
 	<script type="text/javascript" src="./wowslider/engine1/wowslider.js"></script>
 	<script type="text/javascript" src="./wowslider/engine1/script.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="aos/aos.js"></script>
 
 	<script>
 		new Mmenu(document.querySelector("#menu"));
@@ -663,6 +691,26 @@
 		});
 		AOS.init();
 	</script>
+
+	<!-- Back to Top -->
+	<div class="btn btn-primary border-0 btn-lg-square back-to-top">
+		<i class="fas fa-arrow-up"></i>
+	</div>
+
+	<!-- Button call -->
+	<div class="call-now-button">
+		<div>
+			<p class="call-text"><a href="tel:0369 469 525" title="0903 412 411">0369 469 525</a></p>
+			<a href="tel:0369 469 525" title="0369 469 525">
+				<div class="quick-alo-ph-circle"></div>
+				<div class="quick-alo-ph-circle-fill"></div>
+				<div class="quick-alo-ph-btn-icon quick-alo-phone-img-circle">
+					<i class="bi bi-telephone-fill"></i>
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
 </body>
 
 </html>

@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
-	<link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
@@ -37,42 +37,69 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="./mmenu/demo.css">
 	<link rel="stylesheet" href="./mmenu/mmenu.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="aos/aos.css">
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+	/>
 	<link rel="stylesheet" type="text/css" href="./wowslider/engine1/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="./wowslider/engine1/jquery.js"></script>
 </head>
 <body>
-    <nav id="menu">
+	<!-- Spinner Start -->
+	<div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+		<div class="cssload-container">
+			<ul class="cssload-flex-container">
+				<li>
+					<span class="cssload-loading cssload-one"></span>
+					<span class="cssload-loading cssload-two"></span>
+					<span class="cssload-loading-center"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Spinner End -->
+	<nav id="menu">
 		<ul>
+			<li><a href="index.html">Trang chủ</a></li>
 			<li>
-				<a href="#">Bộ sưu tập</a>
+				<a href="#">Về chúng tôi</a>
 				<ul>
 					<li>
-						<a href="#">Nike</a>
-						<ul>
-							<li>
-								<a href="#">Nike 1</a>
-							</li>
-							<li>
-								<a href="#">Nike 2</a>
-							</li>
-						</ul>
+						<a href="#">Giới thiệu</a>
 					</li>
 					<li>
-						<a href="#">Vans</a>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">Tin tức</a>
 					</li>
 				</ul>
 			</li>
-			<li><a href="#">Giới thiệu</a>
+			<li>
+				<a href="category.html">Sản phẩm</a>
 				<ul>
-					<li><a href="#">Sneaker Square 1</a></li>
-					<li><a href="#">Sneaker Square 2</a></li>
-					<li><a href="#">Sneaker Square 3</a></li>
+					<li>
+						<a href="#">Giày Adidas</a>
+					</li>
+					<li>
+						<a href="#">Giày Vans</a>
+					</li>
+					<li>
+						<a href="#">Giày Nike</a>
+					</li>
+					<li>
+						<a href="#">Phụ kiện</a>
+					</li>
 				</ul>
 			</li>
-			<li><a href="#">Dịch vụ</a></li>
 			<li><a href="#">Sale OFF</a></li>
-			<li><a href="#">Liên hệ</a></li>
+			<li><a href="#">Dịch vụ</a></li>
+			<li><a href="contact.html">Liên hệ</a></li>
 		</ul>
 	</nav>
 	<div class="mm-page">
@@ -92,47 +119,60 @@
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
 					role="button"><span></span></a>
 			</div>
-			<a href="index.html" id="logo" class="text-primary">Sneaker Square</a>
+			<a href="index.html" id="logo" class="text-primary">
+				<img class="w-100 h-100" src="img/logo_sn.png" alt="">
+			</a>
 			<div class="menu">
 				<div class="flex-menu">
 					<ul class="p-0 m-0">
-						<li class="text-danger">
-							<a href="#">Giới thiệu</a>
+						<li class="text-menu">
+							<a href="index.html" class="menu-item">Trang chủ</a>
 						</li>
-						<li class="text-danger">
-							<a href="category.html">Sản phẩm</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Về chúng tôi</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giới thiệu</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="#">Tin tức</a></li>
+							</ul>
 						</li>
-						<li class="text-danger">
-							<a href="#">Dịch vụ</a>
+						<li class="text-menu">
+							<a href="category.html" class="active menu-item">Sản phẩm</a>
+							<ul class="sub-menu">
+								<li><a href="#">Giày Adidas</a></li>
+								<li><a href="#">Giày Vans</a></li>
+								<li><a href="#">Giày Nike</a></li>
+								<li><a href="#">Phụ kiện</a></li>
+							</ul>
 						</li>
-						<li class="text-danger">
-							<a href="#">Sale off</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Sale OFF</a>
 						</li>
-                        <li class="text-danger">
-							<a href="blog.html">Blog</a>
+						<li class="text-menu">
+							<a href="#" class="menu-item">Dịch vụ</a>
 						</li>
-						<li class="text-danger">
-							<a href="#">Liên hệ</a>
+						<li class="text-menu">
+							<a href="contact.html" class="menu-item">Liên hệ</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="search-group d-flex">
 				<div id="icon__search" class="d-flex align-items-center">
-					<i class='bx bx-search'></i>
+					<i class='bx bx-search' title="Tìm kiếm"></i>
 					<div id="form_search">
 						<form>
-							<input type="text" class="input_search" placeholder="Nhập từ khóa">
+							<input type="text" class="input_search" placeholder="Nhập từ khóa...">
 							<button class="sub_search"><i class='bx bx-search'></i></button>
 						</form>
 					</div>
 				</div>
 				<div id="icon__heart">
-					<i class='bx bx-heart'></i>
+					<i class='bx bx-heart' title="Yêu thích"></i>
 					<span id="quality">1</span>
 				</div>
 				<div id="icon__shopping">
-					<i class='bx bx-shopping-bag'></i>
+					<i class='bx bx-shopping-bag' title="Giỏ hàng"></i>
 					<span id="quality">1</span>
 				</div>
 			</div>
@@ -147,7 +187,7 @@
                         <nav class="d-flex align-items-center">
                             <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
                             <a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-                            <a href="category.html">Fashon Category</a>
+                            <a href="category.html">Fashion Category</a>
                         </nav>
                     </div>
                 </div>
@@ -159,356 +199,375 @@
         <div class="container-fluid px-5 my-5">
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-5">
-                    <div class="accordion mb-3" id="accordionExample">
-                        <div class="accordion-item rounded-0 border-0">
-                            <div class="sidebar-categories">
-                                <div class="accordion-header">
-                                    <button class="accordion-button head rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Thương hiệu
-                                    </button>
-                                </div>
-                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                    <ul class="main-categories">
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Nike<span class="number">(53)</span>
-                                            </a>
-                                        </li>
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Adidas<span class="number">(53)</span>
-                                            </a>
-                                        </li>
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Vans<span class="number">(53)</span>
-                                            </a>
-                                        </li>
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Bitis<span class="number">(53)</span>
-                                            </a>
-                                        </li>
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Conserve<span class="number">(53)</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion mb-3" id="accordionExample1">
-                        <div class="accordion-item rounded-0 border-0">
-                            <div class="sidebar-categories">
-                                <div class="accordion-header">
-                                    <button class="accordion-button head rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                        Đặc điểm
-                                    </button>
-                                </div>
-                                <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
-                                    <ul class="main-categories">
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Giảm giá<span class="number">(53)</span>
-                                            </a>
-                                        </li>
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Mới nhất<span class="number">(53)</span>
-                                            </a>
-                                        </li>
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Bán chạy<span class="number">(53)</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion mb-3" id="accordionExample2">
-                        <div class="accordion-item rounded-0 border-0">
-                            <div class="sidebar-categories">
-                                <div class="accordion-header">
-                                    <button class="accordion-button head rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                        Phụ kiện
-                                    </button>
-                                </div>
-                                <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
-                                    <ul class="main-categories">
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Vớ
-                                            </a>
-                                        </li>
-                                        <li class="main-nav-list">
-                                            <a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
-                                                <span class="lnr lnr-arrow-right"></span>Mới nhất<span class="number">(53)</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="container-fluid px-0">
+						<div class="accordion mb-3" id="accordionExample">
+							<div class="accordion-item rounded-0 border-0">
+								<div class="sidebar-categories">
+									<div class="accordion-header">
+										<button class="accordion-button head rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Thương hiệu
+											<i class="fas fa-chevron-down"></i>
+										</button>
+									</div>
+									<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+										<ul class="main-categories">
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Nike<span class="number">(53)</span>
+												</a>
+											</li>
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Adidas<span class="number">(53)</span>
+												</a>
+											</li>
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Vans<span class="number">(53)</span>
+												</a>
+											</li>
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Bitis<span class="number">(53)</span>
+												</a>
+											</li>
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Conserve<span class="number">(53)</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion mb-3" id="accordionExample1">
+							<div class="accordion-item rounded-0 border-0">
+								<div class="sidebar-categories">
+									<div class="accordion-header">
+										<button class="accordion-button head rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+											Đặc điểm
+											<i class="fas fa-chevron-down"></i>
+										</button>
+									</div>
+									<div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+										<ul class="main-categories">
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Giảm giá<span class="number">(53)</span>
+												</a>
+											</li>
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Mới nhất<span class="number">(53)</span>
+												</a>
+											</li>
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Bán chạy<span class="number">(53)</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion mb-3" id="accordionExample2">
+							<div class="accordion-item rounded-0 border-0">
+								<div class="sidebar-categories">
+									<div class="accordion-header">
+										<button class="accordion-button head rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+											Phụ kiện
+											<i class="fas fa-chevron-down"></i>
+										</button>
+									</div>
+									<div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+										<ul class="main-categories">
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Vớ<span class="number">(53)</span>
+												</a>
+											</li>
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Dây giày<span class="number">(53)</span>
+												</a>
+											</li>
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Miếng lót giày<span class="number">(53)</span>
+												</a>
+											</li>
+											<li class="main-nav-list">
+												<a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable">
+													<span class="lnr lnr-arrow-right"></span>Dung dịch vệ sinh giày<span class="number">(53)</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
                 <div class="col-xl-9 col-lg-8 col-md-7">
                     <!-- Start Filter Bar -->
-                    <div class="filter-bar d-flex flex-wrap align-items-center justify-content-end" id="filter-bar">
-                        <div class="sorting">
-                            <select>
-                                <option value="0">Sắp xếp theo</option>
-                                <option value="2">Giá giảm dần</option>
-                                <option value="3">Giá tăng dần</option>
-                                <option value="4">Mới nhất</option>
-                                <option value="5">Cũ nhất</option>
-                                <option value="6">A-Z</option>
-                                <option value="7">Z-A</option>
-                            </select>
-                        </div>
-                    </div>
+                    <div class="container-fluid px-0">
+						<div class="filter-bar d-flex flex-wrap align-items-center justify-content-end" id="filter-bar">
+							<div class="box">
+								<select>
+									<option value="0">Sắp xếp theo</option>
+									<option value="2">Giá giảm dần</option>
+									<option value="3">Giá tăng dần</option>
+									<option value="4">Mới nhất</option>
+									<option value="5">Cũ nhất</option>
+									<option value="6">A-Z</option>
+									<option value="7">Z-A</option>
+								</select>
+							</div>
+						</div>
+					</div>
                     <!-- End Filter Bar -->
                     <!-- Start Best Seller -->
                     <section class="lattest-product-area pb-40 category-list">
-                        <div class="row">
-                            <!-- single product -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product rounded">
-                                    <div class="overflow-hidden rounded-top" id="img_product">
-                                        <a href="#">
-                                            <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-details">
-                                        <a href="#">
-                                            <h6 class="px-2 text__truncate">addidas New Hammer sole
-                                                for Sports person 
-                                            </h6>
-                                        </a>
-                                        <div class="price d-flex gap-3 justify-content-center">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through px-0">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom d-flex justify-content-center">
-                                            <a href="#" class="btn btn-order mb-3 px-3 text-white">
-                                                Mua ngay
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single product -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product rounded">
-                                    <div class="overflow-hidden rounded-top" id="img_product">
-                                        <a href="#">
-                                            <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-details">
-                                        <a href="#">
-                                            <h6 class="px-2 text__truncate">addidas New Hammer sole
-                                                for Sports person 
-                                            </h6>
-                                        </a>
-                                        <div class="price d-flex gap-3 justify-content-center">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through px-0">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom d-flex justify-content-center">
-                                            <a href="#" class="btn btn-order mb-3 px-3 text-white">
-                                                Mua ngay
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single product -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product rounded">
-                                    <div class="overflow-hidden rounded-top" id="img_product">
-                                        <a href="#">
-                                            <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-details">
-                                        <a href="#">
-                                            <h6 class="px-2 text__truncate">addidas New Hammer sole
-                                                for Sports person 
-                                            </h6>
-                                        </a>
-                                        <div class="price d-flex gap-3 justify-content-center">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through px-0">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom d-flex justify-content-center">
-                                            <a href="#" class="btn btn-order mb-3 px-3 text-white">
-                                                Mua ngay
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <!-- single product -->
-                                <div class="col-lg-4 col-md-6">
-                                <div class="single-product rounded">
-                                    <div class="overflow-hidden rounded-top" id="img_product">
-                                        <a href="#">
-                                            <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-details">
-                                        <a href="#">
-                                            <h6 class="px-2 text__truncate">addidas New Hammer sole
-                                                for Sports person 
-                                            </h6>
-                                        </a>
-                                        <div class="price d-flex gap-3 justify-content-center">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through px-0">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom d-flex justify-content-center">
-                                            <a href="#" class="btn btn-order mb-3 px-3 text-white">
-                                                Mua ngay
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single product -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product rounded">
-                                    <div class="overflow-hidden rounded-top" id="img_product">
-                                        <a href="#">
-                                            <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-details">
-                                        <a href="#">
-                                            <h6 class="px-2 text__truncate">addidas New Hammer sole
-                                                for Sports person 
-                                            </h6>
-                                        </a>
-                                        <div class="price d-flex gap-3 justify-content-center">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through px-0">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom d-flex justify-content-center">
-                                            <a href="#" class="btn btn-order mb-3 px-3 text-white">
-                                                Mua ngay
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single product -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product rounded">
-                                    <div class="overflow-hidden rounded-top" id="img_product">
-                                        <a href="#">
-                                            <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-details">
-                                        <a href="#">
-                                            <h6 class="px-2 text__truncate">addidas New Hammer sole
-                                                for Sports person 
-                                            </h6>
-                                        </a>
-                                        <div class="price d-flex gap-3 justify-content-center">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through px-0">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom d-flex justify-content-center">
-                                            <a href="#" class="btn btn-order mb-3 px-3 text-white">
-                                                Mua ngay
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <!-- single product -->
-                                <div class="col-lg-4 col-md-6">
-                                <div class="single-product rounded">
-                                    <div class="overflow-hidden rounded-top" id="img_product">
-                                        <a href="#">
-                                            <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-details">
-                                        <a href="#">
-                                            <h6 class="px-2 text__truncate">addidas New Hammer sole
-                                                for Sports person 
-                                            </h6>
-                                        </a>
-                                        <div class="price d-flex gap-3 justify-content-center">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through px-0">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom d-flex justify-content-center">
-                                            <a href="#" class="btn btn-order mb-3 px-3 text-white">
-                                                Mua ngay
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single product -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product rounded">
-                                    <div class="overflow-hidden rounded-top" id="img_product">
-                                        <a href="#">
-                                            <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-details">
-                                        <a href="#">
-                                            <h6 class="px-2 text__truncate">addidas New Hammer sole
-                                                for Sports person 
-                                            </h6>
-                                        </a>
-                                        <div class="price d-flex gap-3 justify-content-center">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through px-0">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom d-flex justify-content-center">
-                                            <a href="#" class="btn btn-order mb-3 px-3 text-white">
-                                                Mua ngay
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single product -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product rounded">
-                                    <div class="overflow-hidden rounded-top" id="img_product">
-                                        <a href="#">
-                                            <img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-details">
-                                        <a href="#">
-                                            <h6 class="px-2 text__truncate">addidas New Hammer sole
-                                                for Sports person 
-                                            </h6>
-                                        </a>
-                                        <div class="price d-flex gap-3 justify-content-center">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through px-0">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom d-flex justify-content-center">
-                                            <a href="#" class="btn btn-order mb-3 px-3 text-white">
-                                                Mua ngay
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="container-fluid px-0">
+							<div class="row">
+								<!-- single product -->
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product rounded">
+										<div class="overflow-hidden rounded-top" id="img_product">
+											<a href="#">
+												<img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-details">
+											<a href="#">
+												<h6 class="px-2 text__truncate">addidas New Hammer sole
+													for Sports person
+												</h6>
+											</a>
+											<div class="price d-flex gap-3 justify-content-center">
+												<h6 class="price__product">$150.00</h6>
+												<h6 class="price__product l-through px-0">$210.00</h6>
+											</div>
+											<div class="prd-bottom d-flex justify-content-center">
+												<a href="#" class="btn btn-order mb-3 px-3 text-white">
+													Mua ngay
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- single product -->
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product rounded">
+										<div class="overflow-hidden rounded-top" id="img_product">
+											<a href="#">
+												<img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-details">
+											<a href="#">
+												<h6 class="px-2 text__truncate">addidas New Hammer sole
+													for Sports person
+												</h6>
+											</a>
+											<div class="price d-flex gap-3 justify-content-center">
+												<h6 class="price__product">$150.00</h6>
+												<h6 class="price__product l-through px-0">$210.00</h6>
+											</div>
+											<div class="prd-bottom d-flex justify-content-center">
+												<a href="#" class="btn btn-order mb-3 px-3 text-white">
+													Mua ngay
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- single product -->
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product rounded">
+										<div class="overflow-hidden rounded-top" id="img_product">
+											<a href="#">
+												<img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-details">
+											<a href="#">
+												<h6 class="px-2 text__truncate">addidas New Hammer sole
+													for Sports person
+												</h6>
+											</a>
+											<div class="price d-flex gap-3 justify-content-center">
+												<h6 class="price__product">$150.00</h6>
+												<h6 class="price__product l-through px-0">$210.00</h6>
+											</div>
+											<div class="prd-bottom d-flex justify-content-center">
+												<a href="#" class="btn btn-order mb-3 px-3 text-white">
+													Mua ngay
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- single product -->
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product rounded">
+										<div class="overflow-hidden rounded-top" id="img_product">
+											<a href="#">
+												<img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-details">
+											<a href="#">
+												<h6 class="px-2 text__truncate">addidas New Hammer sole
+													for Sports person
+												</h6>
+											</a>
+											<div class="price d-flex gap-3 justify-content-center">
+												<h6 class="price__product">$150.00</h6>
+												<h6 class="price__product l-through px-0">$210.00</h6>
+											</div>
+											<div class="prd-bottom d-flex justify-content-center">
+												<a href="#" class="btn btn-order mb-3 px-3 text-white">
+													Mua ngay
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- single product -->
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product rounded">
+										<div class="overflow-hidden rounded-top" id="img_product">
+											<a href="#">
+												<img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-details">
+											<a href="#">
+												<h6 class="px-2 text__truncate">addidas New Hammer sole
+													for Sports person
+												</h6>
+											</a>
+											<div class="price d-flex gap-3 justify-content-center">
+												<h6 class="price__product">$150.00</h6>
+												<h6 class="price__product l-through px-0">$210.00</h6>
+											</div>
+											<div class="prd-bottom d-flex justify-content-center">
+												<a href="#" class="btn btn-order mb-3 px-3 text-white">
+													Mua ngay
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- single product -->
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product rounded">
+										<div class="overflow-hidden rounded-top" id="img_product">
+											<a href="#">
+												<img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-details">
+											<a href="#">
+												<h6 class="px-2 text__truncate">addidas New Hammer sole
+													for Sports person
+												</h6>
+											</a>
+											<div class="price d-flex gap-3 justify-content-center">
+												<h6 class="price__product">$150.00</h6>
+												<h6 class="price__product l-through px-0">$210.00</h6>
+											</div>
+											<div class="prd-bottom d-flex justify-content-center">
+												<a href="#" class="btn btn-order mb-3 px-3 text-white">
+													Mua ngay
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- single product -->
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product rounded">
+										<div class="overflow-hidden rounded-top" id="img_product">
+											<a href="#">
+												<img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-details">
+											<a href="#">
+												<h6 class="px-2 text__truncate">addidas New Hammer sole
+													for Sports person
+												</h6>
+											</a>
+											<div class="price d-flex gap-3 justify-content-center">
+												<h6 class="price__product">$150.00</h6>
+												<h6 class="price__product l-through px-0">$210.00</h6>
+											</div>
+											<div class="prd-bottom d-flex justify-content-center">
+												<a href="#" class="btn btn-order mb-3 px-3 text-white">
+													Mua ngay
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- single product -->
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product rounded">
+										<div class="overflow-hidden rounded-top" id="img_product">
+											<a href="#">
+												<img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-details">
+											<a href="#">
+												<h6 class="px-2 text__truncate">addidas New Hammer sole
+													for Sports person
+												</h6>
+											</a>
+											<div class="price d-flex gap-3 justify-content-center">
+												<h6 class="price__product">$150.00</h6>
+												<h6 class="price__product l-through px-0">$210.00</h6>
+											</div>
+											<div class="prd-bottom d-flex justify-content-center">
+												<a href="#" class="btn btn-order mb-3 px-3 text-white">
+													Mua ngay
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- single product -->
+								<div class="col-lg-4 col-md-6">
+									<div class="single-product rounded">
+										<div class="overflow-hidden rounded-top" id="img_product">
+											<a href="#">
+												<img class="img-fluid w-100 h-100 zoom" src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-details">
+											<a href="#">
+												<h6 class="px-2 text__truncate">addidas New Hammer sole
+													for Sports person
+												</h6>
+											</a>
+											<div class="price d-flex gap-3 justify-content-center">
+												<h6 class="price__product">$150.00</h6>
+												<h6 class="price__product l-through px-0">$210.00</h6>
+											</div>
+											<div class="prd-bottom d-flex justify-content-center">
+												<a href="#" class="btn btn-order mb-3 px-3 text-white">
+													Mua ngay
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
                     </section>
                     <!-- End Best Seller -->
                     <!-- Start Pagination Bar -->
@@ -539,26 +598,26 @@
         </div>         
 		<!-- start footer Area -->
 		<footer class="footer-area">
-			<div class="container">
+			<div class="container-fluid px-5">
 				<div class="row justify-content-start">
-					<div class="col-lg-2 col-md-6 px-0 mb-3 footer-gap">
+					<div class="col-lg-2 col-md-6 mb-3">
 						<h6>Về chúng tôi</h6>
 						<ul class="footer-link">
 							<li class="mb-2"><a href="#">Giới thiệu</a></li>
-							<li class="mb-2"><a href="#">Liên hệ</a></li>
+							<li class="mb-2"><a href="contact.html">Liên hệ</a></li>
 							<li class="mb-2"><a href="#">Tin tức</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-3 col-md-6 px-0 mb-3 footer-gap">
+					<div class="col-lg-3 col-md-6 mb-3">
 						<h6>Chính sách & điều khoản</h6>
 						<ul class="footer-link">
 							<li class="mb-2"><a href="#">Chính sách bảo hành & đổi trả</a></li>
-							<li class="mb-2"><a href="#">FAQ & câu hỏi thường gặp</a></li>
-							<li class="mb-2"><a href="#">Chính sách giao hàng</a></li>
-							<li class="mb-2"><a href="#">Chính sách thanh toán</a></li>
+							<li class="mb-2"><a href="privacy-policy.html">Chính sách bảo mật</a></li>
+							<li class="mb-2"><a href="delivery-policy.html">Chính sách giao hàng</a></li>
+							<li class="mb-2"><a href="delivery-pay.html">Chính sách thanh toán</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-4 col-md-6 px-0 mb-3 footer-gap">
+					<div class="col-lg-4 col-md-6 mb-3">
 						<h6>Thông tin liên hệ</h6>
 						<div class="d-flex justify-content-start gap-2 mb-2">
 							<i class="bi bi-telephone-fill"></i>
@@ -570,34 +629,34 @@
 						</div>
 						<div class="d-flex justify-content-start gap-2 mb-2">
 							<i class="bi bi-geo-alt-fill"></i>
-							<span>99 Tôn Đản, Bến Nghé, Quận 1, TP.Hồ Chí Minh</span>
+							<span>99 Nguyễn Du, Bến Thành, Quận 1, TP.Hồ Chí Minh</span>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 px-0 mb-3 footer-gap">
+					<div class="col-lg-3 col-md-6 mb-3">
 						<h6>Theo dõi chúng tôi</h6>
 						<div class="d-flex gap-3 social-footer justify-content-start">
 							<a href="#" target="_blank">
 								<div class="social-item">
-									<i class="bi bi-facebook fs-5"></i>
+									<i class="bi bi-facebook"></i>
 								</div>
 							</a>
 							<a href="#" target="_blank">
 								<div class="social-item">
-									<i class="bi bi-youtube fs-5"></i>
+									<i class="bi bi-youtube"></i>
 								</div>
 							</a>
 							<a href="#" target="_blank">
 								<div class="social-item">
-									<i class="bi bi-instagram fs-5"></i>
+									<i class="bi bi-instagram"></i>
 								</div>
 							</a>
 						</div>
 					</div>
 					<hr class="w-100 mt-3 px-0">
 				</div>
-				<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap footer-gap">
-					<p class="mb-3">
-						&copy; Copyright - <script>document.write(new Date().getFullYear());</script>. 
+				<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+					<p class="mb-3 text-center">
+						&copy; <script>document.write(new Date().getFullYear());</script> -
 						All rights reserved. Designed by <a href="#" target="_blank" class="link_team">6Flames.</a>
 					</p>
 				</div>
@@ -605,28 +664,35 @@
 		</footer>
 		<!-- End footer Area -->
 	</div>
-    	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
+
+
+	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
-    <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <!--gmaps Js-->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script> -->
-    <script src="js/main.js"></script>
-    <script src="./mmenu/mmenu.js"></script>
-    <!--  -->
-    <script type="text/javascript" src="./wowslider/engine1/wowslider.js"></script>
-    <script type="text/javascript" src="./wowslider/engine1/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
+	<!-- slick -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- <script src="js/vendor/bootstrap.min.js"></script> -->
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<!--gmaps Js-->
+	<script src="js/main.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/app.js"></script>
+	<script src="./mmenu/mmenu.js"></script>
+	<script src="js/product_slide.js"></script>
+
+	<!--  -->
+	<script type="text/javascript" src="./wowslider/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="./wowslider/engine1/script.js"></script>
+	<script src="aos/aos.js"></script>
 
     <script>
         new Mmenu(document.querySelector("#menu"));
@@ -639,5 +705,24 @@
         });
         AOS.init();
     </script>
+
+	<!-- Back to Top -->
+	<div class="btn btn-primary border-0 btn-lg-square back-to-top">
+		<i class="fas fa-arrow-up"></i>
+	</div>
+
+	<!-- Button call -->
+	<div class="call-now-button">
+		<div>
+			<p class="call-text"><a href="tel:0369 469 525" title="0903 412 411">0369 469 525</a></p>
+			<a href="tel:0369 469 525" title="0369 469 525">
+				<div class="quick-alo-ph-circle"></div>
+				<div class="quick-alo-ph-circle-fill"></div>
+				<div class="quick-alo-ph-btn-icon quick-alo-phone-img-circle">
+					<i class="bi bi-telephone-fill"></i>
+				</div>
+			</a>
+		</div>
+	</div>
 </body>
 </html>

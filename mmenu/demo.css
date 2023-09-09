@@ -17,9 +17,7 @@ nav:not(.mm-menu) {
     justify-content: space-between;
     align-items: center;
     z-index: 99999;
-    transition: 2.5s ease-out;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    transition: 2s ease-out;
 }
 #header a#logo {
     height: 60px;

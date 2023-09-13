@@ -6,7 +6,7 @@
 }
 :root{
   --color-orange:#FF7F34;
-  --color-primary: #6DA9E4;
+  --color-primary: #3DB2FF;
   --color-primary2: #7abfff;
   --color-red: #F24C3D;
   --font-text: 'Open Sans', sans-serif;
@@ -6343,7 +6343,7 @@ section#brand-area {
 }
 
 .expanded {
-  max-height: 500px; /* Số này phụ thuộc vào nội dung thực tế */
+  max-height: 500px; 
   overflow: hidden;
   transition: max-height 3s ease-in-out;
 }

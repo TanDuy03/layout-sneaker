@@ -74,6 +74,13 @@ $(document).ready(function(){
     $backToTop.on('click', function(e) {
       $("html, body").animate({scrollTop: 0}, 500);
     });
+    // 
+    (function ($) {
+      $(function () {
+          $("#scroller").simplyScroll({ orientation: 'vertical', customClass: 'vert' });
+      });
+      })(jQuery);
+    // 
     /*=================================
     Javascript for banner area carousel
     ==================================*/

@@ -8611,7 +8611,9 @@ label {
     flex: 2;
     display: flex;
     align-items: center;
+    position: relative;
 }
+
 #top-bar .top-bar_right {
     flex: 1;
     display: flex;

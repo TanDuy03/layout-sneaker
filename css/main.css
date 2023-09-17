@@ -1833,13 +1833,7 @@ h6 {
 
     .flex-container {
         flex-direction: column;
-        /* Chuyển sang hiển thị dọc */
     }
-
-    /* 
-.d-flex {
-  justify-content: center; 
-} */
 }
 
 .flex-container {
@@ -1852,17 +1846,11 @@ h6 {
     display: flex;
 }
 
-
-/* .justify-content-center>input {
-  height: 40px;
-} */
 .d-flex {
     display: flex;
     align-items: center;
     /* Căn giữa theo chiều dọc */
 }
-
-
 
 .search-container {
     display: flex;
@@ -1874,7 +1862,6 @@ h6 {
 
 .search-container i {
     margin-right: 10px;
-    /* Khoảng cách giữa biểu tượng và input */
     color: #757575;
 }
 
@@ -1882,7 +1869,6 @@ input[type="search"] {
     border: none;
     outline: none;
 }
-
 
 #category .organic-breadcrumb {
     margin-bottom: 50px;
@@ -8651,12 +8637,28 @@ label {
         flex: 2;
     }
 }
+
 @media screen and (max-width: 576px){
     #top-bar .top-bar_left {
         display: none;
     }
     #top-bar .top-bar_right {
         flex: 1;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #top-bar .top-bar_right .top-right_info {
+        gap: 0.5rem !important;
+    }
+    #top-bar .top-bar_right .top-right_info a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    #top-bar {
+        display: none !important;
     }
 }
 #header .search-group #icon__search {
@@ -8758,7 +8760,7 @@ label {
     }
 
     #top-bar {
-        padding: 8px 40px;
+        padding: 8px 25px;
     }
 
     #header .search-group {

@@ -10,19 +10,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
         plusButton.addEventListener('click', () => {
             if (amount >= 1) {
+
                 amountInput.value = ++amount;
+
+                if (amount >= 20) {
+                    plusButton.disabled = true;
+                    plusButton.style.opacity = 0.6;
+                }
             }
         })
         minusButton .addEventListener('click', () => {
-            if(amount > 1){
+            if(amount > 1) {
+
                 amountInput.value = --amount;
+
+                if (amount < 20) {
+                    plusButton.disabled = false;
+                    plusButton.style.opacity = 1;
+                }
             }
         });
         amountInput.addEventListener('input', () => {
             amount = amountInput.value;
             amount = parseInt(amount);
-            amount = (isNaN(amount) || amount == 0)?1:amount;
+            // amount = (isNaN(amount) || amount == 0) ? 1 : (amount > 20) ? 20 : amount;
+            if (isNaN(amount) || amount == 0) {
+                amount = 1;
+            } else if (amount > 20) {
+                alert("Tối đa 20 sản phẩm");
+                amount = 20;
+            }
+
             amountInput.value = amount;
+
+            if (amount >= 20) {
+                plusButton.disabled = true;
+                plusButton.style.opacity = 0.6;
+            }
+            else {
+                plusButton.disabled = false;
+                plusButton.style.opacity = 1;
+            }
         })
     })
     //form search

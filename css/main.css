@@ -1877,9 +1877,6 @@ div.menu-blog-button button {
     font-size: 18px;
 }
 
-
-
-
 /* Style cho input search */
 #search {
     border: none;
@@ -1901,17 +1898,6 @@ div.menu-blog-button button {
 .search-button i {
     color: white;
 }
-
-
-
-.d-flex {
-    display: flex;
-    align-items: center;
-    /* Căn giữa theo chiều dọc */
-}
-
-
-
 
 #category .organic-breadcrumb {
     margin-bottom: 50px;
@@ -9222,8 +9208,11 @@ section#brand-area {
 }
 
 .box__shadow {
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card_border {
+    border: 1px solid #E6E6E6;
 }
 
 .btn-checkout {

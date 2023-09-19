@@ -4,24 +4,21 @@
 <head>
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
 	<!--  -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<!-- Author Meta -->
 	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
 	<!-- Meta Keyword -->
 	<meta name="keywords" content="">
 	<!-- meta character set -->
 	<meta charset="UTF-8">
-	<!-- meta title -->
-	<meta property="og:title" content="The Sneaker Square"/>
-	<!-- meta description -->
-	<meta property="og:description" content="Bước chân đẹp - Mua giày thời trang chất lượng ngay hôm nay!"/>
-	<!-- meta image -->
-	<meta property="og:image" content="https://img.freepik.com/free-photo/sports-shoe-competition-abstract-multi-color-background-generated-by-ai_188544-19600.jpg"/>
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="./img/logo-fav.ico" type="image/x-icon">
 	<!-- Site Title -->
-	<title>Sneaker Square</title>
+	<title>Shoes26</title>
+	<!--CSS============================================= -->
 	<!--CSS============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -38,16 +35,12 @@
 	<link rel="stylesheet" href="css/ion.rangeSlider.css" />
 	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery.simplyscroll.css">>
+	<link rel="stylesheet" href="css/jquery.simplyscroll.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="./mmenu/demo.css">
 	<link rel="stylesheet" href="./mmenu/mmenu.css">
 	<link rel="stylesheet" href="aos/aos.css">
-	<link
-		rel="stylesheet"
-		type="text/css"
-		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-	/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" type="text/css" href="./wowslider/engine1/style.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -71,7 +64,6 @@
 		</div>
 	</div>
 	<!-- Spinner End -->
-	<!-- Start Header Area -->
 	<nav id="menu">
 		<ul>
 			<li><a href="index.html">Trang chủ</a></li>
@@ -112,30 +104,25 @@
 		</ul>
 	</nav>
 	<div class="mm-page">
-		<!-- start topbar Area -->
-		<div class="d-flex align-items-center" id="top-bar">
-			<div class="top-bar_left">
-				<marquee behavior="" direction="" class="text-white text-uppercase">Shop giày Sneaker Square - 6Flames</marquee>
+		<div class="d-flex justify-content-end align-items-center" id="top-bar">
+			<div>
+				<span class="text-white">
+					<a href="#" class="text-white">Đăng nhập</a>
+				</span>
 			</div>
-			<div class="top-bar_right">
-				<div class="top-right_info d-flex gap-3">
-					<a href="#">Đăng nhập</a>
-					<span class="top-right_line"></span>
-					<a href="tel:0369469525">Hotline: 0369.469.525</a>
-				</div>
+			<span id="line"></span>
+			<div>
+				<span class="text-white">Hotline: 0363.955.555</span>
 			</div>
 		</div>
-		<!-- End topbar Area -->
 
-		<!-- start Header Area -->
 		<div id="header">
 			<div class="menu_burger">
 				<a href="#menu" id="hambuger" title="Open the menu" menu="menu" fx="collapse" ease="elastic"
 					role="button"><span></span></a>
 			</div>
 			<a href="index.html" id="logo" class="text-primary">
-				<img class="w-100 h-100" src="img/logo_sn.png"
-					alt="">
+				<img class="w-100 h-100" src="./img/logo_sn.png" alt="">
 			</a>
 			<div class="menu">
 				<div class="flex-menu">
@@ -152,7 +139,7 @@
 							</ul>
 						</li>
 						<li class="text-menu">
-							<a href="category.html" class="menu-item">Sản phẩm</a>
+							<a href="category.html" class="active menu-item">Sản phẩm</a>
 							<ul class="sub-menu">
 								<li><a href="#">Giày Adidas</a></li>
 								<li><a href="#">Giày Vans</a></li>
@@ -174,7 +161,7 @@
 			</div>
 			<div class="search-group d-flex">
 				<div id="icon__search" class="d-flex align-items-center">
-					<i class='bx bx-search' title="Tìm kiếm"></i>
+					<i class='bx bx-search'></i>
 					<div id="form_search">
 						<form>
 							<input type="text" class="input_search" placeholder="Nhập từ khóa...">
@@ -183,11 +170,11 @@
 					</div>
 				</div>
 				<div id="icon__heart">
-					<i class='bx bx-heart' title="Yêu thích"></i>
+					<i class='bx bx-heart'></i>
 					<span id="quality">1</span>
 				</div>
 				<div id="icon__shopping">
-					<i class='bx bx-shopping-bag' title="Giỏ hàng"></i>
+					<i class='bx bx-shopping-bag'></i>
 					<span id="quality">1</span>
 				</div>
 			</div>
@@ -381,8 +368,7 @@
 									</div>
 									<div class="col-lg-6 px-0">
 										<form action="#">
-											<button
-												class="btn btn-order w-100 btn-cart_order text-white fw-bold">Mua
+											<button class="btn btn-order w-100 btn-cart_order text-white fw-bold">Mua
 												hàng</button>
 										</form>
 									</div>
@@ -727,7 +713,7 @@
 						<h6>Về chúng tôi</h6>
 						<ul class="footer-link">
 							<li class="mb-2"><a href="#">Giới thiệu</a></li>
-							<li class="mb-2"><a href="contact.html">Liên hệ</a></li>
+							<li class="mb-2"><a href="#">Liên hệ</a></li>
 							<li class="mb-2"><a href="#">Tin tức</a></li>
 						</ul>
 					</div>
@@ -735,9 +721,9 @@
 						<h6>Chính sách & điều khoản</h6>
 						<ul class="footer-link">
 							<li class="mb-2"><a href="#">Chính sách bảo hành & đổi trả</a></li>
-							<li class="mb-2"><a href="privacy-policy.html">Chính sách bảo mật</a></li>
-							<li class="mb-2"><a href="delivery-policy.html">Chính sách giao hàng</a></li>
-							<li class="mb-2"><a href="delivery-pay.html">Chính sách thanh toán</a></li>
+							<li class="mb-2"><a href="#">FAQ & câu hỏi thường gặp</a></li>
+							<li class="mb-2"><a href="#">Chính sách giao hàng</a></li>
+							<li class="mb-2"><a href="#">Chính sách thanh toán</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-4 col-md-6 mb-3">
@@ -779,16 +765,16 @@
 				</div>
 				<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
 					<p class="mb-3 text-center">
-						&copy; <script>document.write(new Date().getFullYear());</script> -
+						&copy;
+						<script>document.write(new Date().getFullYear());</script> -
 						All rights reserved. Designed by <a href="#" target="_blank" class="link_team">6Flames.</a>
 					</p>
 				</div>
 			</div>
 		</footer>
 		<!-- End footer Area -->
-
 	</div>
-	
+
 	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
 		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
@@ -796,6 +782,7 @@
 	<!-- slick -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- <script src="js/vendor/bootstrap.min.js"></script> -->
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/jquery.nice-select.min.js"></script>
@@ -827,11 +814,8 @@
 		});
 		AOS.init();
 	</script>
-
 	<!-- Back to Top -->
-	<div class="btn btn-primary border-0 btn-lg-square back-to-top">
-		<i class="fas fa-arrow-up"></i>
-	</div>
+	<div class="btn btn-primary btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></div>
 
 	<!-- Button call -->
 	<div class="call-now-button">
@@ -846,7 +830,6 @@
 			</a>
 		</div>
 	</div>
-</body>
 </body>
 
 </html>

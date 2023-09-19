@@ -1796,55 +1796,113 @@ h6 {
     background-color: #D9D9D9;
 }
 
-@media (max-width: 1223px) {
-    .timkiem {
-        padding-left: 25px;
+.container-menu-blog{
+    width: 85%;
+    margin: auto;
+}
+.menu-blog{
+    width: 100%;
+}
+ul.menu-blog {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-primary);
+    padding: 10px;
+}
+
+li.menu-blog-item {
+    float: left;
+}
+
+li.menu-blog-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+li.menu-blog-item a:hover {
+    background-color: var(--color-primary2);
+}
+
+/* Tạo hiệu ứng màu nền đổi màu khi di chuột qua */
+li.menu-blog-item a.active {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+/* Sử dụng Media Query để điều chỉnh kiểu dáng menu-blog khi màn hình nhỏ hơn 768px */
+@media screen and (max-width: 768px) {
+    ul.menu-blog {
+        display: none;
+        margin-top: 0;
     }
 
-    .list-loai {
+    ul.menu-blog.responsive {
         display: block;
-        height: 300px;
-        border-radius: 0px;
+    }
+
+    li.menu-blog-item {
+        float: none;
         width: 100%;
-    }
-
-    .flex-container {
-        padding-top: 30px;
-    }
-
-    .list-loai ul {
-        display: block;
         text-align: center;
+        border-top: 1px solid #555;
     }
 
-    .list-loai li {
-        margin-right: 0;
-        /* Loại bỏ khoảng cách giữa các mục */
-        margin-bottom: 10px;
-        /* Thêm khoảng cách dưới mỗi mục */
-        margin-left: 0px;
-    }
-
-    .list-loai li:hover {
-        background-color: white;
-        border-radius: 20px;
-        padding: 5px 20px 5px 20px;
-    }
-
-    .flex-container {
-        flex-direction: column;
+    li.menu-blog-item:last-child {
+        border-bottom: 1px solid #555;
     }
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
+/* Ẩn nút menu-blog khi màn hình rộng hơn 768px */
+@media screen and (min-width: 769px) {
+    div.menu-blog-button {
+        display: none;
+    }
 }
 
-.d-flex {
-    display: flex;
+/* CSS cho nút menu-blog */
+div.menu-blog-button button {
+    width: 100%;
+    margin: auto;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
 }
+
+
+
+
+/* Style cho input search */
+#search {
+    border: none;
+    padding: 5px;
+    border-radius: 50px 0px 0px 50px;
+    outline: none; /* Loại bỏ viền khi input được focus */
+}
+
+/* Style cho nút search */
+.search-button {
+    background-color: var(--color-orange);
+    border: none;
+    padding: 5px;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+}
+
+/* Style cho biểu tượng tìm kiếm */
+.search-button i {
+    color: white;
+}
+
+
 
 .d-flex {
     display: flex;
@@ -1852,23 +1910,8 @@ h6 {
     /* Căn giữa theo chiều dọc */
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    background-color: #ffffff;
-    border-radius: 20px;
-}
 
-.search-container i {
-    margin-right: 10px;
-    color: #757575;
-}
 
-input[type="search"] {
-    border: none;
-    outline: none;
-}
 
 #category .organic-breadcrumb {
     margin-bottom: 50px;

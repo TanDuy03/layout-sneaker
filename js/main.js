@@ -559,4 +559,8 @@ $(document).ready(function () {
         });
     }
 });
-
+// ---------------------------------------------menu blog-------------------------------
+function toggleMenu() {
+    var menu = document.querySelector('ul.menu-blog');
+    menu.classList.toggle('responsive');
+}

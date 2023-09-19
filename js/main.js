@@ -38,19 +38,9 @@ $(document).ready(function () {
             enabled: true
         }
     });
-
-    // Search Toggle
-    var form_search = $('#header #form_search');
-    $("#icon__search .bx-search").on("click", function () {
-        if (form_search.hasClass('activeSearch')) {
-            form_search.removeClass('activeSearch');
-        } else {
-            form_search.addClass('activeSearch');
-        }
-    });
     /*==========================
         javaScript for sticky header
-        ============================*/
+    ============================*/
     var header = $("#header");
     $(window).on('scroll', function () {
         var scroll = $(window).scrollTop();
@@ -163,7 +153,7 @@ $(document).ready(function () {
                     });
                 }
             }
-    });
+        });
 
     // -------   Mail Send ajax
     $(document).ready(function () {

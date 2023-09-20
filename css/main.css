@@ -2488,6 +2488,9 @@ div.menu-blog-button button {
     .exclusive-deal-area .exclusive-right .active-exclusive-product-slider {
         margin-top: 50px;
     }
+    section.section-contact__bottom .contact-power {
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media (max-width: 575px) {
@@ -2591,7 +2594,7 @@ div.menu-blog-button button {
 }
 
 .single-related-product {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;

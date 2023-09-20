@@ -41,7 +41,7 @@ $(document).ready(function () {
         arrows: true,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 3500,
         centerMode: true,
         centerPadding: '40px',
         prevArrow: "<button type='button' class='arrow_prev slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",

@@ -580,10 +580,16 @@ _:-ms-input-placeholder,
 }
 
 @media all and (max-width:400px) {
-
+	/* 
 	#wowslider-container1 .ws_controls,
 	#wowslider-container1 .ws_bullets,
 	#wowslider-container1 .ws_thumbs {
 		display: none
+	} */
+	#wowslider-container1 .ws_bullets a {
+		padding: 5px;
+	}
+	#wowslider-container1 .ws_bullets {
+		bottom: -8px;
 	}
 }

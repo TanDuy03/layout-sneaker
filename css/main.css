@@ -114,12 +114,15 @@
 .cssload-loading-center {
     display: inline-block;
     position: absolute;
-    background: var(--color-orange);
+    background-image: url("../img/logo_sn.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 56px;
     width: 56px;
     left: 68px;
     top: 69px;
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     border-radius: 6px;
     animation: pulse 1.3s ease infinite;
 }

@@ -54,7 +54,7 @@ nav:not(.mm-menu) {
 #header .menu .flex-menu ul li.text-menu .sub-menu {
     position: absolute;
     top: 100%;
-    background-color: #FFCB74;
+    background-color: #4f5e6a;
     min-width: 160px;
     box-shadow: 0 3px 11px 0 rgba(0,0,0,0.1);
     /* opacity:0; */
@@ -95,7 +95,7 @@ nav:not(.mm-menu) {
     left: 100%;
     top: 0;
     min-width: 160px;
-    background-color: rgb(255, 189, 103);
+    background-color: #6c757d;
     display: block;
     visibility: hidden;
     -moz-transform-origin: 0% 0%;

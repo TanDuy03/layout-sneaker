@@ -1899,19 +1899,6 @@ div.menu-blog-button button {
     color: white;
 }
 
-<<<<<<< HEAD
-
-
-/* .d-flex {
-    display: flex;
-    align-items: center;
-} */
-
-
-
-
-=======
->>>>>>> 22b85cbf72191fe3d7b7d443fb02f58ca71d2729
 #category .organic-breadcrumb {
     margin-bottom: 50px;
 }
@@ -9605,6 +9592,7 @@ section#brand-area {
 .product-page_detail .product-detail_thumb .product-detail_image img {
     height: 500px;
     width: 100%;
+    cursor: pointer;
 }
 
 .product-page_detail .product-detail_gallery .product-gallery_image {
@@ -9614,6 +9602,7 @@ section#brand-area {
 .product-page_detail .product-detail_gallery .product-gallery_image img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .product-page_detail .product-detail_gallery .product-gallery_image:not(.slick-current) img {

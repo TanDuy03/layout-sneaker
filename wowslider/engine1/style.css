@@ -38,7 +38,8 @@
 }
 
 * html #wowslider-container1 {
-	width: 1366px
+	/* width: 1366px; */
+	width: 100%;
 }
 
 #wowslider-container1 .ws_images ul {

@@ -72,6 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
             formSearch.classList.remove('activeSearch');
         }
     })
+    
+    document.querySelector('.input_search').addEventListener("click", function(event) {
+        event.stopPropagation();
+    });
 });
 
 

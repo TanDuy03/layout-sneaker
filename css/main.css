@@ -8653,7 +8653,7 @@ label {
 #header #form_search {
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 35px;
     opacity: 0;
     transform: translate(-50%, 80%);
     transition: .5s ease-in-out;

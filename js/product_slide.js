@@ -76,6 +76,39 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('.input_search').addEventListener("click", function(event) {
         event.stopPropagation();
     });
+
+    var checkBox16 = document.getElementById("cbx-16");
+    var formCheck16 = document.getElementById("checkInput16");
+
+    var checkBox17 = document.getElementById("cbx-17");
+    var formCheck17 = document.getElementById("checkInput17");
+
+    checkBox16.addEventListener("change", function () {
+        checkBox17.disabled = checkBox16.checked;
+        formCheck17.style.opacity = 0.5;
+    });
+
+    checkBox17.addEventListener("change", function () {
+        checkBox16.disabled = checkBox17.checked;
+        formCheck16.style.opacity = 0.5;
+    });
+
+    var checkBox14 = document.getElementById("cbx-14");
+    var formCheck14 = document.getElementById("checkInput14");
+
+    var checkBox15 = document.getElementById("cbx-15");
+    var formCheck15 = document.getElementById("checkInput15");
+
+    checkBox14.addEventListener("change", function () {
+        checkBox15.disabled = checkBox14.checked;
+        formCheck15.style.opacity = 0.5;
+    });
+
+    checkBox15.addEventListener("change", function () {
+        checkBox14.disabled = checkBox15.checked;
+        formCheck14.style.opacity = 0.5;
+    });
+
 });
 
 

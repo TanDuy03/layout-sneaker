@@ -84,13 +84,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var formCheck17 = document.getElementById("checkInput17");
 
     checkBox16.addEventListener("change", function () {
-        checkBox17.disabled = checkBox16.checked;
-        formCheck17.style.opacity = 0.5;
+        if(!checkBox16.checked) {
+            checkBox17.disabled = checkBox17.checked;
+            formCheck17.style.opacity = 1;
+        } else {
+            checkBox17.disabled = checkBox16.checked;
+            formCheck17.style.opacity = 0.5;
+        }
     });
 
     checkBox17.addEventListener("change", function () {
-        checkBox16.disabled = checkBox17.checked;
-        formCheck16.style.opacity = 0.5;
+        if(!checkBox17.checked) {
+            checkBox16.disabled = checkBox16.checked;
+            formCheck16.style.opacity = 1;
+        } else {
+            checkBox16.disabled = checkBox17.checked;
+            formCheck16.style.opacity = 0.5;
+        }
     });
 
     var checkBox14 = document.getElementById("cbx-14");
@@ -100,13 +110,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var formCheck15 = document.getElementById("checkInput15");
 
     checkBox14.addEventListener("change", function () {
-        checkBox15.disabled = checkBox14.checked;
-        formCheck15.style.opacity = 0.5;
+        if(!checkBox14.checked) {
+            checkBox15.disabled = checkBox15.checked;
+            formCheck15.style.opacity = 1;
+        } else {
+            checkBox15.disabled = checkBox14.checked;
+            formCheck15.style.opacity = 0.5;
+        }
     });
 
     checkBox15.addEventListener("change", function () {
-        checkBox14.disabled = checkBox15.checked;
-        formCheck14.style.opacity = 0.5;
+        if(!checkBox15.checked) {
+            checkBox14.disabled = checkBox14.checked;
+            formCheck14.style.opacity = 1;
+        } else {
+            checkBox14.disabled = checkBox15.checked;
+            formCheck14.style.opacity = 0.5;
+        }
     });
 
 });

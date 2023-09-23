@@ -67,7 +67,10 @@ $(document).ready(function () {
     // 
     (function ($) {
         $(function () {
-            $("#scroller").simplyScroll({ orientation: 'vertical', customClass: 'vert' });
+            $("#scroller").simplyScroll({ 
+                orientation: 'vertical', 
+                customClass: 'vert' ,
+            });
         });
     })(jQuery);
     // 

@@ -9676,6 +9676,8 @@ section#brand-area {
 /*  */
 .product-page_detail .product-add_cart button.btn-cart_order {
     background-color: var(--color-orange);
+    padding: 10px 0 !important;
+    border-width: 0 !important;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -9690,7 +9692,7 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     justify-content: center;
     gap: 14px;
-    padding: 10px;
+    /* padding: 10px; */
     cursor: pointer;
     user-select: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -9809,4 +9811,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .product-list__relate .product-relate_item .item__product .product-details .prd-bottom a {
     background-color: var(--color-orange);
+}
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 0;
+    font-size: 15px !important;
 }

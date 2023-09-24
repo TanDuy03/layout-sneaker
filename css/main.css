@@ -9872,7 +9872,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .product-detail_des .tab-content .wrapper .form-rating button.submit {
-    background-color: var(--blue);
+    background-color: var(--color-orange);
 }
 
 .product-detail_des .tab-content .wrapper .form-rating button.cancel {

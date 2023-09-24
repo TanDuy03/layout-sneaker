@@ -18,6 +18,13 @@
     /* A2D2FF primary 1
     277BC0 primary 2
   */
+    --yellow: #FFBD13;
+    --blue: #4383FF;
+    --blue-d-1: #3278FF;
+    --light: #F5F5F5;
+    --grey: #AAA;
+    --white: #FFF;
+    --shadow: 8px 8px 30px rgba(0,0,0,.05);
 }
 
 /* Back top top */
@@ -9662,9 +9669,11 @@ section#brand-area {
     outline: none;
     font-size: 16px;
 }
-.product-page_detail .product-add_cart{
+
+.product-page_detail .product-add_cart {
     max-width: 500px;
 }
+
 .product-page_detail .product-add_cart button {
     font-size: 14px;
 }
@@ -9673,6 +9682,7 @@ section#brand-area {
     color: #fff;
     background-color: var(--color-red);
 }
+
 /*  */
 .product-page_detail .product-add_cart button.btn-cart_order {
     background-color: var(--color-orange);
@@ -9767,6 +9777,7 @@ input[type=number]::-webkit-outer-spin-button {
     transform: translate(0px, 0%);
     opacity: 1;
 }
+
 /* #212529 */
 .product-list__relate .product-relate_item {
     position: relative;
@@ -9813,7 +9824,58 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: var(--color-orange);
 }
 
-.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
     border-radius: 0;
     font-size: 15px !important;
+}
+
+/* Star Rating */
+.product-detail_des .tab-content .wrapper h3 {
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.product-detail_des .tab-content .wrapper .rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2rem;
+	color: var(--yellow);
+	margin-bottom: 2rem;
+}
+.product-detail_des .tab-content .wrapper .rating .star {
+	cursor: pointer;
+}
+.product-detail_des .tab-content .wrapper .rating .star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.product-detail_des .tab-content .wrapper .rating .star:hover {
+	transform: scale(1.1);
+}
+
+.product-detail_des .tab-content .wrapper .form-rating button.submit {
+    background-color: var(--blue);
+}
+
+.product-detail_des .tab-content .wrapper .form-rating button.cancel {
+    background-color: var(--light);
+    color: var(--blue);
 }

@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     //click button quality product detail
     let btnQuality = document.querySelectorAll('.btn_quality');
-    
+
     btnQuality.forEach((amountInput) => {
         let amount = parseInt(amountInput.value);
         let plusButton = amountInput.nextElementSibling;
@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         })
-        minusButton .addEventListener('click', () => {
-            if(amount > 1) {
+        minusButton.addEventListener('click', () => {
+            if (amount > 1) {
 
                 amountInput.value = --amount;
 
@@ -56,24 +56,49 @@ document.addEventListener("DOMContentLoaded", function () {
     //form search
     const iconSearch = document.getElementById("icon__search");
     const formSearch = document.getElementById("form_search");
-    
+
     iconSearch.addEventListener("click", (event) => {
         event.stopPropagation();
-        if(formSearch.classList.contains('activeSearch')) {
+        if (formSearch.classList.contains('activeSearch')) {
             formSearch.classList.remove('activeSearch');
         } else {
             formSearch.classList.add('activeSearch');
         }
     })
-    
+
     //click out form search 
-    document.addEventListener("click", function(event) {
-        if(event.target !== iconSearch && !formSearch.contains(event.target)) {
+    document.addEventListener("click", function (event) {
+        if (event.target !== iconSearch && !formSearch.contains(event.target)) {
             formSearch.classList.remove('activeSearch');
         }
     })
-    
-    document.querySelector('.input_search').addEventListener("click", function(event) {
+    // ----------------------
+    const allStar = document.querySelectorAll('.rating .star')
+    const ratingValue = document.querySelector('.rating input')
+
+    allStar.forEach((item, idx) => {
+        item.addEventListener('click', function () {
+            let click = 0
+            ratingValue.value = idx + 1
+
+            allStar.forEach(i => {
+                i.classList.replace('bxs-star', 'bx-star')
+                i.classList.remove('active')
+            })
+            for (let i = 0; i < allStar.length; i++) {
+                if (i <= idx) {
+                    allStar[i].classList.replace('bx-star', 'bxs-star')
+                    allStar[i].classList.add('active')
+                } else {
+                    allStar[i].style.setProperty('--i', click)
+                    click++
+                }
+            }
+        })
+    })
+    // ----------------------
+
+    document.querySelector('.input_search').addEventListener("click", function (event) {
         event.stopPropagation();
     });
 
@@ -84,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var formCheck17 = document.getElementById("checkInput17");
 
     checkBox16.addEventListener("change", function () {
-        if(!checkBox16.checked) {
+        if (!checkBox16.checked) {
             checkBox17.disabled = checkBox17.checked;
             formCheck17.style.opacity = 1;
         } else {
@@ -94,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     checkBox17.addEventListener("change", function () {
-        if(!checkBox17.checked) {
+        if (!checkBox17.checked) {
             checkBox16.disabled = checkBox16.checked;
             formCheck16.style.opacity = 1;
         } else {
@@ -110,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var formCheck15 = document.getElementById("checkInput15");
 
     checkBox14.addEventListener("change", function () {
-        if(!checkBox14.checked) {
+        if (!checkBox14.checked) {
             checkBox15.disabled = checkBox15.checked;
             formCheck15.style.opacity = 1;
         } else {
@@ -120,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     checkBox15.addEventListener("change", function () {
-        if(!checkBox15.checked) {
+        if (!checkBox15.checked) {
             checkBox14.disabled = checkBox14.checked;
             formCheck14.style.opacity = 1;
         } else {

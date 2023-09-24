@@ -410,13 +410,14 @@
 											</form>
 										</div>
 										<div class="flex-fill">
-											<a href="#" class="w-100 h-100 py-2 d-flex align-items-center justify-content-center btn bg-info text-white btn-order">
+											<a href="#"
+												class="w-100 h-100 py-2 d-flex align-items-center justify-content-center btn bg-info text-white btn-order">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
 										</div>
 										<div class="flex-fill">
-											<input type="checkbox" id="favorite"
-											name="favorite-checkbox" value="favorite-button">
+											<input type="checkbox" id="favorite" name="favorite-checkbox"
+												value="favorite-button">
 											<label for="favorite" class="favorite py-2 rounded">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 													viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -435,7 +436,8 @@
 									</div>
 									<div class="col-lg-12 px-0">
 										<form action="#">
-											<button class="btn btn-order w-100 py-2 btn-cart_order text-white fw-bold">Mua
+											<button
+												class="btn btn-order w-100 py-2 btn-cart_order text-white fw-bold">Mua
 												hàng</button>
 										</form>
 									</div>
@@ -576,7 +578,24 @@
 									a
 								</div>
 								<div id="tab-3" class="tab-pane fade show px-4">
-									b
+									<div class="wrapper">
+										<h5 class="text-center">Đánh giá Sneaker Square tại đây</h5>
+										<form action="#">
+											<div class="rating">
+												<input type="number" name="rating" hidden>
+												<i class='bx bx-star star' style="--i: 0;"></i>
+												<i class='bx bx-star star' style="--i: 1;"></i>
+												<i class='bx bx-star star' style="--i: 2;"></i>
+												<i class='bx bx-star star' style="--i: 3;"></i>
+												<i class='bx bx-star star' style="--i: 4;"></i>
+											</div>
+											<textarea name="opinion" class="form-control mb-3" cols="" rows="5" placeholder="Nhận xét..."></textarea>
+											<div class="d-flex gap-2 justify-content-center form-rating">
+												<button type="submit" class="btn px-5 text-white submit">Đánh giá</button>
+												<button class="btn px-5 cancel">Hủy</button>
+											</div>
+										</form>
+									</div>
 								</div>
 							</div>
 						</div>

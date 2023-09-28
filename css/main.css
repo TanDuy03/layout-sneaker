@@ -1797,6 +1797,25 @@ h6 {
     background-color: var(--color-orange);
     color: white;
 }
+.search-blog-input{
+    border-radius: 35px 0px 0px 35px;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid  var(--color-orange);
+}
+.search-blog-button{
+    border-radius: 0px 30px 30px 0px;
+    background-color: var(--color-orange);
+    color: #ffffff;
+}
+.search-blog-input:focus{
+    outline: none;
+}
+.search-blog-button:hover{
+    border-radius: 0px 30px 30px 0px;
+    background-color: var(--color-primary2);
+    color: #ffffff;
+}
 
 #category .organic-breadcrumb {
     margin-bottom: 50px;

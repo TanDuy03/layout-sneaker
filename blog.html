@@ -277,8 +277,8 @@
         <!-- End Banner Area -->
 
         <!--================Blog Categorie Area =================-->
-		<div class="m-5">
-			<div class="row">
+
+			<div class="row m-md-5 m-1">
 				
 				<div class="col-md-8 col-12">
 					<!--================Single Blog =================-->
@@ -329,13 +329,37 @@
 							</div>
 						</div>
 					</div>
+					<!-- Start Pagination Bar -->
+
+					<div class="paginate d-flex justify-content-center gap-3 mt-5">
+						<a href="#" class="item-paginate btn">
+							<i class='bx bx-chevron-left btn-left'></i>
+						</a>
+						<a href="#" class="item-paginate btn">
+							1
+						</a>
+						<a href="#" class="item-paginate active btn">
+							2
+						</a>
+						<a href="#" class="item-paginate btn">
+							3
+						</a>
+						<span>...</span>
+						<a href="#" class="item-paginate btn">
+							7
+						</a>
+						<a href="#" class="item-paginate btn">
+							<i class='bx bx-chevron-right btn-right'></i>
+						</a>
+					</div>
+					<!-- End Pagination Bar -->
 				</div>
 				<!--================Category Blog =================-->
 				<div class=" row col-md-4 col-12 me-auto ms-auto mt-5">
 					<div class="col-12">
 						<div class="d-flex">
-							<input type="text" class="search-input form-control" placeholder="Tìm kiếm...">
-							<button class="btn">
+							<input type="text" class="search-blog-input" placeholder="Tìm kiếm...">
+							<button class="btn search-blog-button">
 								<i class="fas fa-search"></i>
 							</button>
 						</div>
@@ -428,7 +452,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+
         <!--================Blog Categorie Area =================-->
         <!-- start footer Area -->
         <footer class="footer-area">

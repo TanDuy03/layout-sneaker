@@ -181,8 +181,8 @@ nav:not(.mm-menu) {
     display: flex;
     align-items: center;
 }
-#header a:before,
-#header a:after {
+#header a#hambuger:before,
+#header a#hambuger:after {
     content: "";
     display: block;
     background: black;
@@ -214,9 +214,9 @@ nav:not(.mm-menu) {
     #header .search-group {
         padding-right: 25px;
     }
-    #header a span,
-    #header a::before,
-    #header a::after {
+    #header a#hambuger span,
+    #header a#hambuger::before,
+    #header a#hambuger::after {
         background-color: var(--color-primary);
     }
     

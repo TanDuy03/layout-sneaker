@@ -1774,107 +1774,27 @@ h6 {
 
 
 
-.container-menu-blog {
-    width: 85%;
-    margin: auto;
+.blog-img img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
-
-.menu-blog {
-    width: 100%;
+.text-single-blog{
+    font-weight: 900;
+    color: #ccc;
 }
-
-ul.menu-blog {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--color-primary);
-    padding: 10px;
+.text-blog-container li:hover a {
+    font-weight: 900;
+    color: #000;
 }
-
-li.menu-blog-item {
-    float: left;
+.tags-blog{
+    background-color: #f2f2f2;
+    padding: 2px 6px 2px 6px;
+    color: gray;
+    border-radius: 4px;
 }
-
-li.menu-blog-item a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-li.menu-blog-item a:hover {
-    background-color: var(--color-primary2);
-}
-
-/* Tạo hiệu ứng màu nền đổi màu khi di chuột qua */
-li.menu-blog-item a.active {
+.tags-blog:hover{
     background-color: var(--color-orange);
-    color: white;
-}
-
-/* Sử dụng Media Query để điều chỉnh kiểu dáng menu-blog khi màn hình nhỏ hơn 768px */
-@media screen and (max-width: 768px) {
-    ul.menu-blog {
-        display: none;
-        margin-top: 0;
-    }
-
-    ul.menu-blog.responsive {
-        display: block;
-    }
-
-    li.menu-blog-item {
-        float: none;
-        width: 100%;
-        text-align: center;
-    }
-
-    li.menu-blog-item:last-child {
-        padding-top: 10px;
-    }
-}
-
-/* Ẩn nút menu-blog khi màn hình rộng hơn 768px */
-@media screen and (min-width: 769px) {
-    div.menu-blog-button {
-        display: none;
-    }
-}
-
-/* CSS cho nút menu-blog */
-div.menu-blog-button button {
-    width: 100%;
-    margin: auto;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 18px;
-}
-
-/* Style cho input search */
-#search {
-    border: none;
-    padding: 5px;
-    border-radius: 50px 0px 0px 50px;
-    outline: none;
-    /* Loại bỏ viền khi input được focus */
-}
-
-/* Style cho nút search */
-.search-button {
-    background-color: var(--color-orange);
-    border: none;
-    padding: 5px;
-    border-radius: 0 50px 50px 0;
-    cursor: pointer;
-}
-
-/* Style cho biểu tượng tìm kiếm */
-.search-button i {
     color: white;
 }
 

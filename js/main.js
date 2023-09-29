@@ -67,10 +67,7 @@ $(document).ready(function () {
     // 
     (function ($) {
         $(function () {
-            $("#scroller").simplyScroll({ 
-                orientation: 'vertical', 
-                customClass: 'vert' ,
-            });
+            $("#scroller").simplyScroll({ orientation: 'vertical', customClass: 'vert' });
         });
     })(jQuery);
     // 
@@ -111,6 +108,31 @@ $(document).ready(function () {
         nav: true,
         navText: ["<img src='img/product/prev.png'>", "<img src='img/product/next.png'>"],
         dots: false
+    });
+    /*=================================
+    Javascript for exclusive area carousel slider home page
+    ==================================*/
+    $('.owl-slideshow').owlCarousel({
+        items: 1,
+        rewind: true,
+        autoplay: true,
+        loop: true,
+        lazyLoad: false,
+        mouseDrag: false,
+        touchDrag: false,
+        animateIn: 'animate__animated animate__fadeIn',
+        animateOut: 'animate__animated animate__fadeOut',
+        margin: 0,
+        smartSpeed: 500,
+        autoplaySpeed: 2000,
+        nav: false,
+        dots: false
+    });
+    $('.prev-slideshow').click(function() {
+        $('.owl-slideshow').trigger('prev.owl.carousel');
+    });
+    $('.next-slideshow').click(function() {
+        $('.owl-slideshow').trigger('next.owl.carousel');
     });
 
     //--------- Accordion Icon Change ---------//
@@ -553,7 +575,3 @@ $(document).ready(function () {
     }
 });
 // ---------------------------------------------menu blog-------------------------------
-function toggleMenu() {
-    var menu = document.querySelector('ul.menu-blog');
-    menu.classList.toggle('responsive');
-}
